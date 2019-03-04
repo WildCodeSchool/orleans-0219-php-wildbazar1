@@ -1,41 +1,242 @@
-!<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Ma page web</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <div class="contenair-fluid">
     <header> partie pandora
-
-
     </header>
-    
 
-    <main>
+    <div class="container-fluid">
+
+        <main>
 
             <section> partie maiew</section>
 
 
             <section> partie sylvain</section>
 
-            <section> partie vinny</section>
-
-           
-            <section> partie vincere</section>
 
 
+            <!-- Section Top Selling crée par vinny. Utilisation de cards bootstrap -->
+
+
+            <section id="topSelling">
+                <div class="px-5 py-5">
+                    <div class="text-center mb-4">
+                        <h2> Top Selling</h2>
+                        <h3> Find our best sells actually</h3>
+                    </div>
+
+                    <!-- images Top Selling -->
+
+
+                    <div class="row text-center justify-content-center">
+
+                        <!-- cards 1 cliquable -->
+                        <div class="col-xs-12 col-sm-6 col-md-4 pb-4">
+                        <button type="button" class="btn btn-light" data-toggle="modal" data-target="#produit1">
+                            <img class="card-img-top img-fluid" src="http://www.olivepressee.com/33-large_default/vinaigre-balsamique-framboise.jpg"
+                                alt="image du produit1">
+                            <div class="card-body">
+                                <!-- description du produit-->
+                                <h4 class="card-title text-center">Produit 1</h4>
+                            </div>
+                        </button>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="produit1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <!-- insertion du titre du produit -->
+                                        <h4 class="h5" id="titreduproduit1">Produit 1</h4>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <!-- insertion de l'image , du prix et de la description -->
+                                        <div class="row mx-3">
+                                            <div class="col-xs-12 col-sm-6">
+                                                <!-- image-->
+                                                <img class="card-img-top img-fluid" src="http://www.olivepressee.com/33-large_default/vinaigre-balsamique-framboise.jpg"
+                                                    alt="image du produit1">
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6">
+                                                <!-- prix -->
+                                                <h5>100€</h5>
+                                                <!-- description produit-->
+                                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
+                                                    obcaecati
+                                                    ut error
+                                                    dolor dolores eveniet, accusamus ea odit dicta dignissimos animi
+                                                    labore
+                                                    vitae.
+                                                    Eveniet suscipit, quod dolorum culpa est quibusdam.</p>
+                                            </div>
+                                            <!-- caracteristiques du produit-->
+                                            <div>
+                                                <h6>Caracteristics :</h6>
+                                                <ul>
+                                                    <li>Size: xx</li>
+                                                    <li>Weight: xx</li>
+                                                    <li>Color: xx</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- cards 2 cliquable -->
+                        <div class="col-xs-12 col-sm-6 col-md-4 pb-4">
+                        <button type="button" class="btn btn-light" data-toggle="modal" data-target="#produit2">
+                            <img class="card-img-top img-fluid" src="http://www.olivepressee.com/33-large_default/vinaigre-balsamique-framboise.jpg"
+                                alt="image du produit2">
+                            <div class="card-body">
+                                <!-- description du produit-->
+                                <h4 class="card-title text-center">Produit 1</h4>
+                            </div>
+                        </button>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="produit2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <!-- insertion du titre du produit -->
+                                        <h4 class="h5" id="titreduproduit2">Produit 2</h4>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <!-- insertion de l'image , du prix et de la description -->
+                                        <div class="row mx-3">
+                                            <div class="col-xs-12 col-sm-6">
+                                                <!-- image-->
+                                                <img class="card-img-top img-fluid" src="http://www.olivepressee.com/33-large_default/vinaigre-balsamique-framboise.jpg"
+                                                    alt="image du produit1">
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6">
+                                                <!-- prix -->
+                                                <h5>100€</h5>
+                                                <!-- description produit-->
+                                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
+                                                    obcaecati
+                                                    ut error
+                                                    dolor dolores eveniet, accusamus ea odit dicta dignissimos animi
+                                                    labore
+                                                    vitae.
+                                                    Eveniet suscipit, quod dolorum culpa est quibusdam.</p>
+                                            </div>
+                                            <!-- caracteristiques du produit-->
+                                            <div>
+                                                <h6>Caracteristics :</h6>
+                                                <ul>
+                                                    <li>Size: xx</li>
+                                                    <li>Weight: xx</li>
+                                                    <li>Color: xx</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- cards 3 cliquable -->
+                        <div class="col-xs-12 col-sm-6 col-md-4 pb-4">
+                        <button type="button" class="btn btn-light" data-toggle="modal" data-target="#produit3">
+                            <img class="card-img-top img-fluid" src="http://www.olivepressee.com/33-large_default/vinaigre-balsamique-framboise.jpg"
+                                alt="image du produit3">
+                            <div class="card-body">
+                                <!-- description du produit-->
+                                <h4 class="card-title text-center">Produit 3</h4>
+                            </div>
+                        </button>
+                        </div>
 
 
 
 
-    </main>
-    
+                        <!-- Modal -->
+                        <div class="modal fade" id="produit3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <!-- insertion du titre du produit -->
+                                        <h4 class="h5" id="titreduproduit3">Produit 3</h4>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <!-- insertion de l'image , du prix et de la description -->
+                                        <div class="row mx-3">
+                                            <div class="col-xs-12 col-sm-6">
+                                                <!-- image-->
+                                                <img class="card-img-top img-fluid" src="http://www.olivepressee.com/33-large_default/vinaigre-balsamique-framboise.jpg"
+                                                    alt="image du produit1">
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6">
+                                                <!-- prix -->
+                                                <h5>100€</h5>
+                                                <!-- description produit-->
+                                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
+                                                    obcaecati
+                                                    ut error
+                                                    dolor dolores eveniet, accusamus ea odit dicta dignissimos animi
+                                                    labore
+                                                    vitae.
+                                                    Eveniet suscipit, quod dolorum culpa est quibusdam.</p>
+                                            </div>
+                                            <!-- caracteristiques du produit-->
+                                            <div>
+                                                <h6>Caracteristics :</h6>
+                                                <ul>
+                                                    <li>Size: xx</li>
+                                                    <li>Weight: xx</li>
+                                                    <li>Color: xx</li>
+                                                </ul>
+                                            </div>
 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- fin de section top selling cree par vinny -->
+
+
+        </main>
     </div>
-    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
