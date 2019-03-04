@@ -1,0 +1,18 @@
+.navbar{
+    background-color: rgb(226, 116, 112);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4); /* Rajoute une ombre à la nav */
+    font-variant: small-caps;
+}
+
+h1{
+    font-variant: small-caps; /* Met le text en petite majuscule */
+}
+
+.dropdown-item{
+    background-color: transparent;
+}
+
+.nav-link{
+    
+    color: white;
+}
