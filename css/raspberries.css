@@ -1,0 +1,120 @@
+.monospace {
+    font-family: "Courier New", Courier, monospace;
+}
+
+
+
+/* ////////////////////////// HEADER ////////////////////////// */
+
+.navbar{
+    background-color: rgb(226, 116, 112);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4); /* Rajoute une ombre à la nav */
+    font-variant: small-caps;
+    font-family: monospace;
+}
+
+.navbar .navbar-brand{
+    font-size: 25px;
+    color: whitesmoke;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: whitesmoke;
+    background-color: rgba(192, 192, 192, 0.3);
+    text-shadow: 2px 2px 4px #000000;
+    border-radius: 15px;
+    padding: 5px 15px 5px 15px;
+}
+
+.jumbotron h1, .jumbotron h3{
+    font-variant: small-caps; /* Met le text en petite majuscule */
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.jumbotron{
+    background-image: url("images/fond.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 30em;
+    width: 100%;
+}
+
+.jumbotron .container{
+    padding-top: 10em;
+}
+
+.dropdown-item{
+    background-color: transparent;
+}
+
+.nav-link{
+    color: white;
+    padding: 5px 15px 5px 15px; 
+}
+
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+    color: whitesmoke;
+    background-color: rgba(192, 192, 192, 0.3);
+    text-shadow: 2px 2px 4px #000000;
+    border-radius: 15px;
+    padding: 5px 15px 5px 15px; 
+}
+
+/* ////////////////////////// HEADER ////////////////////////// */
+
+
+/* ////////////////////////// RASPBERRIES ////////////////////////// */
+
+body{
+    background-image: url("/images/raspberries/bg.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.card-columns .card{
+    width: 22em;
+    height: 22em;
+    margin: 3em 1em 3em 1em;
+    background-color: rgba(192, 192, 192, 0.5);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+.card-columns .card-img-top{
+    width: 20em;
+    height: 15em;
+    margin: 1em 1em 1em 1em;
+    border-radius: 5px;
+}
+
+.card h5{
+    text-align: center;
+    font-family: monospace;
+    font-variant: small-caps;
+}
+
+/* .card-columns {
+    @include media-breakpoint-only(md) {
+      column-count: 6;
+    }
+
+    @include media-breakpoint-only(lg) {
+      column-count: 4;
+    }
+   
+    @include media-breakpoint-only(xl) {
+      column-count: 5;
+    }
+} */
+
+/* ////////////////////////// RASPBERRIES ////////////////////////// */
+
+
+/* ////////////////////////// FOOTER ////////////////////////// */
+
+/* ////////////////////////// FOOTER ////////////////////////// */
