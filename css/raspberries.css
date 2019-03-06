@@ -36,19 +36,29 @@
     text-shadow: 2px 2px 4px #000000;
 }
 
+.jumbotron h1{
+    font-size: 5em;
+    color: black;
+}
+.jumbotron h3{
+    font-size: 2.5em;
+    color: rgb(226, 116, 112);
+}
+
 .jumbotron{
-    background-image: url("images/raspberries/bg4.jpg");
+    background-image: url("../images/raspberries/fond.png");
+    background-size: cover;
     background-repeat: no-repeat;
-    border-style: outset;
-    border-color: rgb(226, 116, 112); 
-    border-width: 5px;
-    background-size: 100% 100%;
+    background-position: center center;
+    /* opacity: 0.8; */
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
+    background-color: rgba(216, 213, 213, 0.6);
     height: 30em;
     width: 100%;
 }
 
 .jumbotron .container{
-    padding-top: 10em;
+    padding-top: 7em;
 }
 
 .dropdown-item{
@@ -68,14 +78,18 @@
     padding: 5px 15px 5px 15px; 
 }
 
-
 @media screen and (max-width: 375px){
     .jumbotron h3{
         display: none;
     }
     .jumbotron h1{
-        font-size: 3em;
-        padding-top: 2em; 
+        font-size: 3em; 
+    }
+    .jumbotron{
+        height: 20em;
+    }
+    .jumbotron .container{
+        padding-top: 3em;
     }
 }
 
@@ -87,8 +101,9 @@
 body{
     background-image: url("../images/raspberries/bg.jpg");
     background-attachment: fixed;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-position: center center;
 }
 
 .card-columns .card{
@@ -103,11 +118,14 @@ body{
     background-color: rgba(226, 116, 112, 0.8);
 }
 
-.card-columns .card-img-top{
-    width: 20em;
+.card-img-top{
+    width: 90%;
     height: 15em;
     margin: 1em 1em 1em 1em;
     border-radius: 5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .card h5{
@@ -115,20 +133,6 @@ body{
     font-family: monospace;
     font-variant: small-caps;
 }
-
-/* .card-columns {
-    @include media-breakpoint-only(md) {
-      column-count: 6;
-    }
-
-    @include media-breakpoint-only(lg) {
-      column-count: 4;
-    }
-   
-    @include media-breakpoint-only(xl) {
-      column-count: 5;
-    }
-} */
 
 /* ////////////////////////// RASPBERRIES ////////////////////////// */
 
