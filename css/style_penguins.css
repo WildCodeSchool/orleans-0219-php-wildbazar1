@@ -1,8 +1,14 @@
+body {
+    background-image: url("../images/penguins/background.jpg");
+
+}
 
 .card_produit {
     margin-left: 8%;
     margin-right: 8%;
+    opacity: 1;
 }
 
-
-
+.my_card {
+    border: 0;
+}
