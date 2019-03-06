@@ -37,7 +37,7 @@
 }
 
 .jumbotron{
-    background-image: url("../images/raspberries/bg3.jpg");
+    background-image: url("images/raspberries/bg4.jpg");
     background-repeat: no-repeat;
     border-style: outset;
     border-color: rgb(226, 116, 112); 
@@ -66,6 +66,17 @@
     text-shadow: 2px 2px 4px #000000;
     border-radius: 15px;
     padding: 5px 15px 5px 15px; 
+}
+
+
+@media screen and (max-width: 375px){
+    .jumbotron h3{
+        display: none;
+    }
+    .jumbotron h1{
+        font-size: 3em;
+        padding-top: 2em; 
+    }
 }
 
 /* ////////////////////////// HEADER ////////////////////////// */
