@@ -48,7 +48,7 @@ nav img{
 }
 
 .jumbotron{
-    background-image: url("/images/bg12.jpg");
+    background-image: url("../images/bg12.jpg");
     background-size: cover;
     background-repeat:   no-repeat;
     background-position: center center;
