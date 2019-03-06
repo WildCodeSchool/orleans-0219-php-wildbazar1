@@ -1,4 +1,3 @@
-
 .monospace {
     font-family: "Courier New", Courier, monospace;
 }
@@ -102,7 +101,7 @@ h1{
 
 
 body {
-    background-image: url("../image/indexCategorie/pretty-desktop-background-7.jpg");
+    background-image: url("../images/apple/pretty-desktop-background-7 (1).jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-attachment: fixed;
@@ -111,3 +110,99 @@ body {
 .centrer {
     margin-top: 10px;
 }
+
+/* ////////////////////////// APPLES ////////////////////////// */
+
+/* ////////////////////////// FOOTER ////////////////////////// */`
+
+.footer, .container-fluid{
+    background-color: rgb(226,116,112);
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 35px
+}
+
+
+.footer a{
+    font-family: monospace;
+    color: white;
+}
+
+.footer .nav-link{
+    padding-top: 0;
+    padding-right:2em;
+}
+
+.footer img{
+    max-height: 2.3em;
+    max-width: 2.3em;
+    margin-right: 15px;
+
+}
+
+.footer h2{
+    font-variant: small-caps;
+    font-size: 2em;
+    color: white;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: -15px;
+}
+
+.footer #address{
+    margin-left: 7em;
+    font-family: monospace;
+    color: white;
+
+}
+
+.collumn-right h3{
+    font-variant: small-caps;
+    color: white;
+}
+.collumn-right .form-group{
+    font-family: monospace;
+    color: white;
+    font-size: 1.5em;
+}
+
+.collumn-right .col-form-label{
+    padding-top: 0em;
+    padding-right: 0em;
+}
+.collumn-right .btn{
+    background-color: rgb(76,74,74);
+    color: white;
+}
+
+
+/********Media queries Footer***********/
+@media (max-width: 768px){
+    .footer h2{
+        font-size: 1.5em;
+    }
+
+    .footer #address{
+        font-size: 0.8em;
+        margin-left: 7em;
+    }
+
+    .footer-link{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .collumn-right .form-group label{
+        font-size: 0.8em;
+        margin-right: 1.8em;
+    }
+
+    .collumn-right{
+        padding-right: 2em;
+        margin-top: 1em;
+    }
+}
+
+/* ////////////////////////// FOOTER ////////////////////////// */`
+

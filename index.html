@@ -1,77 +1,79 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Ma page web</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
     <link href="http://fr.allfont.net/allfont.css?fonts=courier" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/style.css">
 
     <title>Wild Bazar</title>
 </head>
 
 <body>
-    
+
     <header>
 
         <nav id="gradient" class="navbar fixed-top navbar-expand-lg navbar-light navbar-top">
-        
-            
-            <a class="navbar-brand d-lg-none" href="#">Navbar</a>
-        
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle"
-                aria-expanded="false" aria-label="Toggle navigation">
+
+            <!-- Show this only on mobile to medium screens -->
+            <a class="navbar-brand d-lg-none" href="#"><img src="images/logoblanc.png" width="25px" height="25px"> Wild
+                Bazar</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"
+                aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-        
-            
+
+            <!-- Use flexbox utility classes to change how the child elements are justified -->
             <div class="collapse navbar-collapse justify-content-between" id="navbarToggle">
-        
-                <ul class="navbar-nav">
+
+                <!-- Show this only lg screens and up -->
+                <a class="navbar-brand d-none d-lg-block" href="#"><img src="images/logoblanc.png" width="25px" height="25px">
+                    Wild Bazar</a>
+
+                <ul class="texto navbar-nav text-white px-3">
                     <li class="nav-item">
-                        <a class="nav-link" href="#aboutUs">About Us</a>
+                        <a class="nav-link" href="#aboutUs"> About Us </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#topSelling">Top Selling</a>
+                        <a class="nav-link" href="#topSelling"> Top Selling </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contactUs">Contact Us</a>
+                        <a class="nav-link" href="#contactUs"> Contact Us </a>
                     </li>
-                </ul>
-        
-                
-                <a class="navbar-brand d-none d-lg-block" href="#"><img src="images/logo.png" width="25px" height="25px">Wild Bazar</a>
-        
-                <ul class="navbar-nav px-3">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle px-3" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false">
+                        <a class="nav-link dropdown-toggle px-3" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
                             Catégories
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#apples">Apples</a>
-                            <a class="dropdown-item" href="#windows">Windows</a>
-                            <a class="dropdown-item" href="#penguins">Penguins</a>
-                            <a class="dropdown-item" href="#raspberries">Raspberries</a>
-                            <a class="dropdown-item" href="#developpers">Developpers</a>
+                            <a class="dropdown-item" href="apples.html">Apples</a>
+                            <a class="dropdown-item" href="windows.html">Windows</a>
+                            <a class="dropdown-item" href="penguins.html">Penguins</a>
+                            <a class="dropdown-item" href="raspberries.html">Raspberries</a>
+                            <a class="dropdown-item" href="developpers.html">Developpers</a>
                         </div>
                     </li>
                 </ul>
             </div>
         </nav>
-                    
+
         <div class="jumbotron jumbotron-fluid">
-            <div class="container pt-5">
+            <div class="container">
                 <h1 class="display-4">Wild Bazar</h1>
                 <h3 class="lead">On y trouve de tout et surtout du n'importe quoi!</h3>
             </div>
         </div>
 
     </header>
-    
-    <div class="container-fluid"></div>
+
+    <div class="container-fluid">
 
         <main>
 
@@ -85,132 +87,125 @@
                             <div class="row no-gutters">
 
 
-                                <div class="col-lg-4 col-md-4">
+                                <div class="col-lg-4 col-md-4 line1">
                                     <div class="portfolio-item wow fadeInUp">
-<<<<<<< HEAD
                                         <a href="apple.html">
-=======
-                                        <a href="cat1.html">
->>>>>>> e421b88a514df27c7b20688c5c4ff22d26a80847
-                                            <img src="wildBazar/apple-1122537_1280.jpg" alt="">
+                                            <img src="images/categories_index/apple-1122537_1280.jpg" alt="">
                                             <div class="portfolio-overlay">
-                                                <div class="portfolio-info"><h3>A bite of Apple</h3></div>
+                                                <div class="portfolio-info"><h3 class="text1">A bite of Apple</h3></div>
                                             </div>
                                         </a>
                                     </div>
                                 </div>
 
-                                <div class="col-lg-4 col-md-4">
+                                <div class="col-lg-4 col-md-4 line1">
                                     <div class="portfolio-item wow fadeInUp">
-<<<<<<< HEAD
-                                        <a href="#...">
-=======
-                                        <a href="cat2.html">
->>>>>>> e421b88a514df27c7b20688c5c4ff22d26a80847
-                                            <img src="wildBazar/staircase-1149510_1280.jpg" alt="">
+                                        <a href="windows.html">
+                                            <img src="images/categories_index/40-fenetre-et-volets-bois.jpg" alt="">
                                             <div class="portfolio-overlay">
-                                                <div class="portfolio-info"><h3>Light Throw the Window</h3></div>
+                                                <div class="portfolio-info"><h3 class="text1">Light throw the Window</h3></div>
                                             </div>
                                         </a>
                                     </div>
                                 </div>
 
-                                <div class="col-lg-4 col-md-4">
+                                <div class="col-lg-4 col-md-4 line1">
                                     <div class="portfolio-item wow fadeInUp">
-<<<<<<< HEAD
-                                        <a href="#...">
-=======
-                                        <a href="cat3.html">
->>>>>>> e421b88a514df27c7b20688c5c4ff22d26a80847
-                                            <img src="wildBazar/penguin-56101_1280.jpg" alt="">
+                                        <a href="penguins.html">
+                                            <img src="images/categories_index/penguin-56101_1280.jpg" alt="">
                                             <div class="portfolio-overlay">
-                                                <div class="portfolio-info"><h3>Freedom as a Penguin</h3></div>
+                                                <div class="portfolio-info"><h3 class="text1">Freedom as a Penguin</h3></div>
                                             </div>
                                         </a>
                                     </div>
                                 </div>
-
-                                <div class="col-lg-6 col-md-6">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="portfolio">
+                        <div class="container-fluid">
+                            <div class="row no-gutters">
+                                <div class="col-lg-4 col-md-4 line1">
                                     <div class="portfolio-item wow fadeInUp">
-<<<<<<< HEAD
-                                        <a href="#...">
-=======
-                                        <a href="cat4.html">
->>>>>>> e421b88a514df27c7b20688c5c4ff22d26a80847
-                                            <img src="wildBazar/rasberry-2812469_1280.jpg" alt="">
+                                        <a href="rasberries.html">
+                                            <img src="images/categories_index/rasberry-2812469_1280.jpg" alt="">
                                             <div class="portfolio-overlay">
-                                                <div class="portfolio-info"><h3>Taste of Rasberries</h3></div>
+                                                <div class="portfolio-info"><h3 class="text1">Taste of Rasberries</h3></div>
                                             </div>
                                         </a>
                                     </div>
                                 </div>
 
-                                <div class="col-lg-6 col-md-6">
+                                <div class="col-lg-4 col-md-4 line1">
                                     <div class="portfolio-item wow fadeInUp">
-<<<<<<< HEAD
-                                        <a href="#...">
-=======
-                                        <a href="cat5.html">
->>>>>>> e421b88a514df27c7b20688c5c4ff22d26a80847
-                                            <img src="wildBazar/computer-1209641_1280.jpg" alt="">
+                                        <a href="developers.html">
+                                            <img src="images/categories_index/computer-1209641_1280.jpg" alt="">
                                             <div class="portfolio-overlay">
-                                                <div class="portfolio-info"><h3>Powers of Devellopers</h3></div>
+                                                <div class="portfolio-info"><h3 class="text1">Powers of Devellopers</h3></div>
                                             </div>
                                         </a>
                                     </div>
                                 </div>
-
-
 
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+            <br>
+            <section id="aboutUs">
+                <!--partie sylvain-->
 
-            <section id="aboutUs" style="border: 1px solid blue;"><!--partie sylvain-->
-            
-	    <div class= "px-5 py-5" ><!--espacement section-->
-	      <div class="text-center mb-4" > <!--position h2--> 
-		<h2>About us</h2><!--titre section-->
-	      </div>  
-		<div class="row">
-		    <div class="col-lg-3 col-sm-12">
-			<div class="text-center px-1 py-1">
-			    <img src="https://via.placeholder.com/200" class=" img-thumbnail" alt="Responsive image"><!--image-->
-			</div>
-		    </div>
-		    <div class="col-lg-9 col-sm-12">
-		    <p class="text-align-center px-3 py-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempor
-			laoreet urna, id lobortis mauris varius eu. Aenean in molestie felis,
-			semper rhoncus leo. Phasellus ut metus ut eros facilisis accumsan et
-			quis mauris. Curabitur sodales elit
-			nisl, quis tincidunt orci auctor ac. In sed cursus enim, ut feugiat
-			erat. Etiam gravida feugiat nisi, et porttitor tellus euismod eget.
-			Aliquam neque dui, facilisis ac mi ut, tincidunt congue quam.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempor
-			laoreet urna, id lobortis mauris varius eu. Aenean in molestie felis,
-			semper rhoncus leo. Phasellus ut metus ut eros facilisis accumsan et
-			quis mauris. Curabitur sodales elit
-			nisl, quis tincidunt orci auctor ac. In sed cursus enim, ut feugiat
-			erat. Etiam gravida feugiat nisi, et porttitor tellus euismod eget.
-			Aliquam neque dui, facilisis ac mi ut, tincidunt congue quam.</p>
-		    <p class="text-align-center px-3 py-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempor
-			laoreet urna, id lobortis mauris varius eu. Aenean in molestie felis,
-			semper rhoncus leo.</p>   <!--texte-->
-		    </div>
-		</div>
-	    </div>    
-	</section><!--fin partie sylvain-->
-
-
-
+                <div class="px-5 py-5">
+                    <!--espacement section-->
+                    <div class="text-center mb-4">
+                        <!--position h2-->
+                        <i class="fas fa-caret-up"></i><h2>About us</h2><i class="fas fa-caret-down"></i>
+                        <!--titre section-->
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-12">
+                            <div class="text-center px-1 py-1">
+                                <img src="https://via.placeholder.com/200" class=" img-thumbnail" alt="Responsive image">
+                                <!--image-->
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-sm-12">
+                            <p class="text-align-center px-3 py-1">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Integer tempor
+                                laoreet urna, id lobortis mauris varius eu. Aenean in molestie felis,
+                                semper rhoncus leo. Phasellus ut metus ut eros facilisis accumsan et
+                                quis mauris. Curabitur sodales elit
+                                nisl, quis tincidunt orci auctor ac. In sed cursus enim, ut feugiat
+                                erat. Etiam gravida feugiat nisi, et porttitor tellus euismod eget.
+                                Aliquam neque dui, facilisis ac mi ut, tincidunt congue quam.Lorem ipsum dolor sit
+                                amet, consectetur adipiscing elit. Integer tempor
+                                laoreet urna, id lobortis mauris varius eu. Aenean in molestie felis,
+                                semper rhoncus leo. Phasellus ut metus ut eros facilisis accumsan et
+                                quis mauris. Curabitur sodales elit
+                                nisl, quis tincidunt orci auctor ac. In sed cursus enim, ut feugiat
+                                erat. Etiam gravida feugiat nisi, et porttitor tellus euismod eget.
+                                Aliquam neque dui, facilisis ac mi ut, tincidunt congue quam.
+                            </p>
+                            <p class="text-align-center px-3 py-1">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Integer tempor
+                                laoreet urna, id lobortis mauris varius eu. Aenean in molestie felis,
+                                semper rhoncus leo.
+                            </p>
+                            <!--texte-->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--fin partie sylvain-->
+            <br>
             <!-- Section Top Selling crée par vinny. Utilisation de cards bootstrap -->
-
 
             <section id="topSelling">
                 <div class="px-5 py-5">
                     <div class="text-center mb-4">
-                        <h2> Top Selling</h2>
+                        <i class="fas fa-caret-up"></i><h2> Top Selling</h2><i class="fas fa-caret-down"></i>
+                        </br>
                         <h3> Find our best sells actually</h3>
                     </div>
 
@@ -221,14 +216,14 @@
 
                         <!-- cards 1 cliquable -->
                         <div class="col-xs-12 col-sm-6 col-md-4 pb-4">
-                        <button type="button" class="btn btn-light" data-toggle="modal" data-target="#produit1">
-                            <img class="card-img-top img-fluid" src="http://www.olivepressee.com/33-large_default/vinaigre-balsamique-framboise.jpg"
-                                alt="image du produit1">
-                            <div class="card-body">
-                                <!-- description du produit-->
-                                <h4 class="card-title text-center">Produit 1</h4>
-                            </div>
-                        </button>
+                            <button type="button" class="btn btn-light" data-toggle="modal" data-target="#produit1">
+                                <img class="card-img-top img-fluid" src="http://www.olivepressee.com/33-large_default/vinaigre-balsamique-framboise.jpg"
+                                    alt="image du produit1">
+                                <div class="card-body">
+                                    <!-- description du produit-->
+                                    <h4 class="card-title text-center">Produit 1</h4>
+                                </div>
+                            </button>
                         </div>
 
                         <!-- Modal -->
@@ -281,14 +276,14 @@
 
                         <!-- cards 2 cliquable -->
                         <div class="col-xs-12 col-sm-6 col-md-4 pb-4">
-                        <button type="button" class="btn btn-light" data-toggle="modal" data-target="#produit2">
-                            <img class="card-img-top img-fluid" src="http://www.olivepressee.com/33-large_default/vinaigre-balsamique-framboise.jpg"
-                                alt="image du produit2">
-                            <div class="card-body">
-                                <!-- description du produit-->
-                                <h4 class="card-title text-center">Produit 1</h4>
-                            </div>
-                        </button>
+                            <button type="button" class="btn btn-light" data-toggle="modal" data-target="#produit2">
+                                <img class="card-img-top img-fluid" src="http://www.olivepressee.com/33-large_default/vinaigre-balsamique-framboise.jpg"
+                                    alt="image du produit2">
+                                <div class="card-body">
+                                    <!-- description du produit-->
+                                    <h4 class="card-title text-center">Produit 1</h4>
+                                </div>
+                            </button>
                         </div>
 
                         <!-- Modal -->
@@ -341,18 +336,15 @@
 
                         <!-- cards 3 cliquable -->
                         <div class="col-xs-12 col-sm-6 col-md-4 pb-4">
-                        <button type="button" class="btn btn-light" data-toggle="modal" data-target="#produit3">
-                            <img class="card-img-top img-fluid" src="http://www.olivepressee.com/33-large_default/vinaigre-balsamique-framboise.jpg"
-                                alt="image du produit3">
-                            <div class="card-body">
-                                <!-- description du produit-->
-                                <h4 class="card-title text-center">Produit 3</h4>
-                            </div>
-                        </button>
+                            <button type="button" class="btn btn-light" data-toggle="modal" data-target="#produit3">
+                                <img class="card-img-top img-fluid" src="http://www.olivepressee.com/33-large_default/vinaigre-balsamique-framboise.jpg"
+                                    alt="image du produit3">
+                                <div class="card-body">
+                                    <!-- description du produit-->
+                                    <h4 class="card-title text-center">Produit 3</h4>
+                                </div>
+                            </button>
                         </div>
-
-
-
 
                         <!-- Modal -->
                         <div class="modal fade" id="produit3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
@@ -404,91 +396,74 @@
                     </div>
                 </div>
             </section>
-
+            <br>
             <!-- fin de section top selling cree par vinny -->
-                <section id="footer">
-     	<div class="row  px-3 pt-3 justify-content-center">
-     		<div class="col-12 col-lg-6 collumn-left">
-     			<div class="row">
-      			<div class="col-2 offset-1">
-	           	<ul class="nav">
-	  						<li class="nav-item">
-	    						<a class="nav-link" href="#">Home</a>
-	  						</li>
-							  <li class="nav-item">
-							    <a class="nav-link" href="aboutUs">About us</a>
-							  </li>
-							  <li class="nav-item">
-							    <a class="nav-link" href="topSelling">Top selling</a>
-							  </li>
-							  <li class="nav-item">
-							    <a class="nav-link" href="contactUs">Contact</a>
-							  </li>
-							  <li class="nav-item">
-							    <a class="nav-link" href="#">Legal mentions</a>
-							  </li>
-							</ul>
-      			</div>
-      			<div class="col-2 offset-1">
-      				<ul class="nav">
-	  						<li class="nav-item">
-	    						<a class="nav-link" href="#">Apple</a>
-	  						</li>
-							  <li class="nav-item">
-							    <a class="nav-link" href="#">Windows</a>
-							  </li>
-							  <li class="nav-item">
-							    <a class="nav-link" href="#">Penguin</a>
-							  </li>
-							  <li class="nav-item">
-							    <a class="nav-link" href="#">Raspberry</a>
-							  </li>
-							  <li class="nav-item">
-							    <a class="nav-link" href="#">Dev</a>
-							  </li>
-							</ul>
-      			</div>
-      		</div>
-      		<div class="row justify-content-center">
-      			<div class="col-12">
-      				<img src="./images/logo.png"><span class="align-baseline">WILD BAZAR</span>
-      				<div id="adress">
-      					1,rue de la paix<br>
-      					75000 Paris<br>
-      					01-23-45-67-89
-      				</div>
-      			</div>
-      		</div>
-      	</div>
-      	<div class="col-12 col-lg-6 justify-content-center collumn-right">
-      		<h3 class="text-center" id="contactUs">Contact us</h3>
-      		<form>
-      			<div class="form-group row">
-      				<label for="inputEmail3" class="col-2 col-form-label">Email</label>
-      				<div class="col-8">
-      					<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-      				</div>
-      			</div>
-      			<div class="form-group row">
-      				<label for="inputPassword3" class="col-2 col-form-label">Message</label>
-      				<div class="col-8"> 
-								<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      				</div>
-      			</div>
-      				<div class="form-group row">
-      					<div class="col-12 text-center">
-      						<button type="submit" class="btn btn-primary">Submit</button>
-      					</div>
-      				</div>
-      			</form>	
-      		</div>	
-				</div>
-    </section>
-
-        </main>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
+            </main>
+                <!-- zone footer -->
+        <footer class="footer">
+            <div class="row  px-3 pt-3 justify-content-center">
+                <div class="col-12 col-lg-6 collumn-left">
+                    <div class="row footer-link">
+                        <nav class="flex-column">
+                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link" href="aboutUs">About us</a>
+                            <a class="nav-link" href="topSelling">Top selling</a>
+                            <a class="nav-link" href="contactUs">Contact</a>
+                            <a class="nav-link" href="#">Legal mentions</a>
+                        </nav>
+                        <nav class="flex-column">
+                            <a class="nav-link" href="#">Apple</a>
+                            <a class="nav-link" href="#">Windows</a>
+                            <a class="nav-link" href="#">Penguin</a>
+                            <a class="nav-link" href="#">Raspberry</a>
+                            <a class="nav-link" href="#">Dev</a>
+                        </nav>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <h2><img src="./images/logoblanc.png"><span class="align-baseline">Wild Bazar</span></h2>
+                            <div id="address">
+                                1,rue de la paix<br>
+                                75000 Paris<br>
+                                01-23-45-67-89
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 justify-content-center collumn-right">
+                    <h3 class="text-center" id="contactUs">Contact us</h3>
+                    <form>
+                        <div class="form-group row">
+                            <label for="inputEmail3" class="col-2 col-form-label">Email</label>
+                            <div class="col-8">
+                                <input type="email" class="form-control" id="inputEmail3">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputPassword3" class="col-2 col-form-label">Message</label>
+                            <div class="col-8"> 
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-12 text-center">
+                                <button type="submit" class="btn">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <span>
+    Made with <i class="fa fa-heart pulse"></i> by Vincent Mouline, Vanina Diot, Vincent Ostyn, Sylvain Lamoureux & Maïwenn Gay</a>
+</span>
+            </div>
+        </footer>  
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
