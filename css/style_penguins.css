@@ -1,0 +1,47 @@
+body {
+    background-image: url("../images/penguins/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.my_card:hover {
+    background-color: rgb(226, 116, 112);
+    border-color: rgb(226, 116, 112);
+}
+
+.jumbotron{
+    background-image: url("../images/penguins/tux_head.png");
+    background-size: 100% ;
+    background-position: bottom left;
+
+}
+
+.my_card {
+    border: none;
+    background
+}
+
+
+/*  .jumbotron{
+    background-image: url("../images/fond.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 30em;
+    width: 100%;
+
+
+    @media screen and (max-width: 375px){
+    .jumbotron h3{
+        display: none;
+    }
+    .jumbotron h1{
+        font-size: 3em;
+    }
+    .jumbotron{
+        height: 20em;
+    }
+    .jumbotron .container{
+        padding-top: 5em;
+    }
+ }

@@ -54,6 +54,8 @@ nav img{
     background-position: center center;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
     /* background-size: 100% 100%; */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     height: 30em;
     width: 100%;
 }
@@ -111,6 +113,7 @@ nav img{
         padding-top: 5em;
     }
 }
+
 /* ////////////////////////// HEADER ////////////////////////// */
 
 /* ////////////////////////// CATEGORIE ////////////////////////// */
@@ -168,14 +171,6 @@ nav img{
     border:25px solid #ffffff;
 }
 
-/*.child1 {
-    margin-left: 220px;
-}*/
-
-
-
-
-
 h2{
     font-family: Courier;
     font-size: 40px;
@@ -195,7 +190,6 @@ h2{
     font-variant: small-caps ;
     font-weight: 700;
 
-
 }
 
 @media screen and (min-width: 600px) and (max-width: 900px) {
@@ -209,9 +203,7 @@ h2{
         font-variant: small-caps ;
         font-weight: 600;
 
-
     }
-
 
 }
 
