@@ -102,8 +102,12 @@ h1{
 
 
 body {
-    background-image: url("../image/pretty-desktop-background-7.jpg");
+    background-image: url("../image/indexCategorie/pretty-desktop-background-7.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-attachment: fixed;
+}
+
+.centrer {
+    margin-top: 10px;
 }
