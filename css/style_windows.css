@@ -1,3 +1,10 @@
 .jumbotron{
     background-image: url("../images/windows/xp.png");
 }
+
+body{
+
+    background-image: url("../images/windows/back.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
