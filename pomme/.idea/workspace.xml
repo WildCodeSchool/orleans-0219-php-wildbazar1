@@ -2,23 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d8f3060-8833-4d5a-9c9b-dc20a18ec7a1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/image/indexCategorie/logoblanc.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apples.html" beforeDir="false" afterPath="$PROJECT_DIR$/apples.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style2.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style2.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style2.css" beforeDir="false" afterPath="$PROJECT_DIR$/style2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wildBazar/67365_w300h300c1cx350cy350.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wildBazar/67365_w300h300c1cx350cy350.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wildBazar/Minaudiere-Pomme-Violet-11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wildBazar/Minaudiere-Pomme-Violet-11.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wildBazar/Pomme-au-four-à-la-crème-de-marrons.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wildBazar/Pomme-au-four-à-la-crème-de-marrons.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wildBazar/fotolia_55372155_subscription_xxl-copy.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wildBazar/fotolia_55372155_subscription_xxl-copy.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wildBazar/pomme-_-ver.jpeg.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wildBazar/pomme-_-ver.jpeg.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wildBazar/pomme-deco-en-resine-28cm-noir.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wildBazar/pomme-deco-en-resine-28cm-noir.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wildBazar/pomme-or.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wildBazar/pomme-or.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wildBazar/pomme.png" beforeDir="false" afterPath="$PROJECT_DIR$/wildBazar/pomme.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wildBazar/pomme5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wildBazar/pomme5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wildBazar/pomme_golden.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wildBazar/pomme_golden.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wildBazar/shutterstock_102978833.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wildBazar/shutterstock_102978833.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wildBazar/smoothie-pomme.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wildBazar/smoothie-pomme.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildBazar/67365_w300h300c1cx350cy350.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildBazar/Minaudiere-Pomme-Violet-11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/apple/Minaudiere-Pomme-Violet-11.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildBazar/Pomme-au-four-à-la-crème-de-marrons.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/Pomme-au-four-à-la-crème-de-marrons.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildBazar/Windows.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/Windows.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildBazar/apple-1122537_1280.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/apple/apple-1122537_1280.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildBazar/apple.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/indexCategorie/apple.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildBazar/apple2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/indexCategorie/apple2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildBazar/computer-1209641_1280.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/indexCategorie/computer-1209641_1280.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildBazar/dev.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/indexCategorie/dev.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildBazar/devellopers.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/indexCategorie/devellopers.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildBazar/devellopers2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/indexCategorie/devellopers2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildBazar/fenetre-bois-volets.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/indexCategorie/fenetre-bois-volets.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildBazar/fotolia_55372155_subscription_xxl-copy.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/apple/fotolia_55372155_subscription_xxl-copy.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildBazar/images.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/apple/images.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildBazar/ink-3859571_1280.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/apple/ink-3859571_1280.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildBazar/penguin-56101_1280.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/penguin-56101_1280.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildBazar/penguin.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/penguin.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildBazar/penguin2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/penguin2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildBazar/pomme-_-ver.jpeg.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/image/pomme-_-ver.jpeg.bmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildBazar/pomme-deco-en-resine-28cm-noir.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/pomme-deco-en-resine-28cm-noir.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildBazar/pomme-or.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/pomme-or.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildBazar/pomme.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/pomme.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildBazar/pomme5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/pomme5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildBazar/pomme_golden.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/pomme_golden.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildBazar/pretty-desktop-background-7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/pretty-desktop-background-7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildBazar/rasberries.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/rasberries.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildBazar/rasberries2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/rasberries2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildBazar/rasberry-2812469_1280.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/rasberry-2812469_1280.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildBazar/shutterstock_102978833.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/shutterstock_102978833.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildBazar/smoothie-pomme.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/smoothie-pomme.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildBazar/staircase-1149510_1280.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/staircase-1149510_1280.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildBazar/texture-aquarelle-abstraite_1393-49.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/texture-aquarelle-abstraite_1393-49.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildBazar/windows2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/windows2.jpg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,81 +87,60 @@
     <session id="2104202809">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="11" />
           <entry key="project.open.time.0" value="2" />
-          <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.3" value="2" />
-          <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.2" value="2" />
+          <entry key="project.open.time.3" value="3" />
+          <entry key="project.open.time.5" value="2" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="113" />
-          <entry key="html" value="1015" />
+          <entry key="css" value="197" />
+          <entry key="html" value="1513" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="113" />
-          <entry key="HTML" value="1015" />
+          <entry key="CSS" value="197" />
+          <entry key="HTML" value="1513" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="1" />
-          <entry key="jpg" value="1" />
+          <entry key="css" value="2" />
+          <entry key="html" value="1" />
+          <entry key="jpg" value="11" />
           <entry key="png" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="1" />
-          <entry key="Image" value="2" />
+          <entry key="CSS" value="2" />
+          <entry key="HTML" value="1" />
+          <entry key="Image" value="12" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/apples.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="655">
-              <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
+            <state relative-caret-position="-328">
+              <caret line="67" column="31" selection-start-line="67" selection-start-column="31" selection-end-line="67" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/style2.css">
+        <entry file="file://$PROJECT_DIR$/css/style2.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="99" column="36" selection-start-line="99" selection-start-column="36" selection-end-line="99" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="565">
-              <caret line="323" lean-forward="true" selection-start-line="323" selection-end-line="323" />
-              <folding>
-                <element signature="n#style#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#7897#7904#1" expanded="true" />
-                <element signature="e#11226#11233#1" expanded="true" />
-                <element signature="e#14558#14565#1" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="213" column="69" selection-start-line="213" selection-start-column="69" selection-end-line="213" selection-end-column="69" />
+            <state relative-caret-position="735">
+              <caret line="49" column="17" lean-forward="true" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -163,10 +163,11 @@
       <list>
         <option value="$PROJECT_DIR$/pomme.html" />
         <option value="$PROJECT_DIR$/categories.html" />
-        <option value="$PROJECT_DIR$/apples.html" />
         <option value="$PROJECT_DIR$/style2.css" />
         <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/apples.html" />
+        <option value="$PROJECT_DIR$/css/style2.css" />
       </list>
     </option>
   </component>
@@ -198,7 +199,24 @@
             <path>
               <item name="pomme" type="b2602c69:ProjectViewProjectNode" />
               <item name="pomme" type="462c0819:PsiDirectoryNode" />
-              <item name="wildBazar" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pomme" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pomme" type="462c0819:PsiDirectoryNode" />
+              <item name="image" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pomme" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pomme" type="462c0819:PsiDirectoryNode" />
+              <item name="image" type="462c0819:PsiDirectoryNode" />
+              <item name="apple" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pomme" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pomme" type="462c0819:PsiDirectoryNode" />
+              <item name="image" type="462c0819:PsiDirectoryNode" />
+              <item name="indexCategorie" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -217,7 +235,10 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/image/apple" />
+      <recent name="$PROJECT_DIR$/image/indexCategorie" />
       <recent name="$PROJECT_DIR$/wildBazar" />
+      <recent name="$PROJECT_DIR$/css" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -257,18 +278,22 @@
       <workItem from="1551798395630" duration="871000" />
       <workItem from="1551800406053" duration="1787000" />
       <workItem from="1551802219936" duration="388000" />
-      <workItem from="1551802658414" duration="605000" />
+      <workItem from="1551802658414" duration="899000" />
+      <workItem from="1551809092961" duration="56000" />
+      <workItem from="1551858900784" duration="778000" />
+      <workItem from="1551862781389" duration="1402000" />
+      <workItem from="1551864674190" duration="758000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13792000" />
+    <option name="totallyTimeSpent" value="17080000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="824" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3018598" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3190272" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -296,43 +321,61 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wildBazar/pomme.png">
+    <entry file="file://$PROJECT_DIR$/image/pomme.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/wildBazar/shutterstock_102978833.jpg">
+    <entry file="file://$PROJECT_DIR$/image/shutterstock_102978833.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/apples.html">
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1">
+          <caret line="133" column="26" selection-start-line="133" selection-start-column="26" selection-end-line="133" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="655">
           <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
+    <entry file="file://$PROJECT_DIR$/image/67365_w300h300c1cx350cy350.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image/indexCategorie/apple2.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image/indexCategorie/apple.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image/apple/apples-1004886_1280.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image/indexCategorie/computer-1209641_1280.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image/indexCategorie/dev.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image/apple/apple-1122537_1280.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image/apple/images.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style2.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="213" column="69" selection-start-line="213" selection-start-column="69" selection-end-line="213" selection-end-column="69" />
+        <state relative-caret-position="735">
+          <caret line="49" column="17" lean-forward="true" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style2.css">
+    <entry file="file://$PROJECT_DIR$/apples.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="99" column="36" selection-start-line="99" selection-start-column="36" selection-end-line="99" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="565">
-          <caret line="323" lean-forward="true" selection-start-line="323" selection-end-line="323" />
-          <folding>
-            <element signature="n#style#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#7897#7904#1" expanded="true" />
-            <element signature="e#11226#11233#1" expanded="true" />
-            <element signature="e#14558#14565#1" expanded="true" />
-          </folding>
+        <state relative-caret-position="-328">
+          <caret line="67" column="31" selection-start-line="67" selection-start-column="31" selection-end-line="67" selection-end-column="31" />
         </state>
       </provider>
     </entry>
