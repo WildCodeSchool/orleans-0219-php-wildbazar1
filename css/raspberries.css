@@ -36,16 +36,29 @@
     text-shadow: 2px 2px 4px #000000;
 }
 
+.jumbotron h1{
+    font-size: 5em;
+    color: black;
+}
+.jumbotron h3{
+    font-size: 2.5em;
+    color: rgb(226, 116, 112);
+}
+
 .jumbotron{
-    background-image: url("images/fond.png");
+    background-image: url("../images/raspberries/fond.png");
+    background-size: cover;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-position: right center;
+    /* opacity: 0.8; */
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
+    background-color: rgba(216, 213, 213, 0.6);
     height: 30em;
     width: 100%;
 }
 
 .jumbotron .container{
-    padding-top: 10em;
+    padding-top: 7em;
 }
 
 .dropdown-item{
@@ -65,16 +78,32 @@
     padding: 5px 15px 5px 15px; 
 }
 
+@media screen and (max-width: 375px){
+    .jumbotron h3{
+        display: none;
+    }
+    .jumbotron h1{
+        font-size: 3em; 
+    }
+    .jumbotron{
+        height: 20em;
+    }
+    .jumbotron .container{
+        padding-top: 3em;
+    }
+}
+
 /* ////////////////////////// HEADER ////////////////////////// */
 
 
 /* ////////////////////////// RASPBERRIES ////////////////////////// */
 
 body{
-    background-image: url("/images/raspberries/bg.jpg");
+    background-image: url("../images/raspberries/bg.jpg");
     background-attachment: fixed;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-position: center center;
 }
 
 .card-columns .card{
@@ -85,11 +114,16 @@ body{
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
 }
 
-.card-columns .card-img-top{
-    width: 20em;
+.card:hover{
+    background-color: rgba(226, 116, 112, 0.8);
+}
+
+.card-img-top{
+    width: 90%;
     height: 15em;
     margin: 1em 1em 1em 1em;
     border-radius: 5px;
+   object-fit: cover;
 }
 
 .card h5{
@@ -98,23 +132,103 @@ body{
     font-variant: small-caps;
 }
 
-/* .card-columns {
-    @include media-breakpoint-only(md) {
-      column-count: 6;
-    }
 
-    @include media-breakpoint-only(lg) {
-      column-count: 4;
-    }
-   
-    @include media-breakpoint-only(xl) {
-      column-count: 5;
+/* @media screen and (max-width: 375px){
+    .rasberry {
+        margin: 1rem;
     }
 } */
-
 /* ////////////////////////// RASPBERRIES ////////////////////////// */
 
 
 /* ////////////////////////// FOOTER ////////////////////////// */
+
+.footer{
+    background-color: rgb(226,116,112);
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 35px
+}
+
+
+.footer a{
+    font-family: monospace; 
+    color: white;
+}
+
+.footer .nav-link{
+    padding-top: 0;
+    padding-right:2em;
+}
+
+.footer img{
+    max-height: 2.3em;
+    max-width: 2.3em;
+    margin-right: 15px;
+
+}
+
+.footer h2{
+    font-variant: small-caps;
+    font-size: 2em;
+    color: white;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: -15px;
+}
+
+.footer #address{
+    margin-left: 7em;
+    font-family: monospace;
+    color: white;
+
+}
+
+.collumn-right h3{
+    font-variant: small-caps;
+    color: white;
+}
+.collumn-right .form-group{
+    font-family: monospace;
+    color: white;
+    font-size: 1.5em;
+}
+
+.collumn-right .col-form-label{
+    padding-top: 0em;
+    padding-right: 0em;
+}
+.collumn-right .btn{
+    background-color: rgb(76,74,74);
+    color: white;
+}
+
+
+/********Media queries Footer***********/
+@media (max-width: 768px){
+    .footer h2{
+        font-size: 1.5em;
+    }
+
+    .footer #address{
+        font-size: 0.8em;
+        margin-left: 7em;
+    }
+
+    .footer-link{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .collumn-right .form-group label{
+        font-size: 0.8em;
+        margin-right: 1.8em;
+    }
+
+    .collumn-right{
+        padding-right: 2em;
+        margin-top: 1em;
+    }
+}
 
 /* ////////////////////////// FOOTER ////////////////////////// */
