@@ -7,204 +7,243 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="developers.css">
+    <link rel="stylesheet" type="text/css" href="./css/developers.css">
     <title>Wild Bazar</title>
   </head>
   <body>
-  <div class="container-fluid">
-  	<main>
-    <!-- zone nav -->
-    <!-- zone header developers -->
+  	<header>
 
-		<section id="categorieDev">
-			<div id="headerDev">
+        <nav id="gradient" class="navbar fixed-top navbar-expand-lg navbar-light navbar-top">
+
+            <!-- Show this only on mobile to medium screens -->
+            <a class="navbar-brand d-lg-none" href="#"><img src="images/logoblanc.png" width="25px" height="25px"> Wild
+                Bazar</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"
+                aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Use flexbox utility classes to change how the child elements are justified -->
+            <div class="collapse navbar-collapse justify-content-between" id="navbarToggle">
+
+                <!-- Show this only lg screens and up -->
+                <a class="navbar-brand d-none d-lg-block" href="#"><img src="images/logoblanc.png" width="25px" height="25px">
+                    Wild Bazar</a>
+
+                <ul class="texto navbar-nav text-white px-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aboutUs"> About Us </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#topSelling"> Top Selling </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactUs"> Contact Us </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Catégories
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="apples.html">Apples</a>
+                            <a class="dropdown-item" href="windows.html">Windows</a>
+                            <a class="dropdown-item" href="penguins.html">Penguins</a>
+                            <a class="dropdown-item" href="raspberries.html">Raspberries</a>
+                            <a class="dropdown-item" href="developpers.html">Developpers</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">Wild Bazar</h1>
+                <h3 class="lead">On y trouve de tout et surtout du n'importe quoi!</h3>
+            </div>
+        </div>
+
+    </header>
+  	<main class="container-fluid">
+		<section class="categorieDev">
+			<div class="headerDev">
 				<h1>The powers of Developers</h1>
 				<p>Louer ici les services de développeurs</p>
 				<!-- add new zone -->
 			</div>
-			<div id="productsDev">
+			<div class="productsDev">
 				<div class="d-flex flex-wrap">
-						<div class="card col-xs-6 col-md-4 col-lg-3 bg-dark text-white mb-3">
-		 					<img src="./images/developers/products1.jpg" class="card-img-top" alt="...">
-		  					<div class="card-img-overlay">
-		    					<h5 class="card-title">1OO€</h5>
-		    				</div>
-		    				<div class="card-body">
-		    					<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-								<p class="card-text">Last updated 3 mins ago</p>	
-		    				</div>	
-						</div>
-						<div class="card col-xs-6 col-md-4 col-lg-3 bg-dark text-white mb-3">
-		 					<img src="./images/developers/products1.jpg" class="card-img-top" alt="...">
-		  					<div class="card-img-overlay">
-		    					<h5 class="card-title">1OO€</h5>
-		    				</div>
-		    				<div class="card-body">
-		    					<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-								<p class="card-text">Last updated 3 mins ago</p>	
-		    				</div>	
-						</div>
-						<div class="card col-xs-6 col-md-4 col-lg-3 bg-dark text-white mb-3">
-		 					<img src="./images/developers/products1.jpg" class="card-img-top" alt="...">
-		  					<div class="card-img-overlay">
-	    						<h5 class="card-title">1OO€</h5>
-	    					</div>
-	    					<div class="card-body">
-	    						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-								<p class="card-text">Last updated 3 mins ago</p>	
-	    					</div>
+					<div class="card col-xs-6 col-md-4 col-lg-3 bg-dark text-white">
+	 					<img src="./images/developers/products1.jpg" class="card-img-top" alt="...">
+	  					<div class="card-img-overlay">
+	    					<h5 class="card-title">1OO€</h5>
 	    				</div>
-	    				<div class="card col-xs-6 col-md-4 col-lg-3 bg-dark text-white mb-3">
-		 					<img src="./images/developers/products1.jpg" class="card-img-top" alt="...">
-		  					<div class="card-img-overlay">
-	    						<h5 class="card-title">1OO€</h5>
-	    					</div>
-	    					<div class="card-body">
-	    						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-								<p class="card-text">Last updated 3 mins ago</p>	
-	    					</div>	
-						</div>
-						<div class="card col-xs-6 col-md-4 col-lg-3 bg-dark text-white mb-3">
-		 					<img src="./images/developers/products1.jpg" class="card-img-top" alt="...">
-		  					<div class="card-img-overlay">
-	    						<h5 class="card-title">1OO€</h5>
-	    					</div>
-	    					<div class="card-body">
-	    						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-								<p class="card-text">Last updated 3 mins ago</p>	
-	    					</div>	
-						</div>
-						<div class="card col-xs-6 col-md-4 col-lg-3 bg-dark text-white mb-3">
-		 					<img src="./images/developers/products1.jpg" class="card-img-top" alt="...">
-		  					<div class="card-img-overlay">
-	    						<h5 class="card-title">1OO€</h5>
-	    					</div>
-	    					<div class="card-body">
-	    						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-								<p class="card-text">Last updated 3 mins ago</p>	
-	    					</div>	
-						</div>
-						<div class="card col-xs-6 col-md-4 col-lg-3 bg-dark text-white mb-3">
-		 					<img src="./images/developers/products1.jpg" class="card-img-top" alt="...">
-		  					<div class="card-img-overlay">
-	    						<h5 class="card-title">1OO€</h5>
-	    					</div>
-	    					<div class="card-body">
-	    						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-								<p class="card-text">Last updated 3 mins ago</p>	
-	    					</div>	
-						</div>
-						<div class="card col-xs-6 col-md-4 col-lg-3 bg-dark text-white mb-3">
-		 					<img src="./images/developers/products1.jpg" class="card-img-top" alt="...">
-		  					<div class="card-img-overlay">
-	    						<h5 class="card-title">1OO€</h5>
-	    					</div>
-	    					<div class="card-body">
-	    						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-								<p class="card-text">Last updated 3 mins ago</p>	
-	    					</div>	
-						</div>
-						<div class="card col-xs-6 col-md-4 col-lg-3 bg-dark text-white mb-3">
-		 					<img src="./images/developers/products1.jpg" class="card-img-top" alt="...">
-		  					<div class="card-img-overlay">
-	    						<h5 class="card-title">1OO€</h5>
-	    					</div>
-	    					<div class="card-body">
-	    						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-								<p class="card-text">Last updated 3 mins ago</p>	
-	    					</div>	
-						</div>
-						<div class="card col-xs-6 col-md-4 col-lg-3 bg-dark text-white mb-3">
-		 					<img src="./images/developers/products1.jpg" class="card-img-top" alt="...">
-		  					<div class="card-img-overlay">
-	    						<h5 class="card-title">1OO€</h5>
-	    					</div>
-	    					<div class="card-body">
-	    						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-								<p class="card-text">Last updated 3 mins ago</p>	
-	    					</div>	
-						</div>
-						<div class="card col-xs-6 col-md-4 col-lg-3 bg-dark text-white mb-3">
-		 					<img src="./images/developers/products1.jpg" class="card-img-top" alt="...">
-		  					<div class="card-img-overlay">
-	    						<h5 class="card-title">1OO€</h5>
-	    					</div>
-	    					<div class="card-body">
-	    						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-								<p class="card-text">Last updated 3 mins ago</p>	
-	    					</div>	
-						</div>
-						<div class="card col-xs-6 col-md-4 col-lg-3 bg-dark text-white mb-3">
-		 					<img src="./images/developers/products1.jpg" class="card-img-top" alt="...">
-		  					<div class="card-img-overlay">
-	    						<h5 class="card-title">1OO€</h5>
-	    					</div>
-	    					<div class="card-body">
-	    						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-								<p class="card-text">Last updated 3 mins ago</p>	
-	    					</div>	
-						</div>
+	    				<div class="card-body">
+	    					<p class="card-text">Produit 1.</p>	
+	    				</div>	
+					</div>
+					<div class="card col-xs-6 col-md-4 col-lg-3 bg-dark text-white">
+	 					<img src="./images/developers/products1.jpg" class="card-img-top" alt="...">
+	  					<div class="card-img-overlay">
+	    					<h5 class="card-title">1OO€</h5>
+	    				</div>
+	    				<div class="card-body">
+	    					<p class="card-text">Produit 2.</p>	
+	    				</div>	
+					</div>
+					<div class="card col-xs-6 col-md-4 col-lg-3 bg-dark text-white">
+	 					<img src="./images/developers/products1.jpg" class="card-img-top" alt="...">
+	  					<div class="card-img-overlay">
+    						<h5 class="card-title">1OO€</h5>
+    					</div>
+    					<div class="card-body">
+    						<p class="card-text">Produit 3.</p>	
+    					</div>
+    				</div>
+    				<div class="card col-xs-6 col-md-4 col-lg-3 bg-dark text-white">
+	 					<img src="./images/developers/products1.jpg" class="card-img-top" alt="...">
+	  					<div class="card-img-overlay">
+    						<h5 class="card-title">1OO€</h5>
+    					</div>
+    					<div class="card-body">
+    						<p class="card-text">Produit 4.</p>	
+    					</div>	
+					</div>
+					<div class="card col-xs-6 col-md-4 col-lg-3 bg-dark text-white">
+	 					<img src="./images/developers/products1.jpg" class="card-img-top" alt="...">
+	  					<div class="card-img-overlay">
+    						<h5 class="card-title">1OO€</h5>
+    					</div>
+    					<div class="card-body">
+    						<p class="card-text">Produit 5.</p>	
+    					</div>	
+					</div>
+					<div class="card col-xs-6 col-md-4 col-lg-3 bg-dark text-white">
+	 					<img src="./images/developers/products1.jpg" class="card-img-top" alt="...">
+	  					<div class="card-img-overlay">
+    						<h5 class="card-title">1OO€</h5>
+    					</div>
+    					<div class="card-body">
+    						<p class="card-text">Produit 6.</p>	
+    					</div>	
+					</div>
+					<div class="card col-xs-6 col-md-4 col-lg-3 bg-dark text-white">
+	 					<img src="./images/developers/products1.jpg" class="card-img-top" alt="...">
+	  					<div class="card-img-overlay">
+    						<h5 class="card-title">1OO€</h5>
+    					</div>
+    					<div class="card-body">
+    						<p class="card-text">Produit 7.</p>	
+    					</div>	
+					</div>
+					<div class="card col-xs-6 col-md-4 col-lg-3 bg-dark text-white">
+	 					<img src="./images/developers/products1.jpg" class="card-img-top" alt="...">
+	  					<div class="card-img-overlay">
+    						<h5 class="card-title">1OO€</h5>
+    					</div>
+    					<div class="card-body">
+    						<p class="card-text">Produit 8.</p>	
+    					</div>	
+					</div>
+					<div class="card col-xs-6 col-md-4 col-lg-3 bg-dark text-white">
+	 					<img src="./images/developers/products1.jpg" class="card-img-top" alt="...">
+	  					<div class="card-img-overlay">
+    						<h5 class="card-title">1OO€</h5>
+    					</div>
+    					<div class="card-body">
+    						<p class="card-text">Produit 9.</p>	
+    					</div>	
+					</div>
+					<div class="card col-xs-6 col-md-4 col-lg-3 bg-dark text-white">
+	 					<img src="./images/developers/products1.jpg" class="card-img-top" alt="...">
+	  					<div class="card-img-overlay">
+    						<h5 class="card-title">1OO€</h5>
+    					</div>
+    					<div class="card-body">
+    						<p class="card-text">Produit 10.</p>	
+    					</div>	
+					</div>
+					<div class="card col-xs-6 col-md-4 col-lg-3 bg-dark text-white">
+	 					<img src="./images/developers/products1.jpg" class="card-img-top" alt="...">
+	  					<div class="card-img-overlay">
+    						<h5 class="card-title">1OO€</h5>
+    					</div>
+    					<div class="card-body">
+    						<p class="card-text">Produit 11.</p>	
+    					</div>	
+					</div>
+					<div class="card col-xs-6 col-md-4 col-lg-3 bg-dark text-white">
+	 					<img src="./images/developers/products1.jpg" class="card-img-top" alt="...">
+	  					<div class="card-img-overlay">
+    						<h5 class="card-title">1OO€</h5>
+    					</div>
+    					<div class="card-body">
+    						<p class="card-text">Produit 12.</p>	
+    					</div>	
 					</div>
 				</div>
 			</div>
 		</section>
 	</main>
+
 	<!-- zone footer -->
-	   	<footer class="footer">
-	     	<div class="row  px-3 pt-3 justify-content-center">
-	     		<div class="col-12 col-lg-6 collumn-left">
-	     			<div class="row footer-link">
-	      				<nav class="flex-column">
-		    				<a class="nav-link" href="#">Home</a>
-							<a class="nav-link" href="aboutUs">About us</a>
-							<a class="nav-link" href="topSelling">Top selling</a>
-							<a class="nav-link" href="contactUs">Contact</a>
-							<a class="nav-link" href="#">Legal mentions</a>
-						</nav>
-	      				<nav class="flex-column">
-	      					<a class="nav-link" href="#">Apple</a>
-		  					<a class="nav-link" href="#">Windows</a>
-							<a class="nav-link" href="#">Penguin</a>
-							<a class="nav-link" href="#">Raspberry</a>
-							<a class="nav-link" href="#">Dev</a>
-						</nav>
-	      			</div>
-	      			<div class="row justify-content-center">
-	      				<div class="col-12">
-	      					<h2><img src="./images/logoblanc.png"><span class="align-baseline">Wild Bazar</span></h2>
-	      					<div id="address">
-	      						1,rue de la paix<br>
-	      						75000 Paris<br>
-	      						01-23-45-67-89
-	      					</div>
-	      				</div>
-	      			</div>
-	      		</div>
-	      		<div class="col-12 col-lg-6 justify-content-center collumn-right">
-	      			<h3 class="text-center" id="contactUs">Contact us</h3>
-	      			<form>
-	      				<div class="form-group row">
-	      					<label for="inputEmail3" class="col-2 col-form-label">Email</label>
-	      					<div class="col-8">
-	      						<input type="email" class="form-control" id="inputEmail3">
-	      					</div>
-	      				</div>
-	      				<div class="form-group row">
-	      					<label for="inputPassword3" class="col-2 col-form-label">Message</label>
-	      					<div class="col-8"> 
-								<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-	      					</div>
-	      				</div>
-	      				<div class="form-group row">
-	      					<div class="col-12 text-center">
-	      						<button type="submit" class="btn">Submit</button>
-	      					</div>
-	      				</div>
-	      			</form>	
-	      		</div>	
-			</div>
-    	</footer>
-	</div>
+   	<footer class="footer container-fluid">
+     	<div class="row  px-3 pt-3 justify-content-center">
+     		<div class="col-12 col-lg-6 collumn-left">
+     			<div class="row footer-link">
+      				<nav class="flex-column">
+	    				<a class="nav-link" href="#">Home</a>
+						<a class="nav-link" href="aboutUs">About us</a>
+						<a class="nav-link" href="topSelling">Top selling</a>
+						<a class="nav-link" href="contactUs">Contact</a>
+						<a class="nav-link" href="#">Legal mentions</a>
+					</nav>
+      				<nav class="flex-column">
+      					<a class="nav-link" href="#">Apple</a>
+	  					<a class="nav-link" href="#">Windows</a>
+						<a class="nav-link" href="#">Penguin</a>
+						<a class="nav-link" href="#">Raspberry</a>
+						<a class="nav-link" href="#">Dev</a>
+					</nav>
+      			</div>
+      			<div class="row justify-content-center">
+      				<div class="col-12">
+      					<h2><img src="./images/logoblanc.png"><span class="align-baseline">Wild Bazar</span></h2>
+      					<div id="address">
+      						1,rue de la paix<br>
+      						75000 Paris<br>
+      						01-23-45-67-89
+      					</div>
+      				</div>
+      			</div>
+      		</div>
+      		<div class="col-12 col-lg-6 justify-content-center collumn-right">
+      			<h3 class="text-center" id="contactUs">Contact us</h3>
+      			<form>
+      				<div class="form-group row">
+      					<label for="inputEmail3" class="col-2 col-form-label">Email</label>
+      					<div class="col-8">
+      						<input type="email" class="form-control" id="inputEmail3">
+      					</div>
+      				</div>
+      				<div class="form-group row">
+      					<label for="inputPassword3" class="col-2 col-form-label">Message</label>
+      					<div class="col-8"> 
+							<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      					</div>
+      				</div>
+      				<div class="form-group row">
+      					<div class="col-12 text-center">
+      						<button type="submit" class="btn">Submit</button>
+      					</div>
+      				</div>
+      			</form>	
+      		</div>	
+		</div>
+	</footer>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
