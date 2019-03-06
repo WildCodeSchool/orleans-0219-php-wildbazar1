@@ -215,6 +215,14 @@ h2{
 
 /* ////////////////////////// CATEGORIE ////////////////////////// */
 
+/* ////////////////////////// ABOUT US ////////////////////////// */
+
+.aboutus{
+    background-color: silver;
+}
+
+/* ////////////////////////// ABOUT US ////////////////////////// */
+
 /* ////////////////////////// FOOTER ////////////////////////// */
 
 .footer{
@@ -223,7 +231,6 @@ h2{
     padding-top: 20px;
     padding-left: 35px
 }
-
 
 .footer a{
     font-family: monospace; 
@@ -255,7 +262,6 @@ h2{
     margin-left: 7em;
     font-family: monospace;
     color: white;
-
 }
 
 .collumn-right h3{
