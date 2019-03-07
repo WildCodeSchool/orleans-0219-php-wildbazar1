@@ -8,12 +8,17 @@ body{
     background-position: center center;
 }
 
-/*************************Navbar*******************/
+/* ////////////////////////// HEADER ////////////////////////// */
+
 .navbar{
     background-color: rgb(226, 116, 112);
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4); /* Rajoute une ombre à la nav */
     font-variant: small-caps;
     font-family: monospace;
+}
+nav img{
+height: 25px;
+width: 25px;
 }
 
 .navbar .navbar-brand{
@@ -34,8 +39,6 @@ body{
     padding: 5px 15px 5px 15px;
 }
 
-/*******************Jumbotron**********************/
-
 .jumbotron h1, .jumbotron h3{
     font-variant: small-caps; /* Met le text en petite majuscule */
     text-shadow: 2px 2px 4px #000000;
@@ -51,13 +54,13 @@ body{
 }
 
 .jumbotron{
-    background-image: url("../images/developers/jumbotron.png");
-    background-size: 28%;
+    background-image: url("../images/raspberries/fond.png");
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: right center;
     /* opacity: 0.8; */
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
-    background-color: rgba(216, 213, 213, 0.65);
+    background-color: rgba(216, 213, 213, 0.6);
     height: 30em;
     width: 100%;
 }
@@ -66,19 +69,41 @@ body{
     padding-top: 7em;
 }
 
+.dropdown-item{
+    background-color: transparent;
+}
+
+.nav-link{
+    color: white;
+    padding: 5px 15px 5px 15px; 
+}
+
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+    color: whitesmoke;
+    background-color: rgba(192, 192, 192, 0.3);
+    text-shadow: 2px 2px 4px #000000;
+    border-radius: 15px;
+    padding: 5px 15px 5px 15px; 
+}
+
+@media screen and (max-width: 375px){
+    .jumbotron h3{
+        display: none;
+    }
+    .jumbotron h1{
+        font-size: 3em; 
+    }
+    .jumbotron{
+        height: 20em;
+    }
+    .jumbotron .container{
+        padding-top: 3em;
+    }
+}
+
+/* ////////////////////////// HEADER ////////////////////////// */
+
 /******************Cards**************************/
-.categorieDev{
-	
-}
-
-.productsDev{
-
-}
-
-.productsDev .d-flex .card{
- 
-}
-
 
 .card-columns .card{
     width: 20em;
