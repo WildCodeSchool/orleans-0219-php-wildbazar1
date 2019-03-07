@@ -4,15 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Ma page web</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="http://fr.allfont.net/allfont.css?fonts=courier" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-        crossorigin="anonymous">
     <link rel="stylesheet" href="css/style_penguins.css">
-
     <title>Wild Bazar</title>
 
 
@@ -25,8 +19,8 @@
         <nav id="gradient" class="navbar fixed-top navbar-expand-lg navbar-light navbar-top">
 
             <!-- Show this only on mobile to medium screens -->
-            <a class="navbar-brand d-lg-none" href="index.html"><img src="images/logoblanc.png" alt="logo"> Wild
-                Bazar</a>
+            <a class="navbar-brand d-lg-none" href="#"><img src="./images/logoblanc.png" width="25px" height="25px">
+                Wild Bazar</a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"
                 aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,30 +31,32 @@
             <div class="collapse navbar-collapse justify-content-between" id="navbarToggle">
 
                 <!-- Show this only lg screens and up -->
-                <a class="navbar-brand d-none d-lg-block" href="#"><img src="images/logoblanc.png" alt="logo">
+                <a class="navbar-brand d-none d-lg-block" href="#"><img src="./images/logoblanc.png" width="25px"
+                        height="25px">
+
                     Wild Bazar</a>
 
                 <ul class="texto navbar-nav text-white px-3">
                     <li class="nav-item">
-                        <a class="nav-link" href="#aboutUs"> About Us </a>
+                        <a class="nav-link" href="index.html#aboutUs"> About Us </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#topSelling"> Top Selling </a>
+                        <a class="nav-link" href="index.html#topSelling"> Top Selling </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contactUs"> Contact Us </a>
+                        <a class="nav-link" href="index.html#contactUs"> Contact Us </a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle px-3" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
-                            Catégories
+                            Categories
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="apple.html">Apple</a>
+                            <a class="dropdown-item" href="apple.html">Apples</a>
                             <a class="dropdown-item" href="windows.html">Windows</a>
                             <a class="dropdown-item" href="penguins.html">Penguins</a>
                             <a class="dropdown-item" href="raspberries.html">Raspberries</a>
-                            <a class="dropdown-item" href="developers.html">Developpers</a>
+                            <a class="dropdown-item" href="developpers.html">Developpers</a>
                         </div>
                     </li>
                 </ul>
@@ -75,6 +71,7 @@
         </div>
 
     </header>
+
     <main>
 
         <div class="justify-content-center m-5 d-flex flex-wrap card-columns">
@@ -95,7 +92,7 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <!-- product title -->
-                            <h4 class="h5" id="titreduproduit1">Sweat "Got linux ?"</h4>
+                            <h4 id="titreduproduit1">Sweat "Got linux ?"</h4>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -115,10 +112,7 @@
                                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
                                             obcaecati
                                             ut error
-                                            dolor dolores eveniet, accusamus ea odit dicta dignissimos animi
-                                            labore
-                                            vitae.
-                                            Eveniet suscipit, quod dolorum culpa est quibusdam.</p>
+                                            dolor dolores eveniet.</p>
                                     </div>
                                 </div>
                                 <!-- product features -->
@@ -160,13 +154,12 @@
                 </div>
             </div>
             <!-- Modal -->
-            <div class="modal fade" id="produit2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-                aria-hidden="true">
+            <div class="modal fade" id="produit2" tabindex="-1" role="dialog" aria-labelledby="produit2" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
                             <!-- product title-->
-                            <h4 class="h5" id="titreduproduit2">Sweat "Peace, Love, Linux"</h4>
+                            <h4 id="titreduproduit2">Sweat "Peace, Love, Linux"</h4>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -186,19 +179,30 @@
                                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
                                             obcaecati
                                             ut error
-                                            dolor dolores eveniet, accusamus ea odit dicta dignissimos animi
-                                            labore
-                                            vitae.
-                                            Eveniet suscipit, quod dolorum culpa est quibusdam.</p>
+                                            dolor dolores eveniet.</p>
                                     </div>
-                                    <!-- product features -->
-                                    <div>
-                                        <h6>Caracteristics :</h6>
-                                        <ul>
-                                            <li>Size: xx</li>
-                                            <li>Weight: xx</li>
-                                            <li>Color: xx</li>
-                                        </ul>
+                                </div>
+
+                                <!-- product features -->
+                                <div>
+                                    <div class="row mx-3">
+                                        <div class="col-sm-6 text-center">
+
+                                            <h6 class="text-center caracteristics"> Caracteristics :</h6>
+                                            <ul class="text-left">
+                                                <li>Size: xx</li>
+                                                <li>Weight: xx</li>
+                                                <li>Color: xx</li>
+                                            </ul>
+                                        </div>
+
+
+                                        <div class="col-sm-6 text-center align-self-center">
+
+                                            <button type="button" class="btn btn-outline-dark btn-lg">Ajouter au
+                                                Panier</button>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -218,13 +222,12 @@
                 </div>
             </div>
             <!-- Modal -->
-            <div class="modal fade" id="produit3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-                aria-hidden="true">
+            <div class="modal fade" id="produit3" tabindex="-1" role="dialog" aria-labelledby="produit3" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
                             <!-- product title-->
-                            <h4 class="h5" id="titreduproduit3">Sweat "May The Source Be With You"</h4>
+                            <h4 id="titreduproduit3">Sweat "May The Source Be With You"</h4>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -244,22 +247,33 @@
                                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
                                             obcaecati
                                             ut error
-                                            dolor dolores eveniet, accusamus ea odit dicta dignissimos animi
-                                            labore
-                                            vitae.
-                                            Eveniet suscipit, quod dolorum culpa est quibusdam.</p>
+                                            dolor dolores eveniet.</p>
                                     </div>
-                                    <!-- product features -->
-                                    <div>
-                                        <h6>Caracteristics :</h6>
-                                        <ul>
-                                            <li>Size: xx</li>
-                                            <li>Weight: xx</li>
-                                            <li>Color: xx</li>
-                                        </ul>
-                                    </div>
-
                                 </div>
+
+                                <!-- product features -->
+                                <div>
+                                    <div class="row mx-3">
+                                        <div class="col-sm-6 text-center">
+
+                                            <h6 class="text-center caracteristics"> Caracteristics :</h6>
+                                            <ul class="text-left">
+                                                <li>Size: xx</li>
+                                                <li>Weight: xx</li>
+                                                <li>Color: xx</li>
+                                            </ul>
+                                        </div>
+
+
+                                        <div class="col-sm-6 text-center align-self-center">
+
+                                            <button type="button" class="btn btn-outline-dark btn-lg">Ajouter au
+                                                Panier</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -277,13 +291,12 @@
                 </div>
             </div>
             <!-- Modal -->
-            <div class="modal fade" id="produit4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-                aria-hidden="true">
+            <div class="modal fade" id="produit4" tabindex="-1" role="dialog" aria-labelledby="produit4" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
                             <!-- product title-->
-                            <h4 class="h5" id="titreduproduit4">T-shirt "Why so Windows ?"</h4>
+                            <h4 id="titreduproduit4">T-shirt "Why so Windows ?"</h4>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -303,22 +316,33 @@
                                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
                                             obcaecati
                                             ut error
-                                            dolor dolores eveniet, accusamus ea odit dicta dignissimos animi
-                                            labore
-                                            vitae.
-                                            Eveniet suscipit, quod dolorum culpa est quibusdam.</p>
+                                            dolor dolores eveniet.</p>
                                     </div>
-                                    <!-- product features -->
-                                    <div>
-                                        <h6>Caracteristics :</h6>
-                                        <ul>
-                                            <li>Size: xx</li>
-                                            <li>Weight: xx</li>
-                                            <li>Color: xx</li>
-                                        </ul>
-                                    </div>
-
                                 </div>
+
+                                <!-- product features -->
+                                <div>
+                                    <div class="row mx-3">
+                                        <div class="col-sm-6 text-center">
+
+                                            <h6 class="text-center caracteristics"> Caracteristics :</h6>
+                                            <ul class="text-left">
+                                                <li>Size: xx</li>
+                                                <li>Weight: xx</li>
+                                                <li>Color: xx</li>
+                                            </ul>
+                                        </div>
+
+
+                                        <div class="col-sm-6 text-center align-self-center">
+
+                                            <button type="button" class="btn btn-outline-dark btn-lg">Ajouter au
+                                                Panier</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -336,13 +360,12 @@
                 </div>
             </div>
             <!-- Modal -->
-            <div class="modal fade" id="produit5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-                aria-hidden="true">
+            <div class="modal fade" id="produit5" tabindex="-1" role="dialog" aria-labelledby="produit5" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
                             <!-- product title -->
-                            <h4 class="h5" id="titreduproduit5">Mug "Fork You"</h4>
+                            <h4 id="titreduproduit5">Mug "Fork You"</h4>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -362,19 +385,30 @@
                                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
                                             obcaecati
                                             ut error
-                                            dolor dolores eveniet, accusamus ea odit dicta dignissimos animi
-                                            labore
-                                            vitae.
-                                            Eveniet suscipit, quod dolorum culpa est quibusdam.</p>
+                                            dolor dolores eveniet.</p>
                                     </div>
-                                    <!-- product features -->
-                                    <div>
-                                        <h6>Caracteristics :</h6>
-                                        <ul>
-                                            <li>Size: xx</li>
-                                            <li>Weight: xx</li>
-                                            <li>Color: xx</li>
-                                        </ul>
+                                </div>
+
+                                <!-- product features -->
+                                <div>
+                                    <div class="row mx-3">
+                                        <div class="col-sm-6 text-center">
+
+                                            <h6 class="text-center caracteristics"> Caracteristics :</h6>
+                                            <ul class="text-left">
+                                                <li>Size: xx</li>
+                                                <li>Weight: xx</li>
+                                                <li>Color: xx</li>
+                                            </ul>
+                                        </div>
+
+
+                                        <div class="col-sm-6 text-center align-self-center">
+
+                                            <button type="button" class="btn btn-outline-dark btn-lg">Ajouter au
+                                                Panier</button>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -394,13 +428,12 @@
                 </div>
             </div>
             <!-- Modal -->
-            <div class="modal fade" id="produit6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-                aria-hidden="true">
+            <div class="modal fade" id="produit6" tabindex="-1" role="dialog" aria-labelledby="produit6" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
                             <!-- product title-->
-                            <h4 class="h5" id="titreduproduit6">Mug "Just sudo it"</h4>
+                            <h4 id="titreduproduit6">Mug "Just sudo it"</h4>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -420,19 +453,30 @@
                                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
                                             obcaecati
                                             ut error
-                                            dolor dolores eveniet, accusamus ea odit dicta dignissimos animi
-                                            labore
-                                            vitae.
-                                            Eveniet suscipit, quod dolorum culpa est quibusdam.</p>
+                                            dolor dolores eveniet.</p>
                                     </div>
-                                    <!-- product features -->
-                                    <div>
-                                        <h6>Caracteristics :</h6>
-                                        <ul>
-                                            <li>Size: xx</li>
-                                            <li>Weight: xx</li>
-                                            <li>Color: xx</li>
-                                        </ul>
+                                </div>
+
+                                <!-- product features -->
+                                <div>
+                                    <div class="row mx-3">
+                                        <div class="col-sm-6 text-center">
+
+                                            <h6 class="text-center caracteristics"> Caracteristics :</h6>
+                                            <ul class="text-left">
+                                                <li>Size: xx</li>
+                                                <li>Weight: xx</li>
+                                                <li>Color: xx</li>
+                                            </ul>
+                                        </div>
+
+
+                                        <div class="col-sm-6 text-center align-self-center">
+
+                                            <button type="button" class="btn btn-outline-dark btn-lg">Ajouter au
+                                                Panier</button>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -452,13 +496,12 @@
                 </div>
             </div>
             <!-- Modal -->
-            <div class="modal fade" id="produit7" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-                aria-hidden="true">
+            <div class="modal fade" id="produit7" tabindex="-1" role="dialog" aria-labelledby="produit7" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
                             <!-- product title-->
-                            <h4 class="h5" id="titreduproduit7">Mug "Del Windows"</h4>
+                            <h4 id="titreduproduit7">Mug "Del Windows"</h4>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -478,19 +521,30 @@
                                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
                                             obcaecati
                                             ut error
-                                            dolor dolores eveniet, accusamus ea odit dicta dignissimos animi
-                                            labore
-                                            vitae.
-                                            Eveniet suscipit, quod dolorum culpa est quibusdam.</p>
+                                            dolor dolores eveniet.</p>
                                     </div>
-                                    <!-- product features -->
-                                    <div>
-                                        <h6>Caracteristics :</h6>
-                                        <ul>
-                                            <li>Size: xx</li>
-                                            <li>Weight: xx</li>
-                                            <li>Color: xx</li>
-                                        </ul>
+                                </div>
+
+                                <!-- product features -->
+                                <div>
+                                    <div class="row mx-3">
+                                        <div class="col-sm-6 text-center">
+
+                                            <h6 class="text-center caracteristics"> Caracteristics :</h6>
+                                            <ul class="text-left">
+                                                <li>Size: xx</li>
+                                                <li>Weight: xx</li>
+                                                <li>Color: xx</li>
+                                            </ul>
+                                        </div>
+
+
+                                        <div class="col-sm-6 text-center align-self-center">
+
+                                            <button type="button" class="btn btn-outline-dark btn-lg">Ajouter au
+                                                Panier</button>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -510,13 +564,12 @@
                 </div>
             </div>
             <!-- Modal -->
-            <div class="modal fade" id="produit8" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-                aria-hidden="true">
+            <div class="modal fade" id="produit8" tabindex="-1" role="dialog" aria-labelledby="produit8" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
                             <!-- product title-->
-                            <h4 class="h5" id="titreduproduit8">Peluche "Tux"</h4>
+                            <h4 id="titreduproduit8">Peluche "Tux"</h4>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -536,22 +589,33 @@
                                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
                                             obcaecati
                                             ut error
-                                            dolor dolores eveniet, accusamus ea odit dicta dignissimos animi
-                                            labore
-                                            vitae.
-                                            Eveniet suscipit, quod dolorum culpa est quibusdam.</p>
+                                            dolor dolores eveniet.</p>
                                     </div>
-                                    <!-- product features -->
-                                    <div>
-                                        <h6>Caracteristics :</h6>
-                                        <ul>
-                                            <li>Size: xx</li>
-                                            <li>Weight: xx</li>
-                                            <li>Color: xx</li>
-                                        </ul>
-                                    </div>
-
                                 </div>
+
+                                <!-- product features -->
+                                <div>
+                                    <div class="row mx-3">
+                                        <div class="col-sm-6 text-center">
+
+                                            <h6 class="text-center caracteristics"> Caracteristics :</h6>
+                                            <ul class="text-left">
+                                                <li>Size: xx</li>
+                                                <li>Weight: xx</li>
+                                                <li>Color: xx</li>
+                                            </ul>
+                                        </div>
+
+
+                                        <div class="col-sm-6 text-center align-self-center">
+
+                                            <button type="button" class="btn btn-outline-dark btn-lg">Ajouter au
+                                                Panier</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -569,13 +633,12 @@
                 </div>
             </div>
             <!-- Modal -->
-            <div class="modal fade" id="produit9" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-                aria-hidden="true">
+            <div class="modal fade" id="produit9" tabindex="-1" role="dialog" aria-labelledby="produit9" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
                             <!-- product title-->
-                            <h4 class="h5" id="titreduproduit9">Casquette "Tux"</h4>
+                            <h4 id="titreduproduit9">Casquette "Tux"</h4>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -595,22 +658,33 @@
                                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
                                             obcaecati
                                             ut error
-                                            dolor dolores eveniet, accusamus ea odit dicta dignissimos animi
-                                            labore
-                                            vitae.
-                                            Eveniet suscipit, quod dolorum culpa est quibusdam.</p>
+                                            dolor dolores eveniet.</p>
                                     </div>
-                                    <!-- product features -->
-                                    <div>
-                                        <h6>Caracteristics :</h6>
-                                        <ul>
-                                            <li>Size: xx</li>
-                                            <li>Weight: xx</li>
-                                            <li>Color: xx</li>
-                                        </ul>
-                                    </div>
-
                                 </div>
+
+                                <!-- product features -->
+                                <div>
+                                    <div class="row mx-3">
+                                        <div class="col-sm-6 text-center">
+
+                                            <h6 class="text-center caracteristics"> Caracteristics :</h6>
+                                            <ul class="text-left">
+                                                <li>Size: xx</li>
+                                                <li>Weight: xx</li>
+                                                <li>Color: xx</li>
+                                            </ul>
+                                        </div>
+
+
+                                        <div class="col-sm-6 text-center align-self-center">
+
+                                            <button type="button" class="btn btn-outline-dark btn-lg">Ajouter au
+                                                Panier</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -627,13 +701,12 @@
                 </div>
             </div>
             <!-- Modal -->
-            <div class="modal fade" id="produit10" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-                aria-hidden="true">
+            <div class="modal fade" id="produit10" tabindex="-1" role="dialog" aria-labelledby="produit" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
                             <!-- product title-->
-                            <h4 class="h5" id="titreduproduit10">Casquette "Ubuntu"</h4>
+                            <h4 id="titreduproduit10">Casquette "Ubuntu"</h4>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -653,22 +726,33 @@
                                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
                                             obcaecati
                                             ut error
-                                            dolor dolores eveniet, accusamus ea odit dicta dignissimos animi
-                                            labore
-                                            vitae.
-                                            Eveniet suscipit, quod dolorum culpa est quibusdam.</p>
+                                            dolor dolores eveniet.</p>
                                     </div>
-                                    <!-- product features -->
-                                    <div>
-                                        <h6>Caracteristics :</h6>
-                                        <ul>
-                                            <li>Size: xx</li>
-                                            <li>Weight: xx</li>
-                                            <li>Color: xx</li>
-                                        </ul>
-                                    </div>
-
                                 </div>
+
+                                <!-- product features -->
+                                <div>
+                                    <div class="row mx-3">
+                                        <div class="col-sm-6 text-center">
+
+                                            <h6 class="text-center caracteristics"> Caracteristics :</h6>
+                                            <ul class="text-left">
+                                                <li>Size: xx</li>
+                                                <li>Weight: xx</li>
+                                                <li>Color: xx</li>
+                                            </ul>
+                                        </div>
+
+
+                                        <div class="col-sm-6 text-center align-self-center">
+
+                                            <button type="button" class="btn btn-outline-dark btn-lg">Ajouter au
+                                                Panier</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -686,13 +770,12 @@
                 </div>
             </div>
             <!-- Modal -->
-            <div class="modal fade" id="produit11" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-                aria-hidden="true">
+            <div class="modal fade" id="produit11" tabindex="-1" role="dialog" aria-labelledby="produit9" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
                             <!-- product title-->
-                            <h4 class="h5" id="titreduproduit11">Stickers "sudo rm"</h4>
+                            <h4 id="titreduproduit11">Stickers "sudo rm"</h4>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -713,19 +796,30 @@
                                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
                                             obcaecati
                                             ut error
-                                            dolor dolores eveniet, accusamus ea odit dicta dignissimos animi
-                                            labore
-                                            vitae.
-                                            Eveniet suscipit, quod dolorum culpa est quibusdam.</p>
+                                            dolor dolores eveniet.</p>
                                     </div>
-                                    <!-- product features -->
-                                    <div>
-                                        <h6>Caracteristics :</h6>
-                                        <ul>
-                                            <li>Size: xx</li>
-                                            <li>Weight: xx</li>
-                                            <li>Color: xx</li>
-                                        </ul>
+                                </div>
+
+                                <!-- product features -->
+                                <div>
+                                    <div class="row mx-3">
+                                        <div class="col-sm-6 text-center">
+
+                                            <h6 class="text-center caracteristics"> Caracteristics :</h6>
+                                            <ul class="text-left">
+                                                <li>Size: xx</li>
+                                                <li>Weight: xx</li>
+                                                <li>Color: xx</li>
+                                            </ul>
+                                        </div>
+
+
+                                        <div class="col-sm-6 text-center align-self-center">
+
+                                            <button type="button" class="btn btn-outline-dark btn-lg">Ajouter au
+                                                Panier</button>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -745,13 +839,12 @@
                 </div>
             </div>
             <!-- Modal -->
-            <div class="modal fade" id="produit12" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-                aria-hidden="true">
+            <div class="modal fade" id="produit12" tabindex="-1" role="dialog" aria-labelledby="produit10" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
                             <!-- product title-->
-                            <h4 class="h5" id="titreduproduit12">Sticker "Gnu/Linux"</h4>
+                            <h4 id="titreduproduit12">Sticker "Gnu/Linux"</h4>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -772,20 +865,30 @@
                                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
                                             obcaecati
                                             ut error
-                                            dolor dolores eveniet, accusamus ea odit dicta dignissimos animi
-                                            labore
-                                            vitae.
-                                            Eveniet suscipit, quod dolorum culpa est quibusdam.</p>
+                                            dolor dolores eveniet.</p>
                                     </div>
-                                    <!-- product features -->
-                                    <div>
+                                </div>
 
-                                        <h6>Caracteristics :</h6>
-                                        <ul>
-                                            <li>Size: xx</li>
-                                            <li>Weight: xx</li>
-                                            <li>Color: xx</li>
-                                        </ul>
+                                <!-- product features -->
+                                <div>
+                                    <div class="row mx-3">
+                                        <div class="col-sm-6 text-center">
+
+                                            <h6 class="text-center caracteristics"> Caracteristics :</h6>
+                                            <ul class="text-left">
+                                                <li>Size: xx</li>
+                                                <li>Weight: xx</li>
+                                                <li>Color: xx</li>
+                                            </ul>
+                                        </div>
+
+
+                                        <div class="col-sm-6 text-center align-self-center">
+
+                                            <button type="button" class="btn btn-outline-dark btn-lg">Ajouter au
+                                                Panier</button>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -795,6 +898,61 @@
             </div>
         </div>
     </main>
+    <!-- zone footer -->
+    <footer class="footer container-fluid">
+        <div class="row  px-3 pt-3 justify-content-center">
+            <div class="col-12 col-lg-6 collumn-left">
+                <div class="row footer-link">
+                    <nav class="flex-column">
+                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="index.html#aboutUs">About us</a>
+                        <a class="nav-link" href="index.html#topSelling">Top selling</a>
+                        <a class="nav-link" href="index.html#contactUs">Contact</a>
+                        <a class="nav-link" href="#">Legal mentions</a>
+                    </nav>
+                    <nav class="flex-column">
+                        <a class="nav-link" href="./apples.html">Apple</a>
+                        <a class="nav-link" href="windows.html">Windows</a>
+                        <a class="nav-link" href="penguins.html">Penguin</a>
+                        <a class="nav-link" href="./raspberries.html">Raspberry</a>
+                        <a class="nav-link" href="developpers.html">Dev</a>
+                    </nav>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <h2><img src="./images/logoblanc.png"><span class="align-baseline">Wild Bazar</span></h2>
+                        <div id="address">
+                            1,rue de la paix<br>
+                            75000 Paris<br>
+                            01-23-45-67-89
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 justify-content-center collumn-right">
+                <h3 class="text-center" id="contactUs">Contact us</h3>
+                <form>
+                    <div class="form-group row">
+                        <label for="inputEmail3" class="col-2 col-form-label">Email</label>
+                        <div class="col-8">
+                            <input type="email" class="form-control" id="inputEmail3">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputPassword3" class="col-2 col-form-label">Message</label>
+                        <div class="col-8">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-12 text-center">
+                            <button type="submit" class="btn">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
