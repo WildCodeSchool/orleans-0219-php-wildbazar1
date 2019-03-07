@@ -194,9 +194,8 @@ nav img{
     font-family: sanssherif;
     overflow: auto;
 }
-.modal .button{
-    align-content: center;
-    background-color: rgba(226, 116, 112);
+.modal .btn{
+    background-color: silver;
 }
 
 
