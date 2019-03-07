@@ -30,7 +30,7 @@ body {
     height: 15em;
     margin: 1em 1em 1em 1em;
     border-radius: 5px;
-   object-fit: cover;
+    object-fit: cover;
 }
 
 .card h5{
@@ -51,3 +51,10 @@ body {
     width: 100%;
 }
 
+.caracteristics {
+
+}
+
+.caracteristics > ul li {
+    
+}
