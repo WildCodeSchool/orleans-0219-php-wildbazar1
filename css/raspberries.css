@@ -176,6 +176,7 @@ body{
 }
 
 .modal h5, .modal h6{
+    margin-top: 1em;
     text-align: center;
     font-family: monospace;
     font-variant: small-caps;
@@ -189,13 +190,20 @@ body{
 }
 
 .modal p{
+    margin-top: 1em;
     font-family: sanssherif;
     overflow: auto;
 }
 
-.modal .button{
+.modal .btn{
     align-content: center;
-    background-color: rgba(226, 116, 112);
+    background-color: silver;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+.modal .btn:hover{
+    background-color: rgba(192, 192, 192, 0.5);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.7);
 }
 
 /* ////////////////////////// FOOTER ////////////////////////// */
