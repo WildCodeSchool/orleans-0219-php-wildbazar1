@@ -44,7 +44,7 @@ nav img{
     background-color: rgba(192, 192, 192, 0.3);
     text-shadow: 2px 2px 4px #000000;
     border-radius: 15px;
-    padding: 5px 15px 5px 15px;
+    /* padding: 5px 15px 5px 15px; */
 }
 
 .jumbotron{
@@ -85,7 +85,7 @@ nav img{
 
 .nav-link{
     color: white;
-    padding: 5px 15px 5px 15px; 
+    /* padding: 5px 25px 5px 25px;  */
 }
 
 .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
@@ -93,7 +93,7 @@ nav img{
     background-color: rgba(192, 192, 192, 0.3);
     text-shadow: 2px 2px 4px #000000;
     border-radius: 15px;
-    padding: 5px 15px 5px 15px; 
+    /* padding: 5px 15px 5px 15px;  */
 }
 
 @media screen and (max-width: 767px){
