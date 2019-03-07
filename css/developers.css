@@ -1,112 +1,230 @@
-#categorieDev{
-	
+/********************General**********************/
+
+body{
+    background-image: url("../images/developers/background.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
-#headerDev{
-	
+/* ////////////////////////// HEADER ////////////////////////// */
+
+.navbar{
+    background-color: rgb(226, 116, 112);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4); /* Rajoute une ombre à la nav */
+    font-variant: small-caps;
+    font-family: monospace;
+}
+nav img{
+height: 25px;
+width: 25px;
 }
 
-h1{
-	
+.navbar .navbar-brand{
+    font-size: 25px;
+    color: whitesmoke;
 }
 
-#headerDev p{
-	
+.navbar-light .navbar-nav .nav-link {
+    color: whitesmoke;
+    font-size: 20px;
 }
 
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: whitesmoke;
+    background-color: rgba(192, 192, 192, 0.3);
+    text-shadow: 2px 2px 4px #000000;
+    border-radius: 15px;
+    padding: 5px 15px 5px 15px;
+}
+
+.jumbotron h1, .jumbotron h3{
+    font-variant: small-caps; /* Met le text en petite majuscule */
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.jumbotron h1{
+    font-size: 5em;
+    color: black;
+}
+.jumbotron h3{
+    font-size: 2.5em;
+    color: rgb(226, 116, 112);
+}
+
+.jumbotron{
+    background-image: url("../images/raspberries/fond.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+    /* opacity: 0.8; */
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
+    background-color: rgba(216, 213, 213, 0.6);
+    height: 30em;
+    width: 100%;
+}
+
+.jumbotron .container{
+    padding-top: 7em;
+}
+
+.dropdown-item{
+    background-color: transparent;
+}
+
+.nav-link{
+    color: white;
+    padding: 5px 15px 5px 15px; 
+}
+
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+    color: whitesmoke;
+    background-color: rgba(192, 192, 192, 0.3);
+    text-shadow: 2px 2px 4px #000000;
+    border-radius: 15px;
+    padding: 5px 15px 5px 15px; 
+}
+
+@media screen and (max-width: 375px){
+    .jumbotron h3{
+        display: none;
+    }
+    .jumbotron h1{
+        font-size: 3em; 
+    }
+    .jumbotron{
+        height: 20em;
+    }
+    .jumbotron .container{
+        padding-top: 3em;
+    }
+}
+
+/* ////////////////////////// HEADER ////////////////////////// */
+
+/******************Cards**************************/
+
+.card-columns .card{
+    width: 20em;
+    height: 22em;
+    margin: 3em 1em 3em 1em;
+    background-color: rgba(211, 208, 208, 0.6);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+.card:hover{
+    background-color: rgba(226, 116, 112, 0.8);
+}
+
+.card-img-top{
+    width: 90%;
+    height: 15em;
+    margin: 1em 1em 1em 1em;
+    border-radius: 5px;
+   object-fit: cover;
+}
+
+.card h5{
+    text-align: center;
+    font-family: monospace;
+    font-variant: small-caps;
+}
 
 
 /*****************Footer******************/
-/***********important a supprimé la decalration de police lors du mege du style****/
 .monospace {
 font-family: "Courier New", Courier, monospace;
 }
 
 .footer{
-	background-color: rgb(226,116,112);
-	margin-bottom: 10px;
-	padding-bottom: 20px;
-	padding-top: 20px;
-	padding-left: 35px
+    background-color: rgb(226,116,112);
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 35px
 }
 
 
 .footer a{
-	font-family: monospace;	
-	color: white;
+    font-family: monospace; 
+    color: white;
 }
 
 .footer .nav-link{
-	padding-top: 0;
-	padding-right:2em;
+    padding-top: 0;
+    padding-right:2em;
 }
 
 .footer img{
-	max-height: 2.3em;
-	max-width: 2.3em;
-	margin-right: 15px;
+    max-height: 2.3em;
+    max-width: 2.3em;
+    margin-right: 15px;
 
 }
 
 .footer h2{
-	font-variant: small-caps;
-	font-size: 2em;
-	color: white;
-	font-weight: bold;
-	margin-top: 15px;
-	margin-bottom: -15px;
+    font-variant: small-caps;
+    font-size: 2em;
+    color: white;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: -15px;
 }
 
 .footer #address{
-	margin-left: 7em;
-	font-family: monospace;
-	color: white;
+    margin-left: 7em;
+    font-family: monospace;
+    color: white;
 
 }
 
 .collumn-right h3{
-	font-variant: small-caps;
-	color: white;
+    font-variant: small-caps;
+    color: white;
 }
 .collumn-right .form-group{
-	font-family: monospace;
-	color: white;
-	font-size: 1.5em;
+    font-family: monospace;
+    color: white;
+    font-size: 1.5em;
 }
 
 .collumn-right .col-form-label{
-	padding-top: 0em;
-	padding-right: 0em;
+    padding-top: 0em;
+    padding-right: 0em;
 }
 .collumn-right .btn{
-	background-color: rgb(76,74,74);
-	color: white;
+    background-color: rgb(76,74,74);
+    color: white;
 }
 
+
+.collumn-right .form-control{
+    font-size: 0.5rem;
+}
 
 /********Media queries Footer***********/
 @media (max-width: 768px){
-	.footer h2{
-		font-size: 1.5em;
-	}
+    .footer h2{
+        font-size: 1.5em;
+    }
 
-	.footer #address{
-		font-size: 0.8em;
-		margin-left: 7em;
-	}
+    .footer #address{
+        font-size: 0.8em;
+        margin-left: 7em;
+    }
 
-	.footer-link{
-		margin-left: 15%;
-		margin-right: 15%;
-	}
+    .footer-link{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
 
-	.collumn-right .form-group label{
-		font-size: 0.8em;
-		margin-right: 1.8em;
-	}
+    .collumn-right .form-group label{
+        font-size: 0.8em;
+        margin-right: 1.8em;
+    }
 
-	.collumn-right{
-		padding-right: 2em;
-		margin-top: 1em;
-	}
+    .collumn-right{
+        padding-right: 2em;
+        margin-top: 1em;
+    }
 }
