@@ -55,7 +55,7 @@
                             <a class="dropdown-item" href="windows.html">Windows</a>
                             <a class="dropdown-item" href="penguins.html">Penguins</a>
                             <a class="dropdown-item" href="raspberries.html">Raspberries</a>
-                            <a class="dropdown-item" href="developpers.html">Developpers</a>
+                            <a class="dropdown-item" href="developers.html">Developpers</a>
                         </div>
                     </li>
                 </ul>
@@ -70,146 +70,769 @@
         </div>
 
     </header>
+    
+    <!-- /////////////////////// CARDS //////////////////////////////// -->
     <main>
         <div class="rasberry justify-content-center m-5 d-flex flex-wrap card-columns">
             <div class="card">
-                <img src="./images/raspberries/rose.jpg" class="card-img-top" alt="rose">
-                <div class="card-body">
-                    <h5 class="card-title">Pink Raspberries</h5>
+                <div data-toggle="modal" data-target="#produit1">
+                    <img src="./images/raspberries/rose.jpg" class="card-img-top" alt="rose">
+                    <div class="card-body">
+                        <h4 class="card-title">Pink Raspberries</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade " id="produit1" tabindex="-1" role="dialog" aria-labelledby="produit1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <!-- product title -->
+                            <h4 class="h5" id="titreduproduit1">Pink Raspberries</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <!-- pics , prices , description & features -->
+                                <div class="row mx-3">
+                                    <div class="col-sm-6">
+                                        <!-- pictures -->
+                                        <img class="card-img-top img-fluid mt-3" src="./images/raspberries/rose.jpg" alt="image du produit1">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <!-- prices -->
+                                        <h5>40€</h5>
+                                        <!-- product description -->
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
+                                            obcaecati
+                                            ut error
+                                            dolor dolores eveniet, accusamus ea odit dicta dignissimos animi
+                                            labore
+                                            vitae.
+                                            Eveniet suscipit, quod dolorum culpa est quibusdam.</p>
+                                        <div>
+                                            <button type="button" class="btn btn-outline-dark btn-lg">Ajouter au Panier</button>
+                                        </div>
+                                    </div>
+                                    <!-- product features -->
+                                    <div>
+                                        <h6>Caracteristics :</h6>
+                                        <ul>
+                                            <li>Size: xx</li>
+                                            <li>Weight: xx</li>
+                                            <li>Color: xx</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="card">
-                <img src="./images/raspberries/tarte.jpg" class="card-img-top" alt="tarte">
-                <div class="card-body">
-                    <h5 class="card-title">Raspberries Pie</h5>
+                <div data-toggle="modal" data-target="#produit2">
+                    <img src="./images/raspberries/tarte.jpg" class="card-img-top" alt="tarte">
+                    <div class="card-body">
+                        <h4 class="card-title">Raspberries Pie</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade " id="produit2" tabindex="-1" role="dialog" aria-labelledby="produit1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <!-- product title -->
+                            <h4 class="h5" id="titreduproduit1">Raspberries Pie</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <!-- pics , prices , description & features -->
+                                <div class="row mx-3">
+                                    <div class="col-sm-6">
+                                        <!-- pictures -->
+                                        <img class="card-img-top img-fluid mt-3" src="./images/raspberries/tarte.jpg" alt="image du produit1">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <!-- prices -->
+                                        <h5>40€</h5>
+                                        <!-- product description -->
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
+                                            obcaecati
+                                            ut error
+                                            dolor dolores eveniet, accusamus ea odit dicta dignissimos animi
+                                            labore
+                                            vitae.
+                                            Eveniet suscipit, quod dolorum culpa est quibusdam.</p>
+                                        <div>
+                                            <button type="button" class="btn btn-outline-dark btn-lg">Ajouter au Panier</button>
+                                        </div>
+                                    </div>
+                                    <!-- product features -->
+                                    <div>
+                                        <h6>Caracteristics :</h6>
+                                        <ul>
+                                            <li>Size: xx</li>
+                                            <li>Weight: xx</li>
+                                            <li>Color: xx</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="card">
-                <img src="./images/raspberries/chocolat.jpg" class="card-img-top" alt="chocolat">
-                <div class="card-body">
-                    <h5 class="card-title">Chocolat Raspberries</h5>
+                <div data-toggle="modal" data-target="#produit3">
+                    <img src="./images/raspberries/chocolat.jpg" class="card-img-top" alt="chocolat">
+                    <div class="card-body">
+                        <h4 class="card-title">Chocolat Raspberries</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade " id="produit3" tabindex="-1" role="dialog" aria-labelledby="produit1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <!-- product title -->
+                            <h4 class="h5" id="titreduproduit1">Chocolat Raspberries</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <!-- pics , prices , description & features -->
+                                <div class="row mx-3">
+                                    <div class="col-sm-6">
+                                        <!-- pictures -->
+                                        <img class="card-img-top img-fluid mt-3" src="./images/raspberries/chocolat.jpg" alt="image du produit1">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <!-- prices -->
+                                        <h5>40€</h5>
+                                        <!-- product description -->
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
+                                            obcaecati
+                                            ut error
+                                            dolor dolores eveniet, accusamus ea odit dicta dignissimos animi
+                                            labore
+                                            vitae.
+                                            Eveniet suscipit, quod dolorum culpa est quibusdam.</p>
+                                        <div>
+                                            <button type="button" class="btn btn-outline-dark btn-lg">Ajouter au Panier</button>
+                                        </div>
+                                    </div>
+                                    <!-- product features -->
+                                    <div>
+                                        <h6>Caracteristics :</h6>
+                                        <ul>
+                                            <li>Size: xx</li>
+                                            <li>Weight: xx</li>
+                                            <li>Color: xx</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="card">
-                <img src="./images/raspberries/black.jpg" class="card-img-top" alt="black">
-                <div class="card-body">
-                    <h5 class="card-title">Black Raspberries</h5>
+                <div data-toggle="modal" data-target="#produit4">
+                    <img src="./images/raspberries/black.jpg" class="card-img-top" alt="black">
+                    <div class="card-body">
+                        <h4 class="card-title">Black Raspberries</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade " id="produit4" tabindex="-1" role="dialog" aria-labelledby="produit1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <!-- product title -->
+                            <h4 class="h5" id="titreduproduit1">Black Raspberries</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <!-- pics , prices , description & features -->
+                                <div class="row mx-3">
+                                    <div class="col-sm-6">
+                                        <!-- pictures -->
+                                        <img class="card-img-top img-fluid mt-3" src="./images/raspberries/black.jpg" alt="image du produit1">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <!-- prices -->
+                                        <h5>40€</h5>
+                                        <!-- product description -->
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
+                                            obcaecati
+                                            ut error
+                                            dolor dolores eveniet, accusamus ea odit dicta dignissimos animi
+                                            labore
+                                            vitae.
+                                            Eveniet suscipit, quod dolorum culpa est quibusdam.</p>
+                                        <div>
+                                            <button type="button" class="btn btn-outline-dark btn-lg">Ajouter au Panier</button>
+                                        </div>
+                                    </div>
+                                    <!-- product features -->
+                                    <div>
+                                        <h6>Caracteristics :</h6>
+                                        <ul>
+                                            <li>Size: xx</li>
+                                            <li>Weight: xx</li>
+                                            <li>Color: xx</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="card">
-                <img src="./images/raspberries/dark.png" class="card-img-top" alt="dark">
-                <div class="card-body">
-                    <h5 class="card-title">Dark Raspberries</h5>
+                <div data-toggle="modal" data-target="#produit5">
+                    <img src="./images/raspberries/dark.png" class="card-img-top" alt="dark">
+                    <div class="card-body">
+                        <h4 class="card-title">Dark Raspberries</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade " id="produit5" tabindex="-1" role="dialog" aria-labelledby="produit1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <!-- product title -->
+                            <h4 class="h5" id="titreduproduit1">Dark Raspberries</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <!-- pics , prices , description & features -->
+                                <div class="row mx-3">
+                                    <div class="col-sm-6">
+                                        <!-- pictures -->
+                                        <img class="card-img-top img-fluid mt-3" src="./images/raspberries/dark.png" alt="image du produit1">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <!-- prices -->
+                                        <h5>40€</h5>
+                                        <!-- product description -->
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
+                                            obcaecati
+                                            ut error
+                                            dolor dolores eveniet, accusamus ea odit dicta dignissimos animi
+                                            labore
+                                            vitae.
+                                            Eveniet suscipit, quod dolorum culpa est quibusdam.</p>
+                                        <div>
+                                            <button type="button" class="btn btn-outline-dark btn-lg">Ajouter au Panier</button>
+                                        </div>
+                                    </div>
+                                    <!-- product features -->
+                                    <div>
+                                        <h6>Caracteristics :</h6>
+                                        <ul>
+                                            <li>Size: xx</li>
+                                            <li>Weight: xx</li>
+                                            <li>Color: xx</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="card">
-                <img src="./images/raspberries/blue.jpg" class="card-img-top" alt="blue">
-                <div class="card-body">
-                    <h5 class="card-title">Blue Raspberries</h5>
+                <div data-toggle="modal" data-target="#produit6">
+                    <img src="./images/raspberries/blue.jpg" class="card-img-top" alt="blue">
+                    <div class="card-body">
+                        <h4 class="card-title">Blue Raspberries</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade " id="produit6" tabindex="-1" role="dialog" aria-labelledby="produit1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <!-- product title -->
+                            <h4 class="h5" id="titreduproduit1">Blue Raspberries</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <!-- pics , prices , description & features -->
+                                <div class="row mx-3">
+                                    <div class="col-sm-6">
+                                        <!-- pictures -->
+                                        <img class="card-img-top img-fluid mt-3" src="./images/raspberries/blue.jpg" alt="image du produit1">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <!-- prices -->
+                                        <h5>40€</h5>
+                                        <!-- product description -->
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
+                                            obcaecati
+                                            ut error
+                                            dolor dolores eveniet, accusamus ea odit dicta dignissimos animi
+                                            labore
+                                            vitae.
+                                            Eveniet suscipit, quod dolorum culpa est quibusdam.</p>
+                                        <div>
+                                            <button type="button" class="btn btn-outline-dark btn-lg">Ajouter au Panier</button>
+                                        </div>
+                                    </div>
+                                    <!-- product features -->
+                                    <div>
+                                        <h6>Caracteristics :</h6>
+                                        <ul>
+                                            <li>Size: xx</li>
+                                            <li>Weight: xx</li>
+                                            <li>Color: xx</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="card">
-                <img src="./images/raspberries/jaune.jpg" class="card-img-top" alt="jaune">
-                <div class="card-body">
-                    <h5 class="card-title">Yellow Raspberries</h5>
+                <div data-toggle="modal" data-target="#produit7">
+                    <img src="./images/raspberries/jaune.jpg" class="card-img-top" alt="jaune">
+                    <div class="card-body">
+                        <h4 class="card-title">Yellow Raspberries</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade " id="produit7" tabindex="-1" role="dialog" aria-labelledby="produit1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <!-- product title -->
+                            <h4 class="h5" id="titreduproduit1">Yellow Raspberries</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <!-- pics , prices , description & features -->
+                                <div class="row mx-3">
+                                    <div class="col-sm-6">
+                                        <!-- pictures -->
+                                        <img class="card-img-top img-fluid mt-3" src="./images/raspberries/jaune.jpg" alt="image du produit1">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <!-- prices -->
+                                        <h5>40€</h5>
+                                        <!-- product description -->
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
+                                            obcaecati
+                                            ut error
+                                            dolor dolores eveniet, accusamus ea odit dicta dignissimos animi
+                                            labore
+                                            vitae.
+                                            Eveniet suscipit, quod dolorum culpa est quibusdam.</p>
+                                        <div>
+                                            <button type="button" class="btn btn-outline-dark btn-lg">Ajouter au Panier</button>
+                                        </div>
+                                    </div>
+                                    <!-- product features -->
+                                    <div>
+                                        <h6>Caracteristics :</h6>
+                                        <ul>
+                                            <li>Size: xx</li>
+                                            <li>Weight: xx</li>
+                                            <li>Color: xx</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="card">
-                <img src="./images/raspberries/cupcake.jpg" class="card-img-top" alt="cupcake">
-                <div class="card-body">
-                    <h5 class="card-title">Raspberries Cupcakes</h5>
+                <div data-toggle="modal" data-target="#produit8">
+                    <img src="./images/raspberries/cupcake.jpg" class="card-img-top" alt="cupcake">
+                    <div class="card-body">
+                        <h4 class="card-title">Raspberries Cupcakes</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade " id="produit8" tabindex="-1" role="dialog" aria-labelledby="produit1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <!-- product title -->
+                            <h4 class="h5" id="titreduproduit1">Raspberries Cupcakes</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <!-- pics , prices , description & features -->
+                                <div class="row mx-3">
+                                    <div class="col-sm-6">
+                                        <!-- pictures -->
+                                        <img class="card-img-top img-fluid mt-3" src="./images/raspberries/cupcake.jpg" alt="image du produit1">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <!-- prices -->
+                                        <h5>40€</h5>
+                                        <!-- product description -->
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
+                                            obcaecati
+                                            ut error
+                                            dolor dolores eveniet, accusamus ea odit dicta dignissimos animi
+                                            labore
+                                            vitae.
+                                            Eveniet suscipit, quod dolorum culpa est quibusdam.</p>
+                                        <div>
+                                            <button type="button" class="btn btn-outline-dark btn-lg">Ajouter au Panier</button>
+                                        </div>
+                                    </div>
+                                    <!-- product features -->
+                                    <div>
+                                        <h6>Caracteristics :</h6>
+                                        <ul>
+                                            <li>Size: xx</li>
+                                            <li>Weight: xx</li>
+                                            <li>Color: xx</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="card">
-                <img src="./images/raspberries/tiramisu.jpg" class="card-img-top" alt="tiramisu">
-                <div class="card-body">
-                    <h5 class="card-title">Raspberries Tiramisu</h5>
+                <div data-toggle="modal" data-target="#produit9">
+                    <img src="./images/raspberries/tiramisu.jpg" class="card-img-top" alt="tiramisu">
+                    <div class="card-body">
+                        <h4 class="card-title">Raspberries Tiramisu</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade " id="produit9" tabindex="-1" role="dialog" aria-labelledby="produit1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <!-- product title -->
+                            <h4 class="h5" id="titreduproduit1">Raspberries Tiramisu</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <!-- pics , prices , description & features -->
+                                <div class="row mx-3">
+                                    <div class="col-sm-6">
+                                        <!-- pictures -->
+                                        <img class="card-img-top img-fluid mt-3" src="./images/raspberries/tiramisu.jpg" alt="image du produit1">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <!-- prices -->
+                                        <h5>40€</h5>
+                                        <!-- product description -->
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
+                                            obcaecati
+                                            ut error
+                                            dolor dolores eveniet, accusamus ea odit dicta dignissimos animi
+                                            labore
+                                            vitae.
+                                            Eveniet suscipit, quod dolorum culpa est quibusdam.</p>
+                                        <div>
+                                            <button type="button" class="btn btn-outline-dark btn-lg">Ajouter au Panier</button>
+                                        </div>
+                                    </div>
+                                    <!-- product features -->
+                                    <div>
+                                        <h6>Caracteristics :</h6>
+                                        <ul>
+                                            <li>Size: xx</li>
+                                            <li>Weight: xx</li>
+                                            <li>Color: xx</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="card">
-                <img src="./images/raspberries/rouge.jpg" class="card-img-top" alt="rouge">
-                <div class="card-body">
-                    <h5 class="card-title">Red Raspberries</h5>
+                <div data-toggle="modal" data-target="#produit10">
+                    <img src="./images/raspberries/rouge.jpg" class="card-img-top" alt="rouge">
+                    <div class="card-body">
+                        <h4 class="card-title">Red Raspberries</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade " id="produit10" tabindex="-1" role="dialog" aria-labelledby="produit1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <!-- product title -->
+                            <h4 class="h5" id="titreduproduit1">Red Raspberries</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <!-- pics , prices , description & features -->
+                                <div class="row mx-3">
+                                    <div class="col-sm-6">
+                                        <!-- pictures -->
+                                        <img class="card-img-top img-fluid mt-3" src="./images/raspberries/rouge.jpg" alt="image du produit1">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <!-- prices -->
+                                        <h5>40€</h5>
+                                        <!-- product description -->
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
+                                            obcaecati
+                                            ut error
+                                            dolor dolores eveniet, accusamus ea odit dicta dignissimos animi
+                                            labore
+                                            vitae.
+                                            Eveniet suscipit, quod dolorum culpa est quibusdam.</p>
+                                        <div>
+                                            <button type="button" class="btn btn-outline-dark btn-lg">Ajouter au Panier</button>
+                                        </div>
+                                    </div>
+                                    <!-- product features -->
+                                    <div>
+                                        <h6>Caracteristics :</h6>
+                                        <ul>
+                                            <li>Size: xx</li>
+                                            <li>Weight: xx</li>
+                                            <li>Color: xx</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="card">
-                <img src="./images/raspberries/donuts.jpg" class="card-img-top" alt="donuts">
-                <div class="card-body">
-                    <h5 class="card-title">Raspberries Donuts</h5>
+                <div data-toggle="modal" data-target="#produit11">
+                    <img src="./images/raspberries/donuts.jpg" class="card-img-top" alt="donuts">
+                    <div class="card-body">
+                        <h4 class="card-title">Raspberries Donuts</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade " id="produit11" tabindex="-1" role="dialog" aria-labelledby="produit1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <!-- product title -->
+                            <h4 class="h5" id="titreduproduit1">Raspberries Donuts</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <!-- pics , prices , description & features -->
+                                <div class="row mx-3">
+                                    <div class="col-sm-6">
+                                        <!-- pictures -->
+                                        <img class="card-img-top img-fluid mt-3" src="./images/raspberries/donuts.jpg" alt="image du produit1">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <!-- prices -->
+                                        <h5>40€</h5>
+                                        <!-- product description -->
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
+                                            obcaecati
+                                            ut error
+                                            dolor dolores eveniet, accusamus ea odit dicta dignissimos animi
+                                            labore
+                                            vitae.
+                                            Eveniet suscipit, quod dolorum culpa est quibusdam.</p>
+                                
+                                    </div>
+                                    <!-- product features -->
+                                    <div>
+                                        <h6>Caracteristics :</h6>
+                                        <ul>
+                                            <li>Size: xx</li>
+                                            <li>Weight: xx</li>
+                                            <li>Color: xx</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                            <button type="button" class="btn btn-outline-dark btn-lg">Ajouter au Panier</button>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="card">
-                <img src="./images/raspberries/device.jpg" class="card-img-top" alt="device">
-                <div class="card-body">
-                    <h5 class="card-title">Raspberries Boxes</h5>
-
+                <div data-toggle="modal" data-target="#produit12">
+                    <img src="./images/raspberries/device.jpg" class="card-img-top" alt="device">
+                    <div class="card-body">
+                        <h4 class="card-title">Raspberries Boxes</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade " id="produit12" tabindex="-1" role="dialog" aria-labelledby="produit1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <!-- product title -->
+                            <h4 class="h5" id="titreduproduit1">Raspberries Boxes</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <!-- pics , prices , description & features -->
+                                <div class="row mx-3">
+                                    <div class="col-sm-6">
+                                        <!-- pictures -->
+                                        <img class="card-img-top img-fluid mt-3" src="./images/raspberries/device.jpg" alt="image du produit1">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <!-- prices -->
+                                        <h5>40€</h5>
+                                        <!-- product description -->
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
+                                            obcaecati
+                                            ut error
+                                            dolor dolores eveniet, accusamus ea odit dicta dignissimos animi
+                                            labore
+                                            vitae.
+                                            Eveniet suscipit, quod dolorum culpa est quibusdam.</p>
+                                        <div>
+                                            <button type="button" class="btn btn-outline-dark btn-lg">Ajouter au Panier</button>
+                                        </div>
+                                    </div>
+                                    <!-- product features -->
+                                    <div>
+                                        <h6>Caracteristics :</h6>
+                                        <ul>
+                                            <li>Size: xx</li>
+                                            <li>Weight: xx</li>
+                                            <li>Color: xx</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        </main>
-        <!-- </div> -->
+    </main>
+    <!-- </div> -->
+    <!-- /////////////////////// FOOTER //////////////////////////////// -->
 
-        <footer class="footer container-fluid">
-            <div class="row  px-3 pt-3 justify-content-center">
-                <div class="col-12 col-lg-6 collumn-left">
-                    <div class="row footer-link">
-                        <nav class="flex-column">
-                            <a class="nav-link" href="#">Home</a>
-                            <a class="nav-link" href="index.html#aboutUs">About us</a>
-                            <a class="nav-link" href="index.html#topSelling">Top selling</a>
-                            <a class="nav-link" href="index.html#contactUs">Contact</a>
-                            <a class="nav-link" href="#">Legal mentions</a>
-                        </nav>
-                        <nav class="flex-column">
-                            <a class="nav-link" href="apple.html">Apple</a>
-                            <a class="nav-link" href="windows.html">Windows</a>
-                            <a class="nav-link" href="penguins.html">Penguin</a>
-                            <a class="nav-link" href="raspberries.html">Raspberry</a>
-                            <a class="nav-link" href="developpers.html">Dev</a>
-                        </nav>
-                    </div>
-                    <div class="row justify-content-center">
-                        <div class="col-12">
-                            <h2><img src="./images/logoblanc.png"><span class="align-baseline">Wild Bazar</span></h2>
-                            <div id="address">
-                                1,rue de la paix<br>
-                                75000 Paris<br>
-                                01-23-45-67-89
-                            </div>
-                        </div>
-                    </div>
+    <footer class="footer container-fluid">
+        <div class="row px-3 pt-3 justify-content-center">
+            <div class="col-12 col-lg-6 collumn-left">
+                <div class="row footer-link">
+                    <nav class="flex-column">
+                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="aboutUs">About us</a>
+                        <a class="nav-link" href="topSelling">Top
+                            selling</a>
+                        <a class="nav-link" href="contactUs">Contact</a>
+                        <a class="nav-link" href="#">Legal mentions</a>
+                    </nav>
+                    <nav class="flex-column">
+                        <a class="nav-link" href="#">Apple</a>
+                        <a class="nav-link" href="#">Windows</a>
+                        <a class="nav-link" href="#">Penguin</a>
+                        <a class="nav-link" href="#">Raspberry</a>
+                        <a class="nav-link" href="#">Dev</a>
+                    </nav>
                 </div>
-                <div class="col-12 col-lg-6 justify-content-center collumn-right">
-                    <h3 class="text-center" id="contactUs">Contact us</h3>
-                    <form>
-                        <div class="form-group row">
-                            <label for="inputEmail3" class="col-2 col-form-label">Email</label>
-                            <div class="col-8">
-                                <input type="email" class="form-control" id="inputEmail3">
-                            </div>
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <h2><img src="./images/logoblanc.png"><span class="align-baseline">Wild Bazar</span></h2>
+                        <div id="address">
+                            1,rue de la paix<br>
+                            75000 Paris<br>
+                            01-23-45-67-89
                         </div>
-                        <div class="form-group row">
-                            <label for="inputPassword3" class="col-2 col-form-label">Message</label>
-                            <div class="col-8">
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-12 text-center">
-                                <button type="submit" class="btn">Submit</button>
-                            </div>
-                        </div>
-                    </form>
+                    </div>
                 </div>
             </div>
-        </footer>
+            <div class="col-12 col-lg-6 justify-content-center
+                        collumn-right">
+                <h3 class="text-center" id="contactUs">Contact us</h3>
+                <form>
+                    <div class="form-group row">
+                        <label for="inputEmail3" class="col-2
+                                    col-form-label">Email</label>
+                        <div class="col-8">
+                            <input type="email" class="form-control" id="inputEmail3">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputPassword3" class="col-2
+                                    col-form-label">Message</label>
+                        <div class="col-8">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-12 text-center">
+                            <button type="submit" class="btn">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <span>
+                Made with <i class="fa fa-heart pulse"></i> by Vincent Mouline, Vanina Diot, Vincent Ostyn, Sylvain
+                Lamoureux & Maïwenn Gay</a>
+            </span>
+        </div>
+    </footer>
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 
 </body>
 
