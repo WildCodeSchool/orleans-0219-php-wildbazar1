@@ -64,7 +64,7 @@
                         <a class="dropdown-item" href="windows.html">Windows</a>
                         <a class="dropdown-item" href="penguins.html">Penguins</a>
                         <a class="dropdown-item" href="raspberries.html">Raspberries</a>
-                        <a class="dropdown-item" href="developpers.html">Developpers</a>
+                        <a class="dropdown-item" href="developers.html">Developpers</a>
                     </div>
                 </li>
             </ul>
@@ -73,67 +73,66 @@
 
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-            <h1 class="display-4">Wild Bazar</h1>
-            <h3 class="lead">On y trouve de tout et surtout du n'importe quoi!</h3>
+            <h1 class="display-4">A bite of Apple</h1>
+            <h3 class="lead">Quand on compile performance et élégance</h3>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-dark btn-block buttonJumb">+ Add New</button>
         </div>
     </div>
 
 </header>
 
-<section>
-    <div class="row text-center justify-content-center">
+<main>
 
+    <div class="justify-content-center m-5 d-flex flex-wrap card-columns">
 
-        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 pb-4">
-            <div class="btn btn-light" data-toggle="modal" data-target="#pommeVer">
-                <img class="card-img-top img-fluid" src="images/apple/pomme-_-ver.jpeg.bmp"
-                     alt="Pomme Ver">
+        <!-- cards 1 -->
+        <div class="card">
+            <div data-toggle="modal" data-target="#pommeVer">
+                <img class="card-img-top img-fluid mt-3" src="images/apple/pomme-_-ver.jpeg.bmp" alt="Pomme Ver">
                 <div class="card-body">
-
+                    <!-- product description-->
                     <h4 class="card-title text-center">Pomme Ver</h4>
                 </div>
             </div>
         </div>
-
-
-        <div class="modal fade" id="pommeVer" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        <!-- Modal -->
+        <div class="modal fade" id="pommeVer" tabindex="-1" role="dialog" aria-labelledby="produit1"
              aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-
-                        <h4 class="h5" id="pomme1"> Pomme Ver</h4>
+                        <!-- product title -->
+                        <h4 class="h5" id="Pomme_ver">Pomme Ver</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-
+                        <!-- pics , prices , description & features -->
                         <div class="row mx-3">
-                            <div class="col-xs-12 col-sm-6">
-
-                                <img class="card-img-top img-fluid" src="images/apple/pomme-_-ver.jpeg.bmp"
-                                     alt="Pomme Ver">
+                            <div class="col-sm-6">
+                                <!-- pictures -->
+                                <img class="card-img-top img-fluid mt-3" src="images/apple/pomme-_-ver.jpeg.bmp" alt="image du produit1">
                             </div>
-                            <div class="col-xs-12 col-sm-6">
-
-                                <h5>100€</h5>
-
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
-                                    obcaecati
-                                    ut error
-                                    dolor dolores eveniet, accusamus ea odit dicta dignissimos animi
-                                    labore
-                                    vitae.
-                                    Eveniet suscipit, quod dolorum culpa est quibusdam.</p>
+                            <div class="col-sm-6">
+                                <!-- prices -->
+                                <h5>450€</h5>
+                                <!-- product description -->
+                                <p>Pomme un peu vieillie, mais supporte toujours les dernières
+                                mises à jour.</p>
+                                <div>
+                                    <button type="button" class="btn btn-outline-dark btn-lg">Ajouter au Panier</button>
+                                </div>
                             </div>
-
+                            <!-- product features -->
                             <div>
-                                <h6>Caracteristics :</h6>
-                                <ul>
-                                    <li>Size: xx</li>
-                                    <li>Weight: xx</li>
-                                    <li>Color: xx</li>
+                                <h6>Caracterisques :</h6>
+                                <ul class="display">
+                                    <li>Pourrie</li>
+                                    <li>Contient des vers</li>
+                                    <li>20g</li>
                                 </ul>
                             </div>
                         </div>
@@ -142,58 +141,52 @@
             </div>
         </div>
 
-
-
-        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 pb-4">
-            <div class="btn btn-light" data-toggle="modal" data-target="#pommeNoire">
-                <img class="card-img-top img-fluid" src="images/apple/pomme-deco-en-resine-28cm-noir.jpg"
-                     alt="pommeNoire">
+        <!-- cards 2  -->
+        <div class="card">
+            <div data-toggle="modal" data-target="#pommeNoire">
+                <img class="card-img-top img-fluid mt-3" src="images/apple/pomme-deco-en-resine-28cm-noir.jpg" alt="Pomme Noire">
                 <div class="card-body">
-
-                    <h4 class="card-title text-center">Pomme Noire</h4>
+                    <!-- product description-->
+                    <h4 class="card-title text-center">Pomme Grise Sidéréle</h4>
                 </div>
             </div>
         </div>
-
-
+        <!-- Modal -->
         <div class="modal fade" id="pommeNoire" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
              aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-
-                        <h4 class="h5" id="pomme2">Pomme Noire</h4>
+                        <!-- product title-->
+                        <h4 class="h5" id="Pomme_noire">Pomme - Grise Sidérale</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-
+                        <!-- pics, prices, description & features -->
                         <div class="row mx-3">
-                            <div class="col-xs-12 col-sm-6">
-
-                                <img class="card-img-top img-fluid" src="images/apple/pomme-deco-en-resine-28cm-noir.jpg"
-                                     alt="Pomme Noire">
+                            <div class="col-sm-6">
+                                <!-- pictures-->
+                                <img class="card-img-top img-fluid mt-3" src="images/apple/pomme-deco-en-resine-28cm-noir.jpg" alt="Pomme Noire">
                             </div>
-                            <div class="col-xs-12 col-sm-6">
-
-                                <h5>100€</h5>
-
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
-                                    obcaecati
-                                    ut error
-                                    dolor dolores eveniet, accusamus ea odit dicta dignissimos animi
-                                    labore
-                                    vitae.
-                                    Eveniet suscipit, quod dolorum culpa est quibusdam.</p>
+                            <div class="col-sm-6">
+                                <!-- prices -->
+                                <h5>500€</h5>
+                                <!-- product description -->
+                                <p>Sûrement un de nos produits les plus vendus, son estéthique
+                                et son touché rare feront de vous des mangeurs de pomme comblés.</p>
+                                <div>
+                                    <button type="button" class="btn btn-outline-dark btn-lg">Ajouter au Panier</button>
+                                </div>
                             </div>
-
+                            <!-- product features -->
                             <div>
-                                <h6>Caracteristics :</h6>
-                                <ul>
-                                    <li>Size: xx</li>
-                                    <li>Weight: xx</li>
-                                    <li>Color: xx</li>
+                                <h6>Caracteristiques :</h6>
+                                <ul class="display">
+                                    <li>Élégante</li>
+                                    <li>Gris Sidérale</li>
+                                    <li>70g</li>
                                 </ul>
                             </div>
                         </div>
@@ -202,61 +195,52 @@
             </div>
         </div>
 
-
-
-        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 pb-4">
-            <div class="btn btn-light" data-toggle="modal" data-target="#pommeCroquee">
-                <img class="card-img-top img-fluid" src="images/apple/pomme.png"
-                     alt="pommeCroquee">
+        <!-- cards 3 -->
+        <div class="card">
+            <div data-toggle="modal" data-target="#pommeCroquee">
+                <img class="card-img-top img-fluid mt-3" src="images/apple/pomme.png" alt="Pomme Croquée">
                 <div class="card-body">
-
+                    <!-- product description-->
                     <h4 class="card-title text-center">Pomme Croquée</h4>
                 </div>
             </div>
         </div>
-
-
-
-
-
+        <!-- Modal -->
         <div class="modal fade" id="pommeCroquee" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
              aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-
-                        <h4 class="h5" id="pomme3">Pomme Croquée</h4>
+                        <!-- product title-->
+                        <h4 class="h5" id="Pomme_croquee">Pomme Croquée</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-
+                        <!-- pics, prices, description & features -->
                         <div class="row mx-3">
-                            <div class="col-xs-12 col-sm-6">
-
-                                <img class="card-img-top img-fluid" src="images/apple/pomme.png"
-                                     alt="image du produit1">
+                            <div class="col-sm-6">
+                                <!-- pictures-->
+                                <img class="card-img-top img-fluid mt-3" src="images/apple/pomme.png" alt="Pomme Croquee">
                             </div>
-                            <div class="col-xs-12 col-sm-6">
-
-                                <h5>100€</h5>
-
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
-                                    obcaecati
-                                    ut error
-                                    dolor dolores eveniet, accusamus ea odit dicta dignissimos animi
-                                    labore
-                                    vitae.
-                                    Eveniet suscipit, quod dolorum culpa est quibusdam.</p>
+                            <div class="col-sm-6">
+                                <!-- prices -->
+                                <h5>2000€</h5>
+                                <!-- product description -->
+                                <p>Son design est sorti en 1977, depuis il iconique, cette pomme rare ne
+                                se trouve que à San Francisco, mais ce sera la meilleure de votre vie.</p>
+                                <div>
+                                    <button type="button" class="btn btn-outline-dark btn-lg">Ajouter au Panier</button>
+                                </div>
                             </div>
-
+                            <!-- product features -->
                             <div>
-                                <h6>Caracteristics :</h6>
-                                <ul>
-                                    <li>Size: xx</li>
-                                    <li>Weight: xx</li>
-                                    <li>Color: xx</li>
+                                <h6>Caracteristiques :</h6>
+                                <ul class="display">
+                                    <li>Pomme Croquée</li>
+                                    <li>Signée par Steve Jobs</li>
+                                    <li>56g</li>
                                 </ul>
                             </div>
 
@@ -266,59 +250,52 @@
             </div>
         </div>
 
-
-
-
-
-        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 pb-4">
-            <div class="btn btn-light" data-toggle="modal" data-target="#pommeSmoothie">
-                <img class="card-img-top img-fluid" src="images/apple/smoothie-pomme.jpg"
-                     alt="image du produit3">
+        <!-- cards 4 -->
+        <div class="card">
+            <div data-toggle="modal" data-target="#pommeSmoothie">
+                <img class="card-img-top img-fluid mt-3" src="images/apple/smoothie-pomme.jpg" alt="Pomme Smoothie">
                 <div class="card-body">
-
+                    <!-- product description-->
                     <h4 class="card-title text-center">Pomme Smoothie</h4>
                 </div>
             </div>
         </div>
-
+        <!-- Modal -->
         <div class="modal fade" id="pommeSmoothie" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
              aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-
-                        <h4 class="h5" id="pomme4">Pomme Smoothie</h4>
+                        <!-- product title-->
+                        <h4 class="h5" id="Pomme_smoothie">Pomme Smoothie</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-
+                        <!-- pics, prices, description & features -->
                         <div class="row mx-3">
-                            <div class="col-xs-12 col-sm-6">
-
-                                <img class="card-img-top img-fluid" src="images/apple/smoothie-pomme.jpg"
-                                     alt="image du produit1">
+                            <div class="col-sm-6">
+                                <!-- pictures-->
+                                <img class="card-img-top img-fluid mt-3" src="images/apple/smoothie-pomme.jpg" alt="Pomme Smoothie">
                             </div>
-                            <div class="col-xs-12 col-sm-6">
-
-                                <h5>100€</h5>
-
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
-                                    obcaecati
-                                    ut error
-                                    dolor dolores eveniet, accusamus ea odit dicta dignissimos animi
-                                    labore
-                                    vitae.
-                                    Eveniet suscipit, quod dolorum culpa est quibusdam.</p>
+                            <div class="col-sm-6">
+                                <!-- prices -->
+                                <h5>30€</h5>
+                                <!-- product description -->
+                                <p>Ce délicieux goût frais et savoureux, sera ravir vos papiles.
+                                À déguster sans modération</p>
+                                <div>
+                                    <button type="button" class="btn btn-outline-dark btn-lg">Ajouter au Panier</button>
+                                </div>
                             </div>
-
+                            <!-- product features -->
                             <div>
-                                <h6>Caracteristics :</h6>
-                                <ul>
-                                    <li>Size: xx</li>
-                                    <li>Weight: xx</li>
-                                    <li>Color: xx</li>
+                                <h6>Caracteristiques :</h6>
+                                <ul class="display">
+                                    <li>Pomme Smoothie</li>
+                                    <li>Livrée avec paille</li>
+                                    <li>140g</li>
                                 </ul>
                             </div>
 
@@ -328,251 +305,215 @@
             </div>
         </div>
 
-
-
-
-
-
-        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 pb-4">
-            <div class="btn btn-light" data-toggle="modal" data-target="#pommeViolette">
-                <img class="card-img-top img-fluid" src="images/apple/Minaudiere-Pomme-Violet-11.jpg"
-                     alt="image du produit3">
+        <!-- cards 5 -->
+        <div class="card">
+            <div data-toggle="modal" data-target="#pommeViolette">
+                <img class="card-img-top img-fluid mt-3" src="images/apple/Minaudiere-Pomme-Violet-11.jpg" alt="Pomme Violette">
                 <div class="card-body">
-
+                    <!-- product description-->
                     <h4 class="card-title text-center">Pomme Violette</h4>
                 </div>
             </div>
         </div>
-
+        <!-- Modal -->
         <div class="modal fade" id="pommeViolette" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
              aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-
-                        <h4 class="h5" id="pomme5">Pomme Violette</h4>
+                        <!-- product title -->
+                        <h4 class="h5" id="pomme_Violette">Pomme Violette</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-
+                        <!-- pics , prices , description & features -->
                         <div class="row mx-3">
-                            <div class="col-xs-12 col-sm-6">
-                                <!-- image-->
-                                <img class="card-img-top img-fluid" src="images/apple/Minaudiere-Pomme-Violet-11.jpg"
-                                     alt="image du produit4">
+                            <div class="col-sm-6">
+                                <!-- pictures -->
+                                <img class="card-img-top img-fluid mt-3" src="images/apple/Minaudiere-Pomme-Violet-11.jpg" alt="image du produit1">
                             </div>
-                            <div class="col-xs-12 col-sm-6">
-                                <!-- prix -->
-                                <h5>100€</h5>
-                                <!-- description produit-->
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
-                                    obcaecati
-                                    ut error
-                                    dolor dolores eveniet, accusamus ea odit dicta dignissimos animi
-                                    labore
-                                    vitae.
-                                    Eveniet suscipit, quod dolorum culpa est quibusdam.</p>
+                            <div class="col-sm-6">
+                                <!-- prices -->
+                                <h5>200€</h5>
+                                <!-- product description -->
+                                <p>Son touché velour, et son élégance vous feront voyager,
+                                un design épuré entre sensualité et performance, découvrer cette
+                                magnifique pomme.</p>
+                                <div>
+                                    <button type="button" class="btn btn-outline-dark btn-lg">Ajouter au Panier</button>
+                                </div>
                             </div>
-
+                            <!-- product features -->
                             <div>
-                                <h6>Caracteristics :</h6>
-                                <ul>
-                                    <li>Size: xx</li>
-                                    <li>Weight: xx</li>
-                                    <li>Color: xx</li>
+                                <h6>Caracteristiques :</h6>
+                                <ul class="display">
+                                    <li>Pomme Velour</li>
+                                    <li>Performante</li>
+                                    <li>200g</li>
                                 </ul>
                             </div>
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-
-
-
-
-
-
-        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 pb-4">
-            <div class="btn btn-light" data-toggle="modal" data-target="#pommePourrie">
-                <img class="card-img-top img-fluid" src="images/apple/Pomme-au-four-à-la-crème-de-marrons.jpg"
-                     alt="image du produit3">
+        <!-- cards 6  -->
+        <div class="card">
+            <div data-toggle="modal" data-target="#pommePourrie">
+                <img class="card-img-top img-fluid mt-3" src="images/apple/Pomme-au-four-à-la-crème-de-marrons.jpg" alt="Pomme Pourrie">
                 <div class="card-body">
-
+                    <!-- product description-->
                     <h4 class="card-title text-center">Pomme Pourrie</h4>
                 </div>
             </div>
         </div>
-
+        <!-- Modal -->
         <div class="modal fade" id="pommePourrie" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
              aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-
-                        <h4 class="h5" id="pomme6">Pomme Pourrie</h4>
+                        <!-- product title-->
+                        <h4 class="h5" id="pomme_Pourrie">Pomme Pourrie</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-
+                        <!-- pics, prices, description & features -->
                         <div class="row mx-3">
-                            <div class="col-xs-12 col-sm-6">
-
-                                <img class="card-img-top img-fluid" src="images/apple/Pomme-au-four-à-la-crème-de-marrons.jpg"
-                                     alt="image du produit1">
+                            <div class="col-sm-6">
+                                <!-- pictures-->
+                                <img class="card-img-top img-fluid mt-3" src="images/apple/Pomme-au-four-à-la-crème-de-marrons.jpg" alt="Pomme Pourrie">
                             </div>
-                            <div class="col-xs-12 col-sm-6">
-
-                                <h5>100€</h5>
-
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
-                                    obcaecati
-                                    ut error
-                                    dolor dolores eveniet, accusamus ea odit dicta dignissimos animi
-                                    labore
-                                    vitae.
-                                    Eveniet suscipit, quod dolorum culpa est quibusdam.</p>
+                            <div class="col-sm-6">
+                                <!-- prices -->
+                                <h5>20000000€</h5>
+                                <!-- product description -->
+                                <p>Héritage de notre être cher, cette pomme à été retrouvé dans
+                                son frigo après ça mort, modèle unique.</p>
+                                <div>
+                                    <button type="button" class="btn btn-outline-dark btn-lg">Ajouter au Panier</button>
+                                </div>
                             </div>
-
+                            <!-- product features -->
                             <div>
-                                <h6>Caracteristics :</h6>
-                                <ul>
-                                    <li>Size: xx</li>
-                                    <li>Weight: xx</li>
-                                    <li>Color: xx</li>
+                                <h6>Caracteristiques :</h6>
+                                <ul class="display">
+                                    <li>Pourrie</li>
+                                    <li>Trouvée dans le frigo du King</li>
+                                    <li>4g</li>
                                 </ul>
                             </div>
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-
-
-
-
-
-
-        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 pb-4">
-            <div class="btn btn-light" data-toggle="modal" data-target="#pommeJaune">
-                <img class="card-img-top img-fluid" src="images/apple/pomme_golden.jpg" alt="Pomme Jaune">
+        <!-- cards 7 -->
+        <div class="card">
+            <div data-toggle="modal" data-target="#pommeJaune">
+                <img class="card-img-top img-fluid mt-3" src="images/apple/pomme_golden.jpg" alt="Pomme Jaune">
                 <div class="card-body">
+                    <!-- product description-->
                     <h4 class="card-title text-center">Pomme Jaune</h4>
                 </div>
             </div>
         </div>
-
+        <!-- Modal -->
         <div class="modal fade" id="pommeJaune" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
              aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-
-                        <h4 class="h5" id="pomme7">Pomme Jaune</h4>
+                        <!-- product title-->
+                        <h4 class="h5" id="pomme_Jaune">Pomme Jaune</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-
+                        <!-- pics, prices, description & features -->
                         <div class="row mx-3">
-                            <div class="col-xs-12 col-sm-6">
-
-                                <img class="card-img-top img-fluid" src="images/apple/pomme_golden.jpg"
-                                     alt="image du produit4">
+                            <div class="col-sm-6">
+                                <!-- pictures-->
+                                <img class="card-img-top img-fluid mt-3" src="images/apple/pomme_golden.jpg" alt="Pomme Jaune">
                             </div>
-                            <div class="col-xs-12 col-sm-6">
-
-                                <h5>1000000€</h5>
-
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
-                                    obcaecati
-                                    ut error
-                                    dolor dolores eveniet, accusamus ea odit dicta dignissimos animi
-                                    labore
-                                    vitae.
-                                    Eveniet suscipit, quod dolorum culpa est quibusdam.</p>
+                            <div class="col-sm-6">
+                                <!-- prices -->
+                                <h5>450€</h5>
+                                <!-- product description -->
+                                <p>Pomme de 2014, son design et sa plastique vous feront
+                                adorés les couleurs vives.</p>
+                                <div>
+                                    <button type="button" class="btn btn-outline-dark btn-lg">Ajouter au Panier</button>
+                                </div>
                             </div>
-
+                            <!-- product features -->
                             <div>
                                 <h6>Caracteristiques :</h6>
-                                <ul>
-                                    <li>Size: xx</li>
-                                    <li>Weight: xx</li>
-                                    <li>Color: xx</li>
+                                <ul class="display">
+                                    <li>Plastique</li>
+                                    <li>Jaune Vif</li>
+                                    <li>300g</li>
                                 </ul>
                             </div>
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-
-
-
-
-
-
-
-        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 pb-4">
-            <div class="btn btn-light" data-toggle="modal" data-target="#pommeOr">
-                <img class="card-img-top img-fluid" src="images/apple/pomme-or.jpg"
-                     alt="Pomme Or">
+        <!-- cards 8 -->
+        <div class="card">
+            <div data-toggle="modal" data-target="#pommeOr">
+                <img class="card-img-top img-fluid mt-3" src="images/apple/pomme-or.jpg" alt="Pomme Or">
                 <div class="card-body">
-
+                    <!-- product description-->
                     <h4 class="card-title text-center">Pomme Or</h4>
                 </div>
             </div>
         </div>
-
+        <!-- Modal -->
         <div class="modal fade" id="pommeOr" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
              aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-
-                        <h4 class="h5" id="pomme8">Pomme Or</h4>
+                        <!-- product title-->
+                        <h4 class="h5" id="pomme_or">Pomme Or</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-
+                        <!-- pics, prices, description & features -->
                         <div class="row mx-3">
-                            <div class="col-xs-12 col-sm-6">
-
-                                <img class="card-img-top img-fluid" src="images/apple/pomme-or.jpg"
-                                     alt="image du produit1">
+                            <div class="col-sm-6">
+                                <!-- pictures-->
+                                <img class="card-img-top img-fluid mt-3" src="images/apple/pomme-or.jpg" alt="Pomme Or">
                             </div>
-                            <div class="col-xs-12 col-sm-6">
-
-                                <h5>10000000€</h5>
-
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
-                                    obcaecati
-                                    ut error
-                                    dolor dolores eveniet, accusamus ea odit dicta dignissimos animi
-                                    labore
-                                    vitae.
-                                    Eveniet suscipit, quod dolorum culpa est quibusdam.</p>
+                            <div class="col-sm-6">
+                                <!-- prices -->
+                                <h5>3000€</h5>
+                                <!-- product description -->
+                                <p>Sa couleur or fera chaviré vos coeurs , cette élégance signé "Pomme"
+                                à été intégrée à merveille dans ce modèle.</p>
+                                <div>
+                                    <button type="button" class="btn btn-outline-dark btn-lg">Ajouter au Panier</button>
+                                </div>
                             </div>
-
+                            <!-- product features -->
                             <div>
                                 <h6>Caracteristiques :</h6>
-                                <ul>
-                                    <li>Size: xx</li>
-                                    <li>Weight: xx</li>
-                                    <li>Color: xx</li>
+                                <ul class="display">
+                                    <li>Or</li>
+                                    <li>Paillettes</li>
+                                    <li>135g</li>
                                 </ul>
                             </div>
 
@@ -582,63 +523,53 @@
             </div>
         </div>
 
-
-
-
-
-
-
-
-
-
-        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 pb-4">
-            <div class="btn btn-light" data-toggle="modal" data-target="#pommeRouge">
-                <img class="card-img-top img-fluid" src="images/apple/shutterstock_102978833.jpg"
-                     alt="Pomme Rouge">
+        <!-- cards 9 -->
+        <div class="card">
+            <div data-toggle="modal" data-target="#pommeRouge">
+                <img class="card-img-top img-fluid mt-3" src="images/apple/shutterstock_102978833.jpg" alt="Pomme Rouge">
                 <div class="card-body">
-
+                    <!-- product description-->
                     <h4 class="card-title text-center">Pomme Rouge</h4>
                 </div>
             </div>
         </div>
+        <!-- Modal -->
         <div class="modal fade" id="pommeRouge" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
              aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-
-                        <h4 class="h5" id="pomme9">Pomme Rouge</h4>
+                        <!-- product title-->
+                        <h4 class="h5" id="Pomme_rouge">Pomme Rouge</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-
+                        <!-- pics, prices, description & features -->
                         <div class="row mx-3">
-                            <div class="col-xs-12 col-sm-6">
-
-                                <img class="card-img-top img-fluid" src="images/apple/shutterstock_102978833.jpg"
-                                     alt="image du produit4">
+                            <div class="col-sm-6">
+                                <!-- pictures-->
+                                <img class="card-img-top img-fluid mt-3" src="images/apple/shutterstock_102978833.jpg" alt="Pomme Rouge">
                             </div>
-                            <div class="col-xs-12 col-sm-6">
-
-                                <h5>10000€</h5>
-
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
-                                    obcaecati
-                                    ut error
-                                    dolor dolores eveniet, accusamus ea odit dicta dignissimos animi
-                                    labore
-                                    vitae.
-                                    Eveniet suscipit, quod dolorum culpa est quibusdam.</p>
+                            <div class="col-sm-6">
+                                <!-- prices -->
+                                <h5>525€</h5>
+                                <!-- product description -->
+                                <p>Cette pomme est une bonne action , le constructeur ne gardera que 1€ sur la vente
+                                le reste sera reversé a un association contre le sida</p>
+                                <div>
+                                    <button type="button" class="btn btn-outline-dark btn-lg">Ajouter au Panier</button>
+                                </div>
                             </div>
 
+                            <!-- product features -->
                             <div>
                                 <h6>Caracteristiques :</h6>
-                                <ul>
-                                    <li>Size: xx</li>
-                                    <li>Weight: xx</li>
-                                    <li>Color: xx</li>
+                                <ul class="display">
+                                    <li>Bonne action</li>
+                                    <li>Rouge</li>
+                                    <li>400g</li>
                                 </ul>
                             </div>
 
@@ -647,65 +578,52 @@
                 </div>
             </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 pb-4">
-            <div class="btn btn-light" data-toggle="modal" data-target="#pommeBleue">
-                <img class="card-img-top img-fluid" src="images/apple/pomme5.jpg"
-                     alt="Pomme Bleue">
+        <!-- cards 10 -->
+        <div class="card">
+            <div data-toggle="modal" data-target="#pommeBleue">
+                <img class="card-img-top img-fluid mt-3" src="images/apple/pomme5.jpg" alt="Pomme Bleue">
                 <div class="card-body">
-
+                    <!-- product description-->
                     <h4 class="card-title text-center">Pomme Bleue</h4>
                 </div>
             </div>
         </div>
-
+        <!-- Modal -->
         <div class="modal fade" id="pommeBleue" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
              aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-
-                        <h4 class="h5" id="pomme10">Pomme Bleue</h4>
+                        <!-- product title-->
+                        <h4 class="h5" id="pomme_Bleue">Pomme Bleue</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-
+                        <!-- pics, prices, description & features -->
                         <div class="row mx-3">
-                            <div class="col-xs-12 col-sm-6">
-
-                                <img class="card-img-top img-fluid" src="images/apple/pomme5.jpg"
-                                     alt="image du produit1">
+                            <div class="col-sm-6">
+                                <!-- pictures-->
+                                <img class="card-img-top img-fluid mt-3" src="images/apple/pomme5.jpg" alt="Pomme Bleue ">
                             </div>
-                            <div class="col-xs-12 col-sm-6">
-
-                                <h5>100000€</h5>
-
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
-                                    obcaecati
-                                    ut error
-                                    dolor dolores eveniet, accusamus ea odit dicta dignissimos animi
-                                    labore
-                                    vitae.
-                                    Eveniet suscipit, quod dolorum culpa est quibusdam.</p>
+                            <div class="col-sm-6">
+                                <!-- prices -->
+                                <h5>2550€</h5>
+                                <!-- product description -->
+                                <p>Modèle rare, d'un bleu envoutant, intégrant toutes les dernières technologies
+                                performante , épurée et desing.</p>
+                                <div>
+                                    <button type="button" class="btn btn-outline-dark btn-lg">Ajouter au Panier</button>
+                                </div>
                             </div>
-
+                            <!-- product features -->
                             <div>
                                 <h6>Caracteristiques :</h6>
-                                <ul>
-                                    <li>Size: xx</li>
-                                    <li>Weight: xx</li>
-                                    <li>Color: xx</li>
+                                <ul class="display">
+                                    <li>Bleue</li>
+                                    <li>Performance</li>
+                                    <li>560g</li>
                                 </ul>
                             </div>
 
@@ -715,131 +633,106 @@
             </div>
         </div>
 
-
-
-
-
-
-
-
-        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 pb-4">
-            <div class="btn btn-light" data-toggle="modal" data-target="#pommeVerte">
-                <img class="card-img-top img-fluid" src="images/apple/fotolia_55372155_subscription_xxl-copy.jpg"
-                     alt="image du produit3">
+        <!-- cards 11 -->
+        <div class="card">
+            <div data-toggle="modal" data-target="#pommeVerte">
+                <img class="card-img-top img-fluid mt-3" src="images/apple/fotolia_55372155_subscription_xxl-copy.jpg" alt="pomme verte">
                 <div class="card-body">
-
+                    <!-- product description-->
                     <h4 class="card-title text-center">Pomme Verte</h4>
                 </div>
             </div>
         </div>
+        <!-- Modal -->
         <div class="modal fade" id="pommeVerte" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
              aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-
-                        <h4 class="h5" id="pomme11">Pomme Verte</h4>
+                        <!-- product title-->
+                        <h4 class="h5" id="pomme_verte">Pomme Verte</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-
+                        <!-- pics, prices, description & features -->
                         <div class="row mx-3">
-                            <div class="col-xs-12 col-sm-6">
-
-                                <img class="card-img-top img-fluid" src="images/apple/fotolia_55372155_subscription_xxl-copy.jpg"
-                                     alt="image du produit4">
+                            <div class="col-sm-6">
+                                <!-- pictures-->
+                                <img class="card-img-top img-fluid mt-3" src="images/apple/fotolia_55372155_subscription_xxl-copy.jpg" alt="Pomme Verte">
                             </div>
-                            <div class="col-xs-12 col-sm-6">
-
-                                <h5>10000€</h5>
-
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
-                                    obcaecati
-                                    ut error
-                                    dolor dolores eveniet, accusamus ea odit dicta dignissimos animi
-                                    labore
-                                    vitae.
-                                    Eveniet suscipit, quod dolorum culpa est quibusdam.</p>
+                            <div class="col-sm-6">
+                                <!-- prices -->
+                                <h5>350€</h5>
+                                <!-- product description -->
+                                <p>Pomme de 2014, son design et sa plastique vous feront
+                                    adorés les couleurs vives.</p>
+                                <div>
+                                    <button type="button" class="btn btn-outline-dark btn-lg">Ajouter au Panier</button>
+                                </div>
                             </div>
-
+                            <!-- product features -->
                             <div>
                                 <h6>Caracteristiques :</h6>
-                                <ul>
-                                    <li>Size: xx</li>
-                                    <li>Weight: xx</li>
-                                    <li>Color: xx</li>
+                                <ul class="display">
+                                    <li>Plastique</li>
+                                    <li>Vert Vif</li>
+                                    <li>85g</li>
                                 </ul>
                             </div>
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-
-
-
-
-
-
-
-
-        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 pb-4">
-            <div class="btn btn-light" data-toggle="modal" data-target="#steveJobs">
-                <img class="card-img-top img-fluid" src="images/apple/SteveJobs.jpg"
-                     alt="image du produit3">
+        <!-- cards 12 -->
+        <div class="card">
+            <div data-toggle="modal" data-target="#pommeJobs">
+                <img class="card-img-top img-fluid mt-3" src="images/apple/SteveJobs.jpg" alt="Steve Jobs">
                 <div class="card-body">
-
-                    <h4 class="card-title text-center">Steve Jobs</h4>
+                    <!-- product description-->
+                    <h4 class="card-title text-center">Pomme Jobs</h4>
                 </div>
             </div>
         </div>
-
-        <div class="modal fade" id="steveJobs" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        <!-- Modal -->
+        <div class="modal fade" id="pommeJobs" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
              aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-
-                        <h4 class="h5" id="pomme12">Steve Jobs</h4>
+                        <!-- product title-->
+                        <h4 class="h5" id="Steve_jobs">Pomme Jobs</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-
+                        <!-- pics, prices, description & features -->
                         <div class="row mx-3">
-                            <div class="col-xs-12 col-sm-6">
-
-                                <img class="card-img-top img-fluid" src="images/apple/SteveJobs.jpg"
-                                     alt="image du produit1">
+                            <div class="col-sm-6">
+                                <!-- pictures-->
+                                <img class="card-img-top img-fluid mt-3" src="images/apple/SteveJobs.jpg" alt="Steve Jobs">
                             </div>
-                            <div class="col-xs-12 col-sm-6">
-
-                                <h5>100€</h5>
-
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
-                                    obcaecati
-                                    ut error
-                                    dolor dolores eveniet, accusamus ea odit dicta dignissimos animi
-                                    labore
-                                    vitae.
-                                    Eveniet suscipit, quod dolorum culpa est quibusdam.</p>
+                            <div class="col-sm-6">
+                                <!-- prices -->
+                                <h5>100000€</h5>
+                                <!-- product description -->
+                                <p>Pomme iconique à l'image du créateur, elle sera votre meilleur
+                                objet de collection.</p>
                                 <div>
-                                    <button>Add to Cart</button>
-                                    <button>Whislist</button>
+                                    <button type="button" class="btn btn-outline-dark btn-lg">Ajouter au Panier</button>
                                 </div>
                             </div>
-
-                            <div class="centrer">
+                            <!-- product features -->
+                            <div>
                                 <h6>Caracteristics :</h6>
-                                <ul>
-                                    <li>Size: xx</li>
-                                    <li>Weight: xx</li>
-                                    <li>Color: xx</li>
+                                <ul class="display">
+                                    <li>Collection</li>
+                                    <li>Titane</li>
+                                    <li>600g</li>
                                 </ul>
                             </div>
 
@@ -848,9 +741,67 @@
                 </div>
             </div>
         </div>
+    </div>
+</main>
 
 
 
+
+        <!-- zone footer -->
+        <footer class="footer container-fluid">
+            <div class="row  px-3 pt-3 justify-content-center">
+                <div class="col-12 col-lg-6 collumn-left">
+                    <div class="row footer-link">
+                        <nav class="flex-column">
+                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link" href="index.html#aboutUs">About us</a>
+                            <a class="nav-link" href="index.html#topSelling">Top selling</a>
+                            <a class="nav-link" href="index.html#contactUs">Contact</a>
+                            <a class="nav-link" href="#">Legal mentions</a>
+                        </nav>
+                        <nav class="flex-column">
+                            <a class="nav-link" href="./apples.html">Apple</a>
+                            <a class="nav-link" href="windows.html">Windows</a>
+                            <a class="nav-link" href="penguins.html">Penguin</a>
+                            <a class="nav-link" href="./raspberries.html">Raspberry</a>
+                            <a class="nav-link" href="developpers.html">Dev</a>
+                        </nav>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <h2><img src="./images/logoblanc.png"><span class="align-baseline">Wild Bazar</span></h2>
+                            <div id="address">
+                                1,rue de la paix<br>
+                                75000 Paris<br>
+                                01-23-45-67-89
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 justify-content-center collumn-right">
+                    <h3 class="text-center" id="contactUs">Contact us</h3>
+                    <form>
+                        <div class="form-group row">
+                            <label for="inputEmail3" class="col-2 col-form-label">Email</label>
+                            <div class="col-8">
+                                <input type="email" class="form-control" id="inputEmail3">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputPassword3" class="col-2 col-form-label">Message</label>
+                            <div class="col-8">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-12 text-center">
+                                <button type="submit" class="btn">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </footer>
 
 
 
