@@ -1,18 +1,73 @@
 /********************General***********************/
+
+body{
+    background-image: url("../images/developers/background.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/*************************Navbar*******************/
+.navbar{
+    background-color: rgb(226, 116, 112);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4); /* Rajoute une ombre à la nav */
+    font-variant: small-caps;
+    font-family: monospace;
+}
+
+.navbar .navbar-brand{
+    font-size: 25px;
+    color: whitesmoke;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: whitesmoke;
+    background-color: rgba(192, 192, 192, 0.3);
+    text-shadow: 2px 2px 4px #000000;
+    border-radius: 15px;
+    padding: 5px 15px 5px 15px;
+}
+
+/*******************Jumbotron**********************/
+
+.jumbotron h1, .jumbotron h3{
+    font-variant: small-caps; /* Met le text en petite majuscule */
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.jumbotron h1{
+    font-size: 5em;
+    color: black;
+}
+.jumbotron h3{
+    font-size: 2.5em;
+    color: rgb(226, 116, 112);
+}
+
+.jumbotron{
+    background-image: url("../images/developers/jumbotron.png");
+    background-size: 28%;
+    background-repeat: no-repeat;
+    background-position: right center;
+    /* opacity: 0.8; */
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
+    background-color: rgba(216, 213, 213, 0.65);
+    height: 30em;
+    width: 100%;
+}
+
+.jumbotron .container{
+    padding-top: 7em;
+}
+
+/******************Cards**************************/
 .categorieDev{
-	
-}
-
-.headerDev{
-	
-}
-
-
-.headerDev h1{
-	
-}
-
-.headerDev p{
 	
 }
 
@@ -24,6 +79,32 @@
  
 }
 
+
+.card-columns .card{
+    width: 20em;
+    height: 22em;
+    margin: 3em 1em 3em 1em;
+    background-color: rgba(211, 208, 208, 0.6);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+.card:hover{
+    background-color: rgba(226, 116, 112, 0.8);
+}
+
+.card-img-top{
+    width: 90%;
+    height: 15em;
+    margin: 1em 1em 1em 1em;
+    border-radius: 5px;
+   object-fit: cover;
+}
+
+.card h5{
+    text-align: center;
+    font-family: monospace;
+    font-variant: small-caps;
+}
 
 
 /*****************Footer******************/
@@ -91,6 +172,10 @@ font-family: "Courier New", Courier, monospace;
 	color: white;
 }
 
+
+.collumn-right .form-control{
+	font-size: 0.5rem;
+}
 
 /********Media queries Footer***********/
 @media (max-width: 768px){
