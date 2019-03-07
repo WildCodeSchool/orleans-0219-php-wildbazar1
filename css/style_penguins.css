@@ -1,12 +1,15 @@
+
+.monospace{
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
 body {
     background-image: url("../images/penguins/background.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
 }
-
-
-/* ////////////////////////// HEADER ////////////////////////// */
 
 .navbar{
     background-color: rgb(226, 116, 112);
@@ -161,16 +164,41 @@ nav img{
     width: 100%;
 }
 
-.caracteristics {
-
+.modal-header{
+    background-color: rgba(226, 116, 112, 0.8);
+    color: whitesmoke;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
+    text-shadow: 2px 2px 4px #000000;
+}
+.modal-body{
+    padding-top: 3em;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
+}
+.modal h4{
+    font-family: monospace;
+    font-variant: small-caps;
+    font-size: 3em;
+}
+.modal h5, .modal h6{
+    text-align: center;
+    font-family: monospace;
+    font-variant: small-caps;
+    font-size: 2em;
+}
+.modal li{
+    font-family: monospace;
+    font-variant: small-caps;
+    font-size: 1em;
+}
+.modal p{
+    font-family: sanssherif;
+    overflow: auto;
+}
+.modal .button{
+    align-content: center;
+    background-color: rgba(226, 116, 112);
 }
 
-.caracteristics > ul li {
-    
-}
-
-
-/* ////////////////////////// FOOTER ////////////////////////// */
 
 .footer{
     background-color: rgb(226,116,112);
@@ -232,7 +260,9 @@ nav img{
     color: white;
 }
 
-
+.collumn-right .form-control{
+    font-size: 0.5rem;
+}
 /********Media queries Footer***********/
 @media (max-width: 768px){
     .footer h2{
@@ -260,4 +290,3 @@ nav img{
     }
 }
 
-/* ////////////////////////// FOOTER ////////////////////////// */
