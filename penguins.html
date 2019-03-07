@@ -19,12 +19,13 @@
 </head>
 
 <body>
+    
     <header>
         
         <nav id="gradient" class="navbar fixed-top navbar-expand-lg navbar-light navbar-top">
 
             <!-- Show this only on mobile to medium screens -->
-            <a class="navbar-brand d-lg-none" href="index.html"><img src="./images/logoblanc.png" width="25px" height="25px"> Wild
+            <a class="navbar-brand d-lg-none" href="index.html"><img src="images/logoblanc.png" alt="logo"> Wild
                 Bazar</a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"
@@ -36,7 +37,7 @@
             <div class="collapse navbar-collapse justify-content-between" id="navbarToggle">
 
                 <!-- Show this only lg screens and up -->
-                <a class="navbar-brand d-none d-lg-block" href="index.html"><img src="./images/logoblanc.png" width="25px" height="25px">
+                <a class="navbar-brand d-none d-lg-block" href="#"><img src="images/logoblanc.png" alt="logo">
                     Wild Bazar</a>
 
                 <ul class="texto navbar-nav text-white px-3">
@@ -55,11 +56,11 @@
                             Catégories
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="apples.html">Apples</a>
+                            <a class="dropdown-item" href="apple.html">Apple</a>
                             <a class="dropdown-item" href="windows.html">Windows</a>
                             <a class="dropdown-item" href="penguins.html">Penguins</a>
                             <a class="dropdown-item" href="raspberries.html">Raspberries</a>
-                            <a class="dropdown-item" href="developpers.html">Developpers</a>
+                            <a class="dropdown-item" href="developers.html">Developpers</a>
                         </div>
                     </li>
                 </ul>
@@ -68,20 +69,18 @@
 
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
-                <h1 class="display-4">Wild Bazar</h1>
-                <h3 class="lead">On y trouve de tout et surtout du n'importe quoi!</h3>
+                <h1 class="display-4">Tux need money</h1>
+                <h3 class="lead">Pour frimer entre G33K !</h3>
             </div>
         </div>
 
     </header>
-
-    <div class="container-fluid">
         <main>
 
-            <div class="d-flex flex-wrap card_produit my-5">
+            <div class="justify-content-center m-5 d-flex flex-wrap card-columns">
 
                 <!-- cards 1 -->
-                <div class="my_card col xs-6 col-sm-6 col-md-4 col-lg-3 mb-4 ">
+            <div class="card">
                         <div data-toggle="modal" data-target="#produit1">
                                 <img class="card-img-top img-fluid mt-3" src="images/penguins/sweat1.jpg" alt="image du sweat 1">
                         <div class="card-body">
@@ -91,9 +90,9 @@
                     </div>
                 </div>
                 <!-- Modal -->
-                <div class="modal fade" id="produit1" tabindex="-1" role="dialog" aria-labelledby="produit1"
+                <div class="modal fade " id="produit1" tabindex="-1" role="dialog" aria-labelledby="produit1"
                     aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <!-- product title -->
@@ -103,6 +102,7 @@
                                 </button>
                             </div>
                             <div class="modal-body">
+                                <div class="container-fluid">
                                 <!-- pics , prices , description & features -->
                                 <div class="row mx-3">
                                     <div class="col-sm-6">
@@ -131,13 +131,14 @@
                                         </ul>
                                     </div>
                                 </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- cards 2  -->
-                <div class="my_card col xs-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="card">
                     <div data-toggle="modal" data-target="#produit2">
                         <img class="card-img-top img-fluid mt-3" src="images/penguins/sweat2.jpeg" alt="image du produit2">
                         <div class="card-body">
@@ -149,7 +150,7 @@
                 <!-- Modal -->
                 <div class="modal fade" id="produit2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
                     aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <!-- product title-->
@@ -159,6 +160,7 @@
                                 </button>
                             </div>
                             <div class="modal-body">
+                                <div class="container-fluid">
                                 <!-- pics, prices, description & features -->
                                 <div class="row mx-3">
                                     <div class="col-sm-6">
@@ -187,13 +189,14 @@
                                         </ul>
                                     </div>
                                 </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- cards 3 -->
-                <div class="my_card col-xs-6 col-sm-6 col-md-4 col-lg-3 mb-4 ">
+            <div class="card">
                     <div data-toggle="modal" data-target="#produit3">
                         <img class="card-img-top img-fluid mt-3" src="images/penguins/sweat3.jpg" alt="image du produit3">
                         <div class="card-body">
@@ -205,7 +208,7 @@
                 <!-- Modal -->
                 <div class="modal fade" id="produit3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
                     aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <!-- product title-->
@@ -215,6 +218,7 @@
                                 </button>
                             </div>
                             <div class="modal-body">
+                                <div class="container-fluid">
                                 <!-- pics, prices, description & features -->
                                 <div class="row mx-3">
                                     <div class="col-sm-6">
@@ -243,6 +247,7 @@
                                         </ul>
                                     </div>
 
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -250,7 +255,7 @@
                 </div>
 
                 <!-- cards 4 -->
-                <div class="my_card col-xs-6 col-sm-6 col-md-4 col-lg-3 mb-4 ">
+            <div class="card">
                     <div data-toggle="modal" data-target="#produit4">
                         <img class="card-img-top img-fluid mt-3" src="images/penguins/tshirt1.jpg" alt="image du produit3">
                         <div class="card-body">
@@ -262,7 +267,7 @@
                 <!-- Modal -->
                 <div class="modal fade" id="produit4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
                     aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <!-- product title-->
@@ -272,6 +277,7 @@
                                 </button>
                             </div>
                             <div class="modal-body">
+                                <div class="container-fluid">
                                 <!-- pics, prices, description & features -->
                                 <div class="row mx-3">
                                     <div class="col-sm-6">
@@ -300,6 +306,7 @@
                                         </ul>
                                     </div>
 
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -307,7 +314,7 @@
                 </div>
 
                 <!-- cards 5 -->
-                <div class="my_card col-xs-6 col-sm-6 col-md-4 col-lg-3 mb-4 ">
+            <div class="card">
                     <div data-toggle="modal" data-target="#produit5">
                         <img class="card-img-top img-fluid mt-3" src="images/penguins/mug1.jpg" alt="image du produit5">
                         <div class="card-body">
@@ -319,7 +326,7 @@
                 <!-- Modal -->
                 <div class="modal fade" id="produit5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
                     aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <!-- product title -->
@@ -329,6 +336,7 @@
                                 </button>
                             </div>
                             <div class="modal-body">
+                                <div class="container-fluid">
                                 <!-- pics , prices , description & features -->
                                 <div class="row mx-3">
                                     <div class="col-sm-6">
@@ -357,13 +365,14 @@
                                         </ul>
                                     </div>
                                 </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- cards 6  -->
-                <div class="my_card col-xs-6 col-sm-6 col-md-4 col-lg-3 mb-4 ">
+            <div class="card">
                     <div data-toggle="modal" data-target="#produit6">
                         <img class="card-img-top img-fluid mt-3" src="images/penguins/mug2.jpg" alt="image du produit6">
                         <div class="card-body">
@@ -375,7 +384,7 @@
                 <!-- Modal -->
                 <div class="modal fade" id="produit6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
                     aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <!-- product title-->
@@ -385,6 +394,7 @@
                                 </button>
                             </div>
                             <div class="modal-body">
+                                <div class="container-fluid">
                                 <!-- pics, prices, description & features -->
                                 <div class="row mx-3">
                                     <div class="col-sm-6">
@@ -413,13 +423,14 @@
                                         </ul>
                                     </div>
                                 </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- cards 7 -->
-                <div class="my_card col-xs-6 col-sm-6 col-md-4 col-lg-3 mb-4 ">
+            <div class="card">
                     <div data-toggle="modal" data-target="#produit7">
                         <img class="card-img-top img-fluid mt-3" src="images/penguins/mug3.jpg" alt="image du produit7">
                         <div class="card-body">
@@ -431,7 +442,7 @@
                 <!-- Modal -->
                 <div class="modal fade" id="produit7" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
                     aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <!-- product title-->
@@ -441,6 +452,7 @@
                                 </button>
                             </div>
                             <div class="modal-body">
+                                <div class="container-fluid">
                                 <!-- pics, prices, description & features -->
                                 <div class="row mx-3">
                                     <div class="col-sm-6">
@@ -469,13 +481,14 @@
                                         </ul>
                                     </div>
                                 </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- cards 8 -->
-                <div class="my_card col-xs-6 col-sm-6 col-md-4 col-lg-3 mb-4 ">
+            <div class="card">
                     <div data-toggle="modal" data-target="#produit8">
                         <img class="card-img-top img-fluid mt-3" src="images/penguins/plush1.jpg" alt="image du produit8">
                         <div class="card-body">
@@ -487,7 +500,7 @@
                 <!-- Modal -->
                 <div class="modal fade" id="produit8" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
                     aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <!-- product title-->
@@ -497,6 +510,7 @@
                                 </button>
                             </div>
                             <div class="modal-body">
+                                <div class="container-fluid">
                                 <!-- pics, prices, description & features -->
                                 <div class="row mx-3">
                                     <div class="col-sm-6">
@@ -525,6 +539,7 @@
                                         </ul>
                                     </div>
 
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -532,7 +547,7 @@
                 </div>
 
                 <!-- cards 9 -->
-                <div class="my_card col-xs-6 col-sm-6 col-md-4 col-lg-3 mb-4 ">
+            <div class="card">
                     <div data-toggle="modal" data-target="#produit9">
                         <img class="card-img-top img-fluid mt-3" src="images/penguins/cap1.jpg" alt="image du produit8">
                         <div class="card-body">
@@ -544,7 +559,7 @@
                 <!-- Modal -->
                 <div class="modal fade" id="produit9" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
                     aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <!-- product title-->
@@ -554,6 +569,7 @@
                                 </button>
                             </div>
                             <div class="modal-body">
+                                <div class="container-fluid">
                                 <!-- pics, prices, description & features -->
                                 <div class="row mx-3">
                                     <div class="col-sm-6">
@@ -582,13 +598,14 @@
                                         </ul>
                                     </div>
 
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- cards 10 -->
-                <div class="my_card col-xs-6 col-sm-6 col-md-4 col-lg-3 mb-4 ">
+            <div class="card">
                     <div data-toggle="modal" data-target="#produit10">
                         <img class="card-img-top img-fluid mt-3" src="images/penguins/cap2.jpg" alt="image du produit8">
                         <div class="card-body">
@@ -600,7 +617,7 @@
                 <!-- Modal -->
                 <div class="modal fade" id="produit10" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
                     aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <!-- product title-->
@@ -610,6 +627,7 @@
                                 </button>
                             </div>
                             <div class="modal-body">
+                                <div class="container-fluid">
                                 <!-- pics, prices, description & features -->
                                 <div class="row mx-3">
                                     <div class="col-sm-6">
@@ -638,6 +656,7 @@
                                         </ul>
                                     </div>
 
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -645,7 +664,7 @@
                 </div>
 
                 <!-- cards 11 -->
-                <div class="my_card col-xs-6 col-sm-6 col-md-4 col-lg-3 mb-4 ">
+            <div class="card">
                     <div data-toggle="modal" data-target="#produit11">
                         <img class="card-img-top img-fluid mt-3" src="images/penguins/stickers1.jpg" alt="image du produit11">
                         <div class="card-body">
@@ -657,7 +676,7 @@
                 <!-- Modal -->
                 <div class="modal fade" id="produit11" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
                     aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <!-- product title-->
@@ -667,6 +686,7 @@
                                 </button>
                             </div>
                             <div class="modal-body">
+                                <div class="container-fluid">
                                 <!-- pics, prices, description & features -->
                                 <div class="row mx-3">
                                     <div class="col-sm-6">
@@ -695,13 +715,14 @@
                                         </ul>
                                     </div>
                                 </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- cards 12 -->
-                <div class="my_card col-xs-6 col-sm-6 col-md-4 col-lg-3 mb-4 ">
+            <div class="card">
                     <div data-toggle="modal" data-target="#produit12">
                         <img class="card-img-top img-fluid mt-3" src="images/penguins/stickers2.jpg" alt="image du produit12">
                         <div class="card-body">
@@ -713,7 +734,7 @@
                 <!-- Modal -->
                 <div class="modal fade" id="produit12" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
                     aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <!-- product title-->
@@ -723,6 +744,7 @@
                                 </button>
                             </div>
                             <div class="modal-body">
+                                <div class="container-fluid">
                                 <!-- pics, prices, description & features -->
                                 <div class="row mx-3">
                                     <div class="col-sm-6">
@@ -751,6 +773,7 @@
                                         </ul>
                                     </div>
 
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -758,7 +781,6 @@
                 </div>
             </div>
         </main>
-    </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"

@@ -43,9 +43,13 @@ h1{
 }
 
 .jumbotron{
-    background-image: url("pomme/image/apples-1004886_1280.jpg");
+    background-image: url("../images/apple/apples-1004886_1280.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-position: right center;
+    /* opacity: 0.8; */
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
+    background-color: rgba(216, 213, 213, 0.6);
     height: 30em;
     width: 100%;
 }
@@ -101,13 +105,158 @@ h1{
 
 
 body {
-    background-image: url("../image/indexCategorie/pretty-desktop-background-7.jpg");
+    background-image: url("../images/apple/pretty-desktop-background-7 (1).jpg");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
     background-attachment: fixed;
+
 }
 
 .centrer {
     margin-top: 10px;
 }
+
+.card-columns .card{
+    width: 22em;
+    height: 22em;
+    margin: 3em 1em 3em 1em;
+    background-color: rgba(211, 208, 208, 0.6);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
+    transition-duration:250ms;
+
+}
+
+.card:hover{
+    background-color: rgba(226, 116, 112, 0.8);
+    transform: scale(1.2,1.2);
+    z-index:1;
+    box-shadow: none;
+    transition-duration:250ms;
+}
+
+.card-img-top{
+    width: 90%;
+    height: 15em;
+    margin: 1em 1em 1em 1em;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.card h5{
+    text-align: center;
+    font-family: monospace;
+    font-variant: small-caps;
+}
+
+
+@media screen and (max-width: 575px){
+    h6, .display {
+        display: none;
+    }
+}
+
+.buttonJumb {
+    margin-top: 180px;
+}
+
+@media screen and (max-width: 575px){
+    .buttonJumb {
+        margin-top: 80px;
+    }
+}
+
+
+
+
+/* ////////////////////////// FOOTER ////////////////////////// */
+.footer{
+    background-color: rgb(226,116,112);
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 35px
+}
+
+
+.footer a{
+    font-family: monospace;
+    color: white;
+}
+
+.footer .nav-link{
+    padding-top: 0;
+    padding-right:2em;
+}
+
+.footer img{
+    max-height: 2.3em;
+    max-width: 2.3em;
+    margin-right: 15px;
+
+}
+
+.footer h2{
+    font-variant: small-caps;
+    font-size: 2em;
+    color: white;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: -15px;
+}
+
+.footer #address{
+    margin-left: 7em;
+    font-family: monospace;
+    color: white;
+
+}
+
+.collumn-right h3{
+    font-variant: small-caps;
+    color: white;
+}
+.collumn-right .form-group{
+    font-family: monospace;
+    color: white;
+    font-size: 1.5em;
+}
+
+.collumn-right .col-form-label{
+    padding-top: 0em;
+    padding-right: 0em;
+}
+.collumn-right .btn{
+    background-color: rgb(76,74,74);
+    color: white;
+}
+
+
+/********Media queries Footer***********/
+@media (max-width: 768px){
+    .footer h2{
+        font-size: 1.5em;
+    }
+
+    .footer #address{
+        font-size: 0.8em;
+        margin-left: 7em;
+    }
+
+    .footer-link{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .collumn-right .form-group label{
+        font-size: 0.8em;
+        margin-right: 1.8em;
+    }
+
+    .collumn-right{
+        padding-right: 2em;
+        margin-top: 1em;
+    }
+}
+
+/* ////////////////////////// FOOTER ////////////////////////// */
+
 
