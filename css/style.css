@@ -92,7 +92,7 @@ nav img{
 
 .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
     color: whitesmoke;
-    background-color: rgba(192, 192, 192, 0.3);
+    /* background-color: rgba(192, 192, 192, 0.3); */
     text-shadow: 2px 2px 4px #000000;
     border-radius: 15px;
     /* padding: 5px 15px 5px 15px;  */
