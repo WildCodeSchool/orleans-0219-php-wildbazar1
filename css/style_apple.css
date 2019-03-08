@@ -24,9 +24,13 @@ h1{
 }
 
 .nav-link{
-
     color: white;
     font-family: monospace;
+}
+
+nav img{
+    width: 25px;
+    height: 25px;
 }
 
 .navbar .navbar-brand{
@@ -44,7 +48,7 @@ h1{
     background-color: rgba(192, 192, 192, 0.3);
     text-shadow: 2px 2px 4px #000000;
     border-radius: 15px;
-    padding: 5px 15px 5px 15px;
+    /* padding: 5px 15px 5px 15px; */
 }
 
 .jumbotron{
