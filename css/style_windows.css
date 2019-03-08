@@ -20,7 +20,24 @@ body{
     background-color: rgb(226, 116, 112);
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4); /* Rajoute une ombre à la nav */
     font-variant: small-caps;
+}
+
+h1{
+    font-variant: small-caps; /* Met le text en petite majuscule */
+}
+
+.dropdown-item{
+    background-color: transparent;
+}
+
+.nav-link{
+    color: white;
     font-family: monospace;
+}
+
+nav img{
+    width: 25px; 
+    height: 25px;
 }
 
 .navbar .navbar-brand{
@@ -38,37 +55,37 @@ body{
     background-color: rgba(192, 192, 192, 0.3);
     text-shadow: 2px 2px 4px #000000;
     border-radius: 15px;
-    padding: 5px 15px 5px 15px;
-}
-
-.jumbotron h1, .jumbotron h3{
-    font-variant: small-caps; /* Met le text en petite majuscule */
-    text-shadow: 2px 2px 4px #000000;
-}
-
-.jumbotron h1{
-    font-size: 5em;
-    color: black;
-}
-.jumbotron h3{
-    font-size: 2.5em;
-    color: rgb(226, 116, 112);
+    /* padding: 5px 15px 5px 15px; */
 }
 
 .jumbotron{
     background-image: url("../images/windows/imagefond2.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right center;
-    /* opacity: 0.8; */
+    background-repeat:   no-repeat;
+    background-position: center center;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
-    background-color: rgba(216, 213, 213, 0.6);
+    /* background-size: 100% 100%; */
+    background-size: cover;
     height: 30em;
     width: 100%;
 }
 
 .jumbotron .container{
-    padding-top: 7em;
+    padding-top: 12em;
+}
+
+.jumbotron h1, .jumbotron h3{
+    font-variant: small-caps; /* Met le text en petite majuscule */
+    text-shadow: 2px 20px 14px black;
+}
+
+.jumbotron h1{
+    font-size: 8em;
+    color: black;
+}
+.jumbotron h3{
+    font-size: 2.5em;
+    color:  rgb(226, 116, 112);
+    text-shadow: 3px 1px 1px black;
 }
 
 .dropdown-item{
@@ -77,7 +94,7 @@ body{
 
 .nav-link{
     color: white;
-    padding: 5px 15px 5px 15px; 
+    /* padding: 5px 25px 5px 25px;  */
 }
 
 .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
@@ -85,15 +102,13 @@ body{
     background-color: rgba(192, 192, 192, 0.3);
     text-shadow: 2px 2px 4px #000000;
     border-radius: 15px;
-    padding: 5px 15px 5px 15px; 
+    /* padding: 5px 15px 5px 15px;  */
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 1000px){
     .jumbotron h3{
         font-size: 1.5em;
         text-align: center;
-        border-radius: 15px;
-        background-color: rgba(192, 192, 192, 0.8);
     }
     .jumbotron h1{
         font-size: 3.5em;
@@ -104,12 +119,11 @@ body{
         height: 20em;
     }
     .jumbotron .container{
-        padding-top: 5em;
+        padding-top: 8em;
     }
 }
 
 /* ////////////////////////// HEADER ////////////////////////// */
-
 
 /* ////////////////////////// CATEGORIE ////////////////////////// */
 
