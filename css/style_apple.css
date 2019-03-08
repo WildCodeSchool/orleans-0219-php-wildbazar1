@@ -2,6 +2,11 @@
     font-family: "Courier New", Courier, monospace;
 }
 
+.sanssherif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
 /* ////////////////////////// HEADER ////////////////////////// */
 
 .navbar{
@@ -142,7 +147,7 @@ body {
     object-fit: cover;
 }
 
-.card h5{
+.card h4{
     text-align: center;
     font-family: monospace;
     font-variant: small-caps;
@@ -166,6 +171,54 @@ body {
 }
 
 
+.modal-header{
+    background-color: rgba(226, 116, 112, 0.8);
+    color: whitesmoke;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.modal-body{
+    padding-top: 3em;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+.modal h4{
+    font-family: monospace;
+    font-variant: small-caps;
+    font-size: 3em;
+}
+
+.modal h5, .modal h6{
+    margin-top: 1em;
+    text-align: center;
+    font-family: monospace;
+    font-variant: small-caps;
+    font-size: 2em;
+}
+
+.modal li{
+    font-family: monospace;
+    font-variant: small-caps;
+    font-size: 1em;
+}
+
+.modal p{
+    margin-top: 1em;
+    font-family: sanssherif;
+    overflow: auto;
+}
+
+.modal .btn{
+    align-content: center;
+    background-color: silver;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+.modal .btn:hover{
+    background-color: rgba(192, 192, 192, 0.5);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.7);
+}
 
 
 /* ////////////////////////// FOOTER ////////////////////////// */
