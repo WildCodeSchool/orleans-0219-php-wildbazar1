@@ -267,6 +267,45 @@ h2{
 }
 
 
+.modal-header{
+    background-color: rgba(226, 116, 112, 0.8);
+    color: whitesmoke;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
+    text-shadow: 2px 2px 4px #000000;
+}
+.modal-body{
+    padding-top: 3em;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
+}
+.modal h4{
+    font-family: monospace;
+    font-variant: small-caps;
+    font-size: 3em;
+}
+.modal h5, .modal h6{
+    text-align: center;
+    font-family: monospace;
+    font-variant: small-caps;
+    font-size: 2em;
+}
+.modal li{
+    font-family: monospace;
+    font-variant: small-caps;
+    font-size: 1em;
+}
+.modal p{
+    font-family: sanssherif;
+    overflow: auto;
+}
+.modal .btn{
+    align-content: center;
+    background-color: silver;
+    font-family: monospace;
+    font-variant: small-caps;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+
 /* ////////////////////////// TOP SELLS ////////////////////////// */
 
 /* ////////////////////////// FOOTER ////////////////////////// */

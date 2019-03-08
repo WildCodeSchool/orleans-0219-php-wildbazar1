@@ -1,7 +1,6 @@
 
 .monospace{
     font-family: 'Courier New', Courier, monospace;
-
 }
 
 body {
@@ -195,13 +194,12 @@ nav img{
     overflow: auto;
 }
 .modal .btn{
+    align-content: center;
     background-color: silver;
+    font-family: monospace;
+    font-variant: small-caps;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
 }
-
-.modal-content {
-    opacity
-}
-
 
 .footer{
     background-color: rgb(226,116,112);
@@ -263,9 +261,7 @@ nav img{
     color: white;
 }
 
-.collumn-right .form-control{
-    font-size: 0.5rem;
-}
+
 /********Media queries Footer***********/
 @media (max-width: 768px){
     .footer h2{
@@ -292,4 +288,3 @@ nav img{
         margin-top: 1em;
     }
 }
-
