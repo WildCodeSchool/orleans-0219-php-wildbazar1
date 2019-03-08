@@ -221,7 +221,6 @@ nav img{
     padding-left: 35px
 }
 
-
 .footer a{
     font-family: monospace; 
     color: white;
@@ -252,7 +251,6 @@ nav img{
     margin-left: 7em;
     font-family: monospace;
     color: white;
-
 }
 
 .collumn-right h3{
@@ -270,10 +268,20 @@ nav img{
     padding-right: 0em;
 }
 .collumn-right .btn{
-    background-color: rgb(76,74,74);
-    color: white;
+    align-content: center;
+    background-color: silver;
+    font-family: monospace;
+    font-variant: small-caps;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
+}
+.collumn-right .btn:hover{
+    background-color: rgb(211, 208, 208);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.7);
 }
 
+.collumn-right .form-control{
+    font-size: 0.5rem;
+}
 
 /********Media queries Footer***********/
 @media (max-width: 768px){
