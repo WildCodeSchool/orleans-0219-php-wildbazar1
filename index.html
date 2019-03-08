@@ -82,7 +82,7 @@
                     <i class="fas fa-caret-up"></i>
                     <h2>Categories</h2><i class="fas fa-caret-down"></i>
                 </div>
-                <div id="portfolio">
+                <div class="portfolio">
                     <div class="container-fluid">
                         <div class="row no-gutters">
 
@@ -128,7 +128,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="portfolio">
+                <div class="portfolio">
                     <div class="container-fluid">
                         <div class="row no-gutters">
                             <div class="col-lg-4 col-md-4 center">
@@ -207,226 +207,230 @@
         <br>
         <!-- Section Top Selling crée par vinny. Utilisation de cards bootstrap -->
 
-        <section id="topSelling" class="topselling">
-            <div class="px-5 py-5">
-                <div class="text-center mb-4">
-                    <i class="fas fa-caret-up"></i>
-                    <h2> Top Selling</h2><i class="fas fa-caret-down"></i>
-                    <br />
-                    <h3 class="py-3"> Find our best sells here </h3>
+            <section id="topSelling" class="topselling">
+                    <div class="justify-content-center m-5 d-flex flex-wrap card-columns">
+
+                <div class="px-5 py-5">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-caret-up"></i>
+                        <h2> Top Selling</h2><i class="fas fa-caret-down"></i>
+                        <br />
+                        <h3 class="py-3"> Find our best sells here </h3>
+                    </div>
+
+                    <!-- images Top Selling -->
+
+                    <div class="justify-content-center m-5 d-flex flex-wrap card-columns">
+
+                        <!-- cards 1 -->
+                        <div class="card">
+                            <div data-toggle="modal" data-target="#produit1">
+                                <img class="card-img-top img-fluid mt-3" src="images/apple/pomme-or.jpg" alt="Pomme Or">
+                                <div class="card-body">
+                                    <!-- product description-->
+                                    <h4 class="card-title text-center">Pomme Or</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade " id="produit1" tabindex="-1" role="dialog" aria-labelledby="produit1"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <!-- product title -->
+                                        <h4 id="titreduproduit1">Pomme Or</h4>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container-fluid">
+                                            <!-- pics , prices , description & features -->
+                                            <div class="row mx-3">
+                                                <div class="col-sm-6">
+                                                    <!-- pictures -->
+                                                    <img class="card-img-top img-fluid mt-3" src="images/apple/pomme-or.jpg"
+                                                        alt="Pomme Or">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <!-- prices -->
+                                                    <h5><i class="fab fa-bitcoin"></i>20000000</h5>
+                                                    <!-- product description -->
+                                                    <p>Sa couleur or fera chaviré vos coeurs , cette élégance signé
+                                                        "Pomme"
+                                                        à été intégrée à merveille dans ce modèle.</p>
+                                                </div>
+                                            </div>
+                                            <!-- product features -->
+                                            <div>
+                                                <div class="row mx-3">
+                                                    <div class="col-sm-6 text-center">
+
+                                                        <h6 class="text-center caracteristics"> Caracteristics :</h6>
+                                                        <ul class="text-left">
+                                                            <li>Gold</li>
+                                                            <li>Paillettes</li>
+                                                            <li>10lb</li>
+                                                        </ul>
+                                                    </div>
+
+                                                    <div class="col-sm-6 text-center align-self-center">
+
+                                                        <button type="button" class="btn btn-lg">Add to
+                                                            card</button>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- cards 2  -->
+                        <div class="card">
+                            <div data-toggle="modal" data-target="#produit5">
+                                <img class="card-img-top img-fluid mt-3" src="images/penguins/mug1.jpg" alt="image du produit5">
+                                <div class="card-body">
+                                    <!-- product description-->
+                                    <h4 class="card-title text-center">Mug "Fork You"</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="produit5" tabindex="-1" role="dialog" aria-labelledby="produit5"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <!-- product title -->
+                                        <h4 id="titreduproduit5">Mug "Fork You"</h4>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container-fluid">
+                                            <!-- pics , prices , description & features -->
+                                            <div class="row mx-3">
+                                                <div class="col-sm-6">
+                                                    <!-- pictures -->
+                                                    <img class="card-img-top img-fluid mt-3" src="images/penguins/mug1.jpg"
+                                                        alt="image du produit2">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <!-- prices -->
+                                                    <h5><i class="fab fa-bitcoin"></i>20</h5>
+                                                    <!-- product description -->
+                                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
+                                                        obcaecati
+                                                        ut error
+                                                        dolor dolores eveniet.</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- product features -->
+                                            <div>
+                                                <div class="row mx-3">
+                                                    <div class="col-sm-6 text-center">
+
+                                                        <h6 class="text-center caracteristics"> Caracteristics :</h6>
+                                                        <ul class="text-left">
+                                                            <li>Size: xx</li>
+                                                            <li>Weight: xx</li>
+                                                            <li>Color: xx</li>
+                                                        </ul>
+                                                    </div>
+
+
+                                                    <div class="col-sm-6 text-center align-self-center">
+
+                                                        <button type="button" class="btn btn-lg">Add to card</button>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- cards 3 -->
+                        <div class="card">
+                            <div data-toggle="modal" data-target="#produit3">
+                                <img class="card-img-top img-fluid mt-3" src="images/windows/7.png" alt="image du produit7">
+                                <div class="card-body">
+                                    <!-- product description-->
+                                    <h4 class="card-title text-center">curvy windows</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="produit3" tabindex="-1" role="dialog" aria-labelledby="produit3"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <!-- product title-->
+                                        <h4 id="titreduproduit3">curvy windows</h4>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container-fluid">
+                                            <!-- pics, prices, description & features -->
+                                            <div class="row mx-3">
+                                                <div class="col-sm-6">
+                                                    <!-- pictures-->
+                                                    <img class="card-img-top img-fluid mt-3" src="images/windows/7.png"
+                                                        alt="image du produit3">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <!-- prices -->
+                                                    <h5><i class="fab fa-bitcoin"></i>5000</h5>
+                                                    <!-- product description -->
+                                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
+                                                        obcaecati
+                                                        ut error
+                                                        dolor dolores eveniet.</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- product features -->
+                                            <div>
+                                                <div class="row mx-3">
+                                                    <div class="col-sm-6 text-center">
+
+                                                        <h6 class="text-center caracteristics"> Caracteristics :</h6>
+                                                        <ul class="text-left">
+                                                            <li>Size: xx</li>
+                                                            <li>Weight: xx</li>
+                                                            <li>Color: xx</li>
+                                                        </ul>
+                                                    </div>
+
+
+                                                    <div class="col-sm-6 text-center align-self-center">
+
+                                                        <button type="button" class="btn btn-lg">Add to
+                                                            card</button>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                <!-- images Top Selling -->
-
-                <div class="justify-content-center m-5 d-flex flex-wrap card-columns">
-
-                    <!-- cards 1 -->
-                    <div class="card">
-                        <div data-toggle="modal" data-target="#produit1">
-                            <img class="card-img-top img-fluid mt-3" src="images/apple/pomme-or.jpg" alt="Pomme Or">
-                            <div class="card-body">
-                                <!-- product description-->
-                                <h4 class="card-title text-center">Pomme Or</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Modal -->
-                    <div class="modal fade " id="produit1" tabindex="-1" role="dialog" aria-labelledby="produit1"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <!-- product title -->
-                                    <h4 id="titreduproduit1">Pomme Or</h4>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <div class="container-fluid">
-                                        <!-- pics , prices , description & features -->
-                                        <div class="row mx-3">
-                                            <div class="col-sm-6">
-                                                <!-- pictures -->
-                                                <img class="card-img-top img-fluid mt-3" src="images/apple/pomme-or.jpg"
-                                                    alt="Pomme Or">
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <!-- prices -->
-                                                <h5><i class="fab fa-bitcoin"></i>20000000</h5>
-                                                <!-- product description -->
-                                                <p>Sa couleur or fera chaviré vos coeurs , cette élégance signé "Pomme"
-                                                    à été intégrée à merveille dans ce modèle.</p>
-                                            </div>
-                                        </div>
-                                        <!-- product features -->
-                                        <div>
-                                            <div class="row mx-3">
-                                                <div class="col-sm-6 text-center">
-
-                                                    <h6 class="text-center caracteristics"> Caracteristics :</h6>
-                                                    <ul class="text-left">
-                                                        <li>Gold</li>
-                                                        <li>Paillettes</li>
-                                                        <li>10lb</li>
-                                                    </ul>
-                                                </div>
-
-                                                <div class="col-sm-6 text-center align-self-center">
-
-                                                    <button type="button" class="btn btn-lg">Add to
-                                                        card</button>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- cards 2  -->
-                    <div class="card">
-                        <div data-toggle="modal" data-target="#produit5">
-                            <img class="card-img-top img-fluid mt-3" src="images/penguins/mug1.jpg" alt="image du produit5">
-                            <div class="card-body">
-                                <!-- product description-->
-                                <h4 class="card-title text-center">Mug "Fork You"</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Modal -->
-                    <div class="modal fade" id="produit5" tabindex="-1" role="dialog" aria-labelledby="produit5"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <!-- product title -->
-                                    <h4 id="titreduproduit5">Mug "Fork You"</h4>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <div class="container-fluid">
-                                        <!-- pics , prices , description & features -->
-                                        <div class="row mx-3">
-                                            <div class="col-sm-6">
-                                                <!-- pictures -->
-                                                <img class="card-img-top img-fluid mt-3" src="images/penguins/mug1.jpg"
-                                                    alt="image du produit2">
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <!-- prices -->
-                                                <h5><i class="fab fa-bitcoin"></i>20</h5>
-                                                <!-- product description -->
-                                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
-                                                    obcaecati
-                                                    ut error
-                                                    dolor dolores eveniet.</p>
-                                            </div>
-                                        </div>
-
-                                        <!-- product features -->
-                                        <div>
-                                            <div class="row mx-3">
-                                                <div class="col-sm-6 text-center">
-
-                                                    <h6 class="text-center caracteristics"> Caracteristics :</h6>
-                                                    <ul class="text-left">
-                                                        <li>Size: xx</li>
-                                                        <li>Weight: xx</li>
-                                                        <li>Color: xx</li>
-                                                    </ul>
-                                                </div>
-
-
-                                                <div class="col-sm-6 text-center align-self-center">
-
-                                                    <button type="button" class="btn btn-lg">Add to card</button>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- cards 3 -->
-                    <div class="card">
-                        <div data-toggle="modal" data-target="#produit3">
-                            <img class="card-img-top img-fluid mt-3" src="images/windows/7.png" alt="image du produit7">
-                            <div class="card-body">
-                                <!-- product description-->
-                                <h4 class="card-title text-center">curvy windows</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Modal -->
-                    <div class="modal fade" id="produit3" tabindex="-1" role="dialog" aria-labelledby="produit3"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <!-- product title-->
-                                    <h4 id="titreduproduit3">curvy windows</h4>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <div class="container-fluid">
-                                        <!-- pics, prices, description & features -->
-                                        <div class="row mx-3">
-                                            <div class="col-sm-6">
-                                                <!-- pictures-->
-                                                <img class="card-img-top img-fluid mt-3" src="images/windows/7.png" alt="image du produit3">
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <!-- prices -->
-                                                <h5><i class="fab fa-bitcoin"></i>5000</h5>
-                                                <!-- product description -->
-                                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
-                                                    obcaecati
-                                                    ut error
-                                                    dolor dolores eveniet.</p>
-                                            </div>
-                                        </div>
-
-                                        <!-- product features -->
-                                        <div>
-                                            <div class="row mx-3">
-                                                <div class="col-sm-6 text-center">
-
-                                                    <h6 class="text-center caracteristics"> Caracteristics :</h6>
-                                                    <ul class="text-left">
-                                                        <li>Size: xx</li>
-                                                        <li>Weight: xx</li>
-                                                        <li>Color: xx</li>
-                                                    </ul>
-                                                </div>
-
-
-                                                <div class="col-sm-6 text-center align-self-center">
-
-                                                    <button type="button" class="btn btn-lg">Add to
-                                                        card</button>
-                                                </div>
-
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+        </div>
         </section>
         <br>
         <!-- fin de section top selling cree par vinny -->
