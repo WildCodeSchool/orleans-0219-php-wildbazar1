@@ -119,7 +119,7 @@ nav img{
 /* ////////////////////////// HEADER ////////////////////////// */
 
 /* ////////////////////////// CATEGORIE ////////////////////////// */
-#portfolio .portfolio-overlay {
+.portfolio .portfolio-overlay {
     position: absolute;
     top: 0;
     right: 0;
@@ -132,7 +132,7 @@ nav img{
     transition: all ease-in-out 0.4s;
 }
 
-#portfolio .portfolio-item {
+.portfolio .portfolio-item {
     overflow: hidden;
     position: relative;
     padding: 0;
@@ -140,28 +140,28 @@ nav img{
     text-align: center;
 }
 
-#portfolio .portfolio-item {
+.portfolio .portfolio-item {
     margin: 0;
     font-weight: 700;
 }
 
-#portfolio .portfolio-item img {
+.portfolio .portfolio-item img {
     -webkit-transition: all ease-in-out 0.4s;
     transition: all ease-in-out 0.4s;
     width: 100%;
 }
 
-#portfolio .portfolio-item:hover img {
+.portfolio .portfolio-item:hover img {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
 
-#portfolio .portfolio-item:hover .portfolio-overlay {
+.portfolio .portfolio-item:hover .portfolio-overlay {
     opacity: 1;
     background: rgba(0, 0, 0, 0.7);
 }
 
-#portfolio .portfolio-info {
+.portfolio .portfolio-info {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -194,11 +194,11 @@ h2{
 
 }
 
-@media screen and (min-width: 600px) and (max-width: 900px) {
+@media screen and (max-width: 900px) {
     .text1 {
 
         color: white;
-        font-size: 24px;
+        font-size: 20px;
         font-family: "Courier New";
         text-shadow:3px 2px 2px black;
         margin: 0;
@@ -206,6 +206,17 @@ h2{
         font-weight: 600;
 
     }
+
+    .line1{
+        border: 5px solid #ffffff;
+    }
+
+    .center{
+        margin: none auto;
+        float:none;
+
+    }
+
 
 }
 
