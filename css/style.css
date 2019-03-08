@@ -290,11 +290,23 @@ h2{
 }
 .modal li{
     font-family: monospace;
+    font-variant: small-caps;
+    font-size: 1em;
+}
+
+
+.modal .btn{
+    align-content: center;
+    background-color: silver;
     font-family: monospace;
     font-variant: small-caps;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
 }
 
+.modal .btn:hover{
+    background-color: rgba(192, 192, 192, 0.5);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.7);
+}
 
 /* ////////////////////////// TOP SELLS ////////////////////////// */
 
