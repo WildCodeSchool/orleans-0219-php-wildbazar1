@@ -1,24 +1,31 @@
-<!doctype html>
-<html lang="zxx">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!DOCTYPE html>
+<html lang="fr">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/developers.css">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-            crossorigin="anonymous">
-      <title>Wild Bazar</title>
-  </head>
-  <body>
-<header>
+<head>
+    <meta charset="UTF-8">
+    <!--- Appel Bootstrap 4 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <!-- Appel fontawesome -->
+        <link href="http://fr.allfont.net/allfont.css?fonts=courier" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <!-- Appel css -->
+    <link rel="stylesheet" href="css/developers.css">
+    <title>Wild Bazar</title>
+
+
+</head>
+
+<body>
+
+    <header>
 
         <nav id="gradient" class="navbar fixed-top navbar-expand-lg navbar-light navbar-top">
 
             <!-- Show this only on mobile to medium screens -->
-            <a class="navbar-brand d-lg-none" href="#"><img src="./images/logoblanc.png" alt="logoblanc">
+            <a class="navbar-brand d-lg-none" href="#"><img src="./images/logoblanc.png" width="25px" height="25px">
                 Wild Bazar</a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"
@@ -30,7 +37,10 @@
             <div class="collapse navbar-collapse justify-content-between" id="navbarToggle">
 
                 <!-- Show this only lg screens and up -->
-                <a class="navbar-brand d-none d-lg-block" href="#"><img src="./images/logoblanc.png" alt="logoblanc">Wild Bazar</a>
+                <a class="navbar-brand d-none d-lg-block" href="index.html"><img src="./images/logoblanc.png" width="25px"
+                        height="25px">
+
+                    Wild Bazar</a>
 
                 <ul class="texto navbar-nav text-white px-3">
                     <li class="nav-item">
@@ -45,14 +55,14 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle px-3" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
-                            Catégories
+                            Categories
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="apple.html">Apples</a>
                             <a class="dropdown-item" href="windows.html">Windows</a>
                             <a class="dropdown-item" href="penguins.html">Penguins</a>
                             <a class="dropdown-item" href="raspberries.html">Raspberries</a>
-                            <a class="dropdown-item" href="developpers.html">Developpers</a>
+                            <a class="dropdown-item" href="developers.html">Developpers</a>
                         </div>
                     </li>
                 </ul>
@@ -61,30 +71,34 @@
 
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
-                <h1 class="display-4">The power of developers!</h1>
-                <h3 class="lead">Louer ici les services de nos meilleurs développeurs</h3>
+                <h1 class="display-4">The power of developpers</h1>
+                <h3 class="lead">Sales our better developppers!</h3>
             </div>
         </div>
 
     </header>
-  	<main>
-		<div class="justify-content-center m-5 d-flex flex-wrap card-columns">
-      <!-- card 1 -->
+
+    <main>
+
+        <div class="justify-content-center m-5 d-flex flex-wrap card-columns">
+
+            <!-- cards 1 -->
             <div class="card">
                 <div data-toggle="modal" data-target="#produit1">
-                  <img src="./images/developers/products1.jpg" class="card-img-top" alt="img1">
-                  <div class="card-body">
-                      <h4 class="card-title text-center">Zen your projects</h4>
-                  </div>
+                    <img class="card-img-top img-fluid mt-3" src="images/developers/products1.jpg" alt="image du sweat 1">
+                    <div class="card-body">
+                        <!-- product description-->
+                        <h4 class="card-title text-center">Zen your projects</h4>
+                    </div>
                 </div>
             </div>
-      <!-- card1 Modal -->
+            <!-- Modal -->
             <div class="modal fade " id="produit1" tabindex="-1" role="dialog" aria-labelledby="produit1" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
                             <!-- product title -->
-                            <h4 class="h5" id="titreduproduit1">Zen your projects</h4>
+                            <h4 id="titreduproduit1">Zen your projects</h4>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -99,24 +113,33 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <!-- prices -->
-                                        <h5>70€/h</h5>
+                                        <h5><i class="fab fa-bitcoin"></i>70</h5>
                                         <!-- product description -->
                                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
                                             obcaecati
                                             ut error
-                                            dolor dolores eveniet, accusamus ea odit dicta dignissimos animi
-                                            labore
-                                            vitae.
-                                            Eveniet suscipit, quod dolorum culpa est quibusdam.</p>
+                                            dolor dolores eveniet.</p>
                                     </div>
                                 </div>
+                                <!-- product features -->
                                 <div>
                                     <div class="row mx-3">
-                                        <div class=" offset-sm-6 col-sm-6 text-center align-self-center">
+                                        <div class="col-sm-6 text-center">
 
-                                            <button type="button" class="btn btn-outline-dark btn-lg">Ajouter au
-                                                Panier</button>
+                                            <h6 class="text-center caracteristics"> Caracteristics :</h6>
+                                            <ul class="text-left">
+                                                <li>Language: xx</li>
+                                                <li>Speciality: xx</li>
+                                                <li>Experience: xx</li>
+                                            </ul>
                                         </div>
+
+
+                                        <div class="col-sm-6 text-center align-self-center">
+
+                                            <button type="button" class="btn btn-lg">Add to card</button>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -124,80 +147,91 @@
                     </div>
                 </div>
             </div>
-   <!--  card2 -->
-            <div class="card">
-              <div data-toggle="modal" data-target="#produit2">
-                <img src="./images/developers/products2.jpg" class="card-img-top" alt="img2">
-                <div class="card-body">
-                    <h5 class="card-title">Data-analist specialist</h5>
-                </div>
-              </div>
-              <!-- Modal -->
-              <div class="modal fade" id="produit2" tabindex="-1" role="dialog" aria-labelledby="produit2"
-                  aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                      <div class="modal-content">
-                          <div class="modal-header">
-                              <!-- product title-->
-                              <h4 class="h5" id="titreduproduit2">Data-analist specialist</h4>
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                  <span aria-hidden="true">&times;</span>
-                              </button>
-                          </div>
-                          <div class="modal-body">
-                              <div class="container-fluid">
-                                  <!-- pics, prices, description & features -->
-                                  <div class="row mx-3">
-                                      <div class="col-sm-6">
-                                          <!-- pictures-->
-                                          <img class="card-img-top img-fluid mt-3" src="images/developers/products2.jpg" alt="image du produit1">
-                                      </div>
-                                      <div class="col-sm-6">
-                                          <!-- prices -->
-                                          <h5>90€/h</h5>
-                                          <!-- product description -->
-                                          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
-                                              obcaecati
-                                              ut error
-                                              dolor dolores eveniet, accusamus ea odit dicta dignissimos animi
-                                              labore
-                                              vitae.
-                                              Eveniet suscipit, quod dolorum culpa est quibusdam.</p>
-                                      </div>
-                                  </div>
-                                  <div>
-                                    <div class="row mx-3">
-                                        <div class=" offset-sm-6 col-sm-6 text-center align-self-center">
 
-                                            <button type="button" class="btn btn-outline-dark btn-lg">Ajouter au
-                                                Panier</button>
-                                        </div>
-                                    </div>
-                                </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-            </div>
-    <!-- card3 -->
+            <!-- cards 2  -->
             <div class="card">
-              <div data-toggle="modal" data-target="#produit3">
-                <img src="./images/developers/products3.jpg" class="card-img-top" alt="img3">
-                <div class="card-body">
-                    <h5 class="card-title">Design and beautifull</h5>
+                <div data-toggle="modal" data-target="#produit2">
+                    <img class="card-img-top img-fluid mt-3" src="images/developers/products2.jpg" alt="image du produit2">
+                    <div class="card-body">
+                        <!-- product description-->
+                        <h4 class="card-title text-center">Data-analyst</h4>
+                    </div>
                 </div>
-              </div>
             </div>
-
             <!-- Modal -->
-            <div class="modal fade" id="produit3" tabindex="-1" role="dialog" aria-labelledby="produit3"
-                aria-hidden="true">
+            <div class="modal fade" id="produit2" tabindex="-1" role="dialog" aria-labelledby="produit2" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
                             <!-- product title-->
-                            <h4 class="h5" id="titreduproduit3">Sweat "May The Source Be With You"</h4>
+                            <h4 id="titreduproduit2">Data-analyst</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <!-- pics, prices, description & features -->
+                                <div class="row mx-3">
+                                    <div class="col-sm-6">
+                                        <!-- pictures-->
+                                        <img class="card-img-top img-fluid mt-3" src="images/developers/products2.jpg" alt="image du produit1">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <!-- prices -->
+                                        <h5><i class="fab fa-bitcoin"></i>50</h5>
+                                        <!-- product description -->
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
+                                            obcaecati
+                                            ut error
+                                            dolor dolores eveniet.</p>
+                                    </div>
+                                </div>
+
+                                <!-- product features -->
+                                <div>
+                                    <div class="row mx-3">
+                                        <div class="col-sm-6 text-center">
+
+                                            <h6 class="text-center caracteristics"> Caracteristics :</h6>
+                                            <ul class="text-left">
+                                                <li>Language: xx</li>
+                                                <li>Speciality: xx</li>
+                                                <li>Experience: xx</li>
+                                            </ul>
+                                        </div>
+
+
+                                        <div class="col-sm-6 text-center align-self-center">
+
+                                            <button type="button" class="btn btn-lg">Add to card</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- cards 3 -->
+            <div class="card">
+                <div data-toggle="modal" data-target="#produit3">
+                    <img class="card-img-top img-fluid mt-3" src="images/developers/products3.jpg" alt="image du produit3">
+                    <div class="card-body">
+                        <!-- product description-->
+                        <h4 class="card-title text-center">Webdesign and safely your projects</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="produit3" tabindex="-1" role="dialog" aria-labelledby="produit3" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <!-- product title-->
+                            <h4 id="titreduproduit3">Webdesign and safely your project</h4>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -212,48 +246,60 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <!-- prices -->
-                                        <h5>50€</h5>
+                                        <h5><i class="fab fa-bitcoin"></i>50</h5>
                                         <!-- product description -->
                                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
                                             obcaecati
                                             ut error
-                                            dolor dolores eveniet, accusamus ea odit dicta dignissimos animi
-                                            labore
-                                            vitae.
-                                            Eveniet suscipit, quod dolorum culpa est quibusdam.</p>
+                                            dolor dolores eveniet.</p>
                                     </div>
                                 </div>
+
+                                <!-- product features -->
                                 <div>
                                     <div class="row mx-3">
-                                        <div class=" offset-sm-6 col-sm-6 text-center align-self-center">
+                                        <div class="col-sm-6 text-center">
 
-                                            <button type="button" class="btn btn-outline-dark btn-lg">Ajouter au
-                                                Panier</button>
+                                            <h6 class="text-center caracteristics"> Caracteristics :</h6>
+                                            <ul class="text-left">
+                                                <li>Language: xx</li>
+                                                <li>Speciality: xx</li>
+                                                <li>Experience: xx</li>
+                                            </ul>
                                         </div>
+
+
+                                        <div class="col-sm-6 text-center align-self-center">
+
+                                            <button type="button" class="btn btn-lg">Add to card</button>
+                                        </div>
+
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-    <!-- card4 -->        
+
+            <!-- cards 4 -->
             <div class="card">
-              <div data-toggle="modal" data-target="#produit4">
-                <img src="./images/developers/products4.jpg" class="card-img-top" alt="img4">
-                <div class="card-body">
-                    <h5 class="card-title">Upgrade your website</h5>
+                <div data-toggle="modal" data-target="#produit4">
+                    <img class="card-img-top img-fluid mt-3" src="images/developers/products4.jpg" alt="image du produit3">
+                    <div class="card-body">
+                        <!-- product description-->
+                        <h4 class="card-title text-center">Specialist Symphony</h4>
+                    </div>
                 </div>
-              </div>
             </div>
             <!-- Modal -->
-            <div class="modal fade" id="produit4" tabindex="-1" role="dialog" aria-labelledby="produit4"
-                aria-hidden="true">
+            <div class="modal fade" id="produit4" tabindex="-1" role="dialog" aria-labelledby="produit4" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
                             <!-- product title-->
-                            <h4 class="h5" id="titreduproduit4">T-shirt "Why so Windows ?"</h4>
+                            <h4 id="titreduproduit4">Specialist Symphony</h4>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -268,49 +314,60 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <!-- prices -->
-                                        <h5>30€</h5>
+                                        <h5><i class="fab fa-bitcoin"></i>30</h5>
                                         <!-- product description -->
                                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
                                             obcaecati
                                             ut error
-                                            dolor dolores eveniet, accusamus ea odit dicta dignissimos animi
-                                            labore
-                                            vitae.
-                                            Eveniet suscipit, quod dolorum culpa est quibusdam.</p>
+                                            dolor dolores eveniet.</p>
                                     </div>
                                 </div>
+
+                                <!-- product features -->
                                 <div>
                                     <div class="row mx-3">
-                                        <div class=" offset-sm-6 col-sm-6 text-center align-self-center">
+                                        <div class="col-sm-6 text-center">
 
-                                            <button type="button" class="btn btn-outline-dark btn-lg">Ajouter au
-                                                Panier</button>
+                                            <h6 class="text-center caracteristics"> Caracteristics :</h6>
+                                            <ul class="text-left">
+                                                <li>Language: xx</li>
+                                                <li>Speciality: xx</li>
+                                                <li>Experience: xx</li>
+                                            </ul>
                                         </div>
+
+
+                                        <div class="col-sm-6 text-center align-self-center">
+
+                                            <button type="button" class="btn btn-lg">Add to card</button>
+                                        </div>
+
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-    <!-- card5 -->  
+            <!-- cards 5 -->
             <div class="card">
-              <div data-toggle="modal" data-target="#produit5">
-                <img src="./images/developers/products5.jpg" class="card-img-top" alt="img5">
-                <div class="card-body">
-                    <h5 class="card-title">product5</h5>
+                <div data-toggle="modal" data-target="#produit5">
+                    <img class="card-img-top img-fluid mt-3" src="images/developers/products5.jpg" alt="image du produit5">
+                    <div class="card-body">
+                        <!-- product description-->
+                        <h4 class="card-title text-center">Lorem ipsum</h4>
+                    </div>
                 </div>
-              </div>
             </div>
             <!-- Modal -->
-            <div class="modal fade" id="produit5" tabindex="-1" role="dialog" aria-labelledby="produit5"
-                aria-hidden="true">
+            <div class="modal fade" id="produit5" tabindex="-1" role="dialog" aria-labelledby="produit5" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
                             <!-- product title -->
-                            <h4 class="h5" id="titreduproduit5">Mug "Fork You"</h4>
+                            <h4 id="titreduproduit5">Lorem ipsum</h4>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -325,24 +382,34 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <!-- prices -->
-                                        <h5>20€</h5>
+                                        <h5><i class="fab fa-bitcoin"></i>20</h5>
                                         <!-- product description -->
                                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
                                             obcaecati
                                             ut error
-                                            dolor dolores eveniet, accusamus ea odit dicta dignissimos animi
-                                            labore
-                                            vitae.
-                                            Eveniet suscipit, quod dolorum culpa est quibusdam.</p>
+                                            dolor dolores eveniet.</p>
                                     </div>
                                 </div>
+
+                                <!-- product features -->
                                 <div>
                                     <div class="row mx-3">
-                                        <div class=" offset-sm-6 col-sm-6 text-center align-self-center">
+                                        <div class="col-sm-6 text-center">
 
-                                            <button type="button" class="btn btn-outline-dark btn-lg">Ajouter au
-                                                Panier</button>
+                                            <h6 class="text-center caracteristics"> Caracteristics :</h6>
+                                            <ul class="text-left">
+                                                <li>Language: xx</li>
+                                                <li>Speciality: xx</li>
+                                                <li>Experience: xx</li>
+                                            </ul>
                                         </div>
+
+
+                                        <div class="col-sm-6 text-center align-self-center">
+
+                                            <button type="button" class="btn btn-lg">Add to card</button>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -350,23 +417,24 @@
                     </div>
                 </div>
             </div>
-    <!-- card6 -->
+
+            <!-- cards 6  -->
             <div class="card">
-              <div data-toggle="modal" data-target="#produit6">
-                <img src="./images/developers/products6.jpg" class="card-img-top" alt="img6">
-                <div class="card-body">
-                    <h5 class="card-title">Work together!</h5>
+                <div data-toggle="modal" data-target="#produit6">
+                    <img class="card-img-top img-fluid mt-3" src="images/developers/products6.jpg" alt="image du produit6">
+                    <div class="card-body">
+                        <!-- product description-->
+                        <h4 class="card-title text-center">Work together</h4>
+                    </div>
                 </div>
-              </div>
             </div>
             <!-- Modal -->
-            <div class="modal fade" id="produit6" tabindex="-1" role="dialog" aria-labelledby="produit6"
-                aria-hidden="true">
+            <div class="modal fade" id="produit6" tabindex="-1" role="dialog" aria-labelledby="produit6" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
                             <!-- product title-->
-                            <h4 class="h5" id="titreduproduit6">Mug "Just sudo it"</h4>
+                            <h4 id="titreduproduit6">Work together</h4>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -381,24 +449,34 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <!-- prices -->
-                                        <h5>20€</h5>
+                                        <h5><i class="fab fa-bitcoin"></i>20</h5>
                                         <!-- product description -->
                                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
                                             obcaecati
                                             ut error
-                                            dolor dolores eveniet, accusamus ea odit dicta dignissimos animi
-                                            labore
-                                            vitae.
-                                            Eveniet suscipit, quod dolorum culpa est quibusdam.</p>
+                                            dolor dolores eveniet.</p>
                                     </div>
                                 </div>
+
+                                <!-- product features -->
                                 <div>
                                     <div class="row mx-3">
-                                        <div class=" offset-sm-6 col-sm-6 text-center align-self-center">
+                                        <div class="col-sm-6 text-center">
 
-                                            <button type="button" class="btn btn-outline-dark btn-lg">Ajouter au
-                                                Panier</button>
+                                            <h6 class="text-center caracteristics"> Caracteristics :</h6>
+                                            <ul class="text-left">
+                                                <li>Language: xx</li>
+                                                <li>Speciality: xx</li>
+                                                <li>Experience: xx</li>
+                                            </ul>
                                         </div>
+
+
+                                        <div class="col-sm-6 text-center align-self-center">
+
+                                            <button type="button" class="btn btn-lg">Add to card</button>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -407,23 +485,23 @@
                 </div>
             </div>
 
-    <!-- card7 -->
+            <!-- cards 7 -->
             <div class="card">
-              <div data-toggle="modal" data-target="#produit7">
-                <img src="./images/developers/products10.jpg" class="card-img-top" alt="img7">
-                <div class="card-body">
-                    <h5 class="card-title">Boost yor projects!</h5>
+                <div data-toggle="modal" data-target="#produit7">
+                    <img class="card-img-top img-fluid mt-3" src="images/developers/products8.jpg" alt="image du produit7">
+                    <div class="card-body">
+                        <!-- product description-->
+                        <h4 class="card-title text-center">Lorem ipsum</h4>
+                    </div>
                 </div>
-              </div>
             </div>
             <!-- Modal -->
-            <div class="modal fade" id="produit7" tabindex="-1" role="dialog" aria-labelledby="produit7"
-                aria-hidden="true">
+            <div class="modal fade" id="produit7" tabindex="-1" role="dialog" aria-labelledby="produit7" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
                             <!-- product title-->
-                            <h4 class="h5" id="titreduproduit7">Mug "Del Windows"</h4>
+                            <h4 id="titreduproduit7">Lorem ipsum</h4>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -434,28 +512,38 @@
                                 <div class="row mx-3">
                                     <div class="col-sm-6">
                                         <!-- pictures-->
-                                        <img class="card-img-top img-fluid mt-3" src="images/developers/products7.jpg" alt="image du produit1">
+                                        <img class="card-img-top img-fluid mt-3" src="images/developers/products8.jpg" alt="image du produit1">
                                     </div>
                                     <div class="col-sm-6">
                                         <!-- prices -->
-                                        <h5>20€</h5>
+                                        <h5><i class="fab fa-bitcoin"></i>20</h5>
                                         <!-- product description -->
                                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
                                             obcaecati
                                             ut error
-                                            dolor dolores eveniet, accusamus ea odit dicta dignissimos animi
-                                            labore
-                                            vitae.
-                                            Eveniet suscipit, quod dolorum culpa est quibusdam.</p>
+                                            dolor dolores eveniet.</p>
                                     </div>
                                 </div>
+
+                                <!-- product features -->
                                 <div>
                                     <div class="row mx-3">
-                                        <div class=" offset-sm-6 col-sm-6 text-center align-self-center">
+                                        <div class="col-sm-6 text-center">
 
-                                            <button type="button" class="btn btn-outline-dark btn-lg">Ajouter au
-                                                Panier</button>
+                                            <h6 class="text-center caracteristics"> Caracteristics :</h6>
+                                            <ul class="text-left">
+                                                <li>Language: xx</li>
+                                                <li>Speciality: xx</li>
+                                                <li>Experience: xx</li>
+                                            </ul>
                                         </div>
+
+
+                                        <div class="col-sm-6 text-center align-self-center">
+
+                                            <button type="button" class="btn btn-lg">Add to card</button>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -463,136 +551,24 @@
                     </div>
                 </div>
             </div>
-    <!-- card8 -->
+
+            <!-- cards 8 -->
             <div class="card">
-              <div data-toggle="modal" data-target="#produit8">
-                <img src="./images/developers/products8.jpg" class="card-img-top" alt="img8">
-                <div class="card-body">
-                    <h5 class="card-title">Start your website</h5>
-                </div>
-              </div>
-            </div>
-             <!-- Modal -->
-            <div class="modal fade" id="produit8" tabindex="-1" role="dialog" aria-labelledby="produit8"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <!-- product title-->
-                            <h4 class="h5" id="titreduproduit8">Peluche "Tux"</h4>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="container-fluid">
-                                <!-- pics, prices, description & features -->
-                                <div class="row mx-3">
-                                    <div class="col-sm-6">
-                                        <!-- pictures-->
-                                        <img class="card-img-top img-fluid mt-3" src="images/developers/products.jpg" alt="image du produit4">
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <!-- prices -->
-                                        <h5>30€</h5>
-                                        <!-- product description -->
-                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
-                                            obcaecati
-                                            ut error
-                                            dolor dolores eveniet, accusamus ea odit dicta dignissimos animi
-                                            labore
-                                            vitae.
-                                            Eveniet suscipit, quod dolorum culpa est quibusdam.</p>
-                                    </div>
-
-                                </div>
-                                <div>
-                                    <div class="row mx-3">
-                                        <div class=" offset-sm-6 col-sm-6 text-center align-self-center">
-
-                                            <button type="button" class="btn btn-outline-dark btn-lg">Ajouter au
-                                                Panier</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div data-toggle="modal" data-target="#produit8">
+                    <img class="card-img-top img-fluid mt-3" src="images/developers/products12.jpg" alt="image du produit8">
+                    <div class="card-body">
+                        <!-- product description-->
+                        <h4 class="card-title text-center">Lorem ipsum</h4>
                     </div>
                 </div>
-            </div>
-    <!-- card9 -->
-            <div class="card">
-              <div data-toggle="modal" data-target="#produit9">
-                <img src="./images/developers/products11.jpg" class="card-img-top" alt="img9">
-                <div class="card-body">
-                    <h5 class="card-title">Help to start your projet!</h5>
-                </div>
-              </div>
             </div>
             <!-- Modal -->
-            <div class="modal fade" id="produit9" tabindex="-1" role="dialog" aria-labelledby="produit9"
-                aria-hidden="true">
+            <div class="modal fade" id="produit8" tabindex="-1" role="dialog" aria-labelledby="produit8" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
                             <!-- product title-->
-                            <h4 class="h5" id="titreduproduit9">Casquette "Tux"</h4>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="container-fluid">
-                                <!-- pics, prices, description & features -->
-                                <div class="row mx-3">
-                                    <div class="col-sm-6">
-                                        <!-- pictures-->
-                                        <img class="card-img-top img-fluid mt-3" src="images/developers/products11.jpg" alt="image du produit4">
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <!-- prices -->
-                                        <h5>25€</h5>
-                                        <!-- product description -->
-                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
-                                            obcaecati
-                                            ut error
-                                            dolor dolores eveniet, accusamus ea odit dicta dignissimos animi
-                                            labore
-                                            vitae.
-                                            Eveniet suscipit, quod dolorum culpa est quibusdam.</p>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="row mx-3">
-                                        <div class=" offset-sm-6 col-sm-6 text-center align-self-center">
-
-                                            <button type="button" class="btn btn-outline-dark btn-lg">Ajouter au
-                                                Panier</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    <!-- card10 -->
-            <div class="card">
-              <div data-toggle="modal" data-target="#produit10">
-                <img src="./images/developers/products12.jpg" class="card-img-top" alt="img10">
-                <div class="card-body">
-                    <h5 class="card-title">Realize your dreams!</h5>
-                </div>
-              </div>
-            </div>
-            <!-- Modal -->
-            <div class="modal fade" id="produit10" tabindex="-1" role="dialog" aria-labelledby="produit10"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <!-- product title-->
-                            <h4 class="h5" id="titreduproduit10">Casquette "Ubuntu"</h4>
+                            <h4 id="titreduproduit8">Lorem ipsum</h4>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -607,49 +583,195 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <!-- prices -->
-                                        <h5>25€</h5>
+                                        <h5><i class="fab fa-bitcoin"></i><30</h5>
                                         <!-- product description -->
                                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
                                             obcaecati
                                             ut error
-                                            dolor dolores eveniet, accusamus ea odit dicta dignissimos animi
-                                            labore
-                                            vitae.
-                                            Eveniet suscipit, quod dolorum culpa est quibusdam.</p>
+                                            dolor dolores eveniet.</p>
                                     </div>
                                 </div>
+
+                                <!-- product features -->
                                 <div>
                                     <div class="row mx-3">
-                                        <div class=" offset-sm-6 col-sm-6 text-center align-self-center">
+                                        <div class="col-sm-6 text-center">
 
-                                            <button type="button" class="btn btn-outline-dark btn-lg">Ajouter au
-                                                Panier</button>
+                                            <h6 class="text-center caracteristics"> Caracteristics :</h6>
+                                            <ul class="text-left">
+                                                <li>Language: xx</li>
+                                                <li>Speciality: xx</li>
+                                                <li>Experience: xx</li>
+                                            </ul>
                                         </div>
+
+
+                                        <div class="col-sm-6 text-center align-self-center">
+
+                                            <button type="button" class="btn btn-lg">Add to card</button>
+                                        </div>
+
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-    <!-- card11 -->
+            <!-- cards 9 -->
             <div class="card">
-              <div data-toggle="modal" data-target="#produit11">
-                <img src="./images/developers/products9.jpg" class="card-img-top" alt="img11">
-                <div class="card-body">
-                    <h5 class="card-title">Security!</h5>
+                <div data-toggle="modal" data-target="#produit9">
+                    <img class="card-img-top img-fluid mt-3" src="images/developers/products10.jpg" alt="image du produit8">
+                    <div class="card-body">
+                        <!-- product description-->
+                        <h4 class="card-title text-center">Upgrade your projects</h4>
+                    </div>
                 </div>
-              </div>
             </div>
             <!-- Modal -->
-            <div class="modal fade" id="produit11" tabindex="-1" role="dialog" aria-labelledby="produit11"
-                aria-hidden="true">
+            <div class="modal fade" id="produit9" tabindex="-1" role="dialog" aria-labelledby="produit9" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
                             <!-- product title-->
-                            <h4 class="h5" id="titreduproduit11">Stickers "sudo rm"</h4>
+                            <h4 id="titreduproduit9">Upgrade your projects</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <!-- pics, prices, description & features -->
+                                <div class="row mx-3">
+                                    <div class="col-sm-6">
+                                        <!-- pictures-->
+                                        <img class="card-img-top img-fluid mt-3" src="images/developers/products10.jpg" alt="image du produit4">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <!-- prices -->
+                                        <h5><i class="fab fa-bitcoin"></i>25</h5>
+                                        <!-- product description -->
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
+                                            obcaecati
+                                            ut error
+                                            dolor dolores eveniet.</p>
+                                    </div>
+                                </div>
+
+                                <!-- product features -->
+                                <div>
+                                    <div class="row mx-3">
+                                        <div class="col-sm-6 text-center">
+
+                                            <h6 class="text-center caracteristics"> Caracteristics :</h6>
+                                            <ul class="text-left">
+                                                <li>Language: xx</li>
+                                                <li>Speciality: xx</li>
+                                                <li>Experience: xx</li>
+                                            </ul>
+                                        </div>
+
+
+                                        <div class="col-sm-6 text-center align-self-center">
+
+                                            <button type="button" class="btn btn-lg">Add to card</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- cards 10 -->
+            <div class="card">
+                <div data-toggle="modal" data-target="#produit10">
+                    <img class="card-img-top img-fluid mt-3" src="images/developers/products11.jpg" alt="image du produit8">
+                    <div class="card-body">
+                        <!-- product description-->
+                        <h4 class="card-title text-center">Lorem ipsum</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="produit10" tabindex="-1" role="dialog" aria-labelledby="produit" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <!-- product title-->
+                            <h4 id="titreduproduit10">Lorem ipsum</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <!-- pics, prices, description & features -->
+                                <div class="row mx-3">
+                                    <div class="col-sm-6">
+                                        <!-- pictures-->
+                                        <img class="card-img-top img-fluid mt-3" src="images/developers/products11.jpg" alt="image du produit4">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <!-- prices -->
+                                        <h5><i class="fab fa-bitcoin"></i>25</h5>
+                                        <!-- product description -->
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
+                                            obcaecati
+                                            ut error
+                                            dolor dolores eveniet.</p>
+                                    </div>
+                                </div>
+
+                                <!-- product features -->
+                                <div>
+                                    <div class="row mx-3">
+                                        <div class="col-sm-6 text-center">
+
+                                            <h6 class="text-center caracteristics"> Caracteristics :</h6>
+                                            <ul class="text-left">
+                                                <li>Language: xx</li>
+                                                <li>Speciality: xx</li>
+                                                <li>Experience: xx</li>
+                                            </ul>
+                                        </div>
+
+
+                                        <div class="col-sm-6 text-center align-self-center">
+
+                                            <button type="button" class="btn btn-lg">Add to card</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- cards 11 -->
+            <div class="card">
+                <div data-toggle="modal" data-target="#produit11">
+                    <img class="card-img-top img-fluid mt-3" src="images/developers/products9.jpg" alt="image du produit11">
+                    <div class="card-body">
+                        <!-- product description-->
+                        <h4 class="card-title text-center">Security!</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="produit11" tabindex="-1" role="dialog" aria-labelledby="produit9" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <!-- product title-->
+                            <h4 id="titreduproduit11">Too many expensive!</h4>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -665,24 +787,34 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <!-- prices -->
-                                        <h5>10€</h5>
+                                        <h5>Not enough!</h5>
                                         <!-- product description -->
                                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
                                             obcaecati
                                             ut error
-                                            dolor dolores eveniet, accusamus ea odit dicta dignissimos animi
-                                            labore
-                                            vitae.
-                                            Eveniet suscipit, quod dolorum culpa est quibusdam.</p>
+                                            dolor dolores eveniet.</p>
                                     </div>
                                 </div>
+
+                                <!-- product features -->
                                 <div>
                                     <div class="row mx-3">
-                                        <div class=" offset-sm-6 col-sm-6 text-center align-self-center">
+                                        <div class="col-sm-6 text-center">
 
-                                            <button type="button" class="btn btn-outline-dark btn-lg">Ajouter au
-                                                Panier</button>
+                                            <h6 class="text-center caracteristics"> Caracteristics :</h6>
+                                            <ul class="text-left">
+                                                <li>Language: xx</li>
+                                                <li>Speciality: xx</li>
+                                                <li>Experience: xx</li>
+                                            </ul>
                                         </div>
+
+
+                                        <div class="col-sm-6 text-center align-self-center">
+
+                                            <button type="button" class="btn btn-lg">Prepare to be empty your count!</button>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -690,23 +822,24 @@
                     </div>
                 </div>
             </div>
-    <!-- card12 -->
+
+            <!-- cards 12 -->
             <div class="card">
-              <div data-toggle="modal" data-target="#produit12">
-                <img src="./images/developers/linus.jpg" class="card-img-top" alt="img12">
-                <div class="card-body">
-                    <h5 class="card-title">Better security! &#128514; </h5>
+                <div data-toggle="modal" data-target="#produit12">
+                    <img class="card-img-top img-fluid mt-3" src="images/developers/linus.jpg" alt="image du produit12">
+                    <div class="card-body">
+                        <!-- product description-->
+                        <h4 class="card-title text-center">Better security &#128514;</h4>
+                    </div>
                 </div>
-              </div>
             </div>
             <!-- Modal -->
-            <div class="modal fade" id="produit12" tabindex="-1" role="dialog" aria-labelledby="produit12"
-                aria-hidden="true">
+            <div class="modal fade" id="produit12" tabindex="-1" role="dialog" aria-labelledby="produit10" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
                             <!-- product title-->
-                            <h4 class="h5" id="titreduproduit12">Sticker "Gnu/Linux"</h4>
+                            <h4 id="titreduproduit12">Not to be sale, because i'm free!</h4>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -722,24 +855,34 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <!-- prices -->
-                                        <h5>10€</h5>
+                                        <h5>Free!</h5>
                                         <!-- product description -->
                                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
                                             obcaecati
                                             ut error
-                                            dolor dolores eveniet, accusamus ea odit dicta dignissimos animi
-                                            labore
-                                            vitae.
-                                            Eveniet suscipit, quod dolorum culpa est quibusdam.</p>
+                                            dolor dolores eveniet.</p>
                                     </div>
                                 </div>
+
+                                <!-- product features -->
                                 <div>
                                     <div class="row mx-3">
-                                        <div class=" offset-sm-6 col-sm-6 text-center align-self-center">
+                                        <div class="col-sm-6 text-center">
 
-                                            <button type="button" class="btn btn-outline-dark btn-lg">Ajouter au
-                                                Panier</button>
+                                            <h6 class="text-center caracteristics"> Caracteristics :</h6>
+                                            <ul class="text-left">
+                                                <li>Language: xx</li>
+                                                <li>Speciality: xx</li>
+                                                <li>Experience: xx</li>
+                                            </ul>
                                         </div>
+
+
+                                        <div class="col-sm-6 text-center align-self-center">
+
+                                            <button type="button" class="btn btn-lg">Impossible!</button>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -748,71 +891,80 @@
                 </div>
             </div>
         </div>
-	</main>
+    </main>
 
-	<!-- zone footer -->
-   	<footer class="footer container-fluid">
-     	<div class="row  px-3 pt-3 justify-content-center">
-     		<div class="col-12 col-lg-6 collumn-left">
-     			<div class="row footer-link">
-                        <nav class="flex-column">
-                            <a class="nav-link" href="#">Home</a>
-                            <a class="nav-link" href="index.html#aboutUs">About us</a>
-                            <a class="nav-link" href="index.html#topSelling">Top selling</a>
-                            <a class="nav-link" href="index.html#contactUs">Contact</a>
-                            <a class="nav-link" href="#">Legal mentions</a>
-                        </nav>
-                        <nav class="flex-column">
-                            <a class="nav-link" href="apple.html">Apple</a>
-                            <a class="nav-link" href="windows.html">Windows</a>
-                            <a class="nav-link" href="penguins.html">Penguin</a>
-                            <a class="nav-link" href="raspberries.html">Raspberry</a>
-                            <a class="nav-link" href="developpers.html">Dev</a>
-                        </nav>
-      			</div>
-      			<div class="row justify-content-center">
-      				<div class="col-12">
-      					<h2><img src="./images/logoblanc.png" alt="logoblanc"><span class="align-baseline">Wild Bazar</span></h2>
-      					<div id="address">
-      						1,rue de la paix<br>
-      						75000 Paris<br>
-      						01-23-45-67-89
-      					</div>
-      				</div>
-      			</div>
-      		</div>
-      		<div class="col-12 col-lg-6 justify-content-center collumn-right">
-      			<h3 class="text-center" id="contactUs">Contact us</h3>
-      			<form>
-      				<div class="form-group row">
-      					<label for="inputEmail3" class="col-2 col-form-label">Email</label>
-      					<div class="col-8">
-      						<input type="email" class="form-control" id="inputEmail3">
-      					</div>
-      				</div>
-      				<div class="form-group row">
-      					<label for="exampleFormControlTextarea1" class="col-2 col-form-label">Message</label>
-      					<div class="col-8"> 
-							<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      					</div>
-      				</div>
-      				<div class="form-group row">
-      					<div class="col-12 text-center">
-      						<button type="submit" class="btn">Submit</button>
-      					</div>
-      				</div>
-      			</form>	
-      		</div>
+    <!-- zone footer -->
+
+    <footer class="footer container-fluid">
+        <div class="row px-3 pt-3 justify-content-center">
+            <div class="col-12 col-lg-6 collumn-left">
+                <div class="row footer-link">
+                    <nav class="flex-column">
+                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="index.html#aboutUs">About us</a>
+                        <a class="nav-link" href="index.html#topSelling">Top
+                            selling</a>
+                        <a class="nav-link" href="index.html#contactUs">Contact</a>
+                        <a class="nav-link" href="index.html">Legal mentions</a>
+                    </nav>
+                    <nav class="flex-column">
+                        <a class="nav-link" href="apple.html">Apple</a>
+                        <a class="nav-link" href="windows.html">Windows</a>
+                        <a class="nav-link" href="penguins.html">Penguin</a>
+                        <a class="nav-link" href="raspberries.html">Raspberry</a>
+                        <a class="nav-link" href="developers.html">Dev</a>
+                    </nav>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <h2><img src="./images/logoblanc.png"><span class="align-baseline">Wild Bazar</span></h2>
+                        <div id="address">
+                            1,rue de la paix<br>
+                            75000 Paris<br>
+                            01-23-45-67-89
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 justify-content-center
+                        collumn-right">
+                <h3 class="text-center" id="contactUs">Contact us</h3>
+                <form>
+                    <div class="form-group row">
+                        <label for="inputEmail3" class="col-2
+                                    col-form-label">Email</label>
+                        <div class="col-8">
+                            <input type="email" class="form-control" id="inputEmail3">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="exampleFormControlTextarea1" class="col-2
+                                    col-form-label">Message</label>
+                        <div class="col-8">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-12 text-center">
+                            <button type="submit" class="btn">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
             <span>
-                            Made with <i class="fa fa-heart pulse"></i> by Vincent Mouline, Vanina Diot, Vincent Ostyn, Sylvain Lamoureux & Maïwenn Gay</a>
-                         </span>
-		</div>
-	</footer>
+                <a>Made with <i class="fa fa-heart pulse"></i> by Vincent Mouline, Vanina Diot, Vincent Ostyn, Sylvain
+                Lamoureux & Maïwenn Gay</a>
+            </span>
+        </div>
+    </footer>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+
 </html>

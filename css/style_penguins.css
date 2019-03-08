@@ -53,13 +53,13 @@ nav img{
 }
 
 .jumbotron{
-    background-image: url("../images/bg12.jpg");
-    background-size: cover;
-    background-repeat:   no-repeat;
-    background-position: center center;
+    background-image: url("../images/penguins/tux2.png");
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: bottom right ;
+    /* opacity: 0.8; */
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
-    /* background-size: 100% 100%; */
-    background-size: 100% 100%;
+    background-color: rgba(216, 213, 213, 0.6);
     height: 30em;
     width: 100%;
 }
@@ -92,7 +92,7 @@ nav img{
 
 .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
     color: whitesmoke;
-    background-color: rgba(192, 192, 192, 0.3);
+   /* background-color: rgba(192, 192, 192, 0.3);*/
     text-shadow: 2px 2px 4px #000000;
     border-radius: 15px;
     /* padding: 5px 15px 5px 15px;  */
@@ -149,17 +149,6 @@ nav img{
     font-variant: small-caps;
 }
 
-.jumbotron{
-    background-image: url("../images/penguins/tux2.png");
-    background-size: 30%;
-    background-repeat: no-repeat;
-    background-position: bottom right ;
-    /* opacity: 0.8; */
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
-    background-color: rgba(216, 213, 213, 0.6);
-    height: 30em;
-    width: 100%;
-}
 
 .modal-header{
     background-color: rgba(226, 116, 112, 0.8);
@@ -167,30 +156,38 @@ nav img{
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
     text-shadow: 2px 2px 4px #000000;
 }
+
 .modal-body{
     padding-top: 3em;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
 }
+
 .modal h4{
     font-family: monospace;
     font-variant: small-caps;
     font-size: 3em;
 }
+
 .modal h5, .modal h6{
+    margin-top: 1em;
     text-align: center;
     font-family: monospace;
     font-variant: small-caps;
     font-size: 2em;
 }
+
 .modal li{
     font-family: monospace;
     font-variant: small-caps;
     font-size: 1em;
 }
+
 .modal p{
+    margin-top: 1em;
     font-family: sanssherif;
     overflow: auto;
 }
+
 .modal .btn{
     align-content: center;
     background-color: silver;
@@ -199,13 +196,19 @@ nav img{
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
 }
 
+.modal .btn:hover{
+    background-color: rgba(192, 192, 192, 0.5);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.7);
+}
+
+/* ////////////////////////// FOOTER ////////////////////////// */
+
 .footer{
     background-color: rgb(226,116,112);
     padding-bottom: 20px;
     padding-top: 20px;
     padding-left: 35px
 }
-
 
 .footer a{
     font-family: monospace; 
@@ -237,7 +240,6 @@ nav img{
     margin-left: 7em;
     font-family: monospace;
     color: white;
-
 }
 
 .collumn-right h3{
@@ -255,8 +257,15 @@ nav img{
     padding-right: 0em;
 }
 .collumn-right .btn{
-    background-color: rgb(76,74,74);
-    color: white;
+    align-content: center;
+    background-color: silver;
+    font-family: monospace;
+    font-variant: small-caps;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
+}
+.collumn-right .btn:hover{
+    background-color: rgb(211, 208, 208);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.7);
 }
 
 
@@ -286,3 +295,5 @@ nav img{
         margin-top: 1em;
     }
 }
+
+/* ////////////////////////// FOOTER ////////////////////////// */
