@@ -53,7 +53,7 @@
                             Categories
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="apple.html">Apples</a>
+                            <a class="dropdown-item" href="apple.php">Apples</a>
                             <a class="dropdown-item" href="windows.html">Windows</a>
                             <a class="dropdown-item" href="penguins.html">Penguins</a>
                             <a class="dropdown-item" href="raspberries.html">Raspberries</a>
@@ -89,7 +89,7 @@
 
                             <div class="col-lg-4 col-md-4 line1">
                                 <div class="portfolio-item wow fadeInUp">
-                                    <a href="apple.html">
+                                    <a href="apple.php">
                                         <img src="images/categories_index/apple-1122537_1280.jpg" alt="">
                                         <div class="portfolio-overlay">
                                             <div class="portfolio-info">
@@ -428,61 +428,9 @@
         <!-- fin de section top selling cree par vinny -->
     </main>
 
-    <!-- zone footer -->
-    <footer class="footer container-fluid">
-        <div class="row  px-3 pt-3 justify-content-center">
-            <div class="col-12 col-lg-6 collumn-left">
-                <div class="row footer-link">
-                    <nav class="flex-column">
-                        <a class="nav-link" href="#">Home</a>
-                        <a class="nav-link" href="index.html#aboutUs">About us</a>
-                        <a class="nav-link" href="index.html#topSelling">Top selling</a>
-                        <a class="nav-link" href="index.html#contactUs">Contact</a>
-                        <a class="nav-link" href="#">Legal mentions</a>
-                    </nav>
-                    <nav class="flex-column">
-                        <a class="nav-link" href="apple.html">Apple</a>
-                        <a class="nav-link" href="windows.html">Windows</a>
-                        <a class="nav-link" href="penguins.html">Penguin</a>
-                        <a class="nav-link" href="raspberries.html">Raspberry</a>
-                        <a class="nav-link" href="developers.html">Dev</a>
-                    </nav>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-12">
-                        <h2><img src="./images/logoblanc.png"><span class="align-baseline">Wild Bazar</span></h2>
-                        <div id="address">
-                            1,rue de la paix<br>
-                            75000 Paris<br>
-                            01-23-45-67-89
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-6 justify-content-center collumn-right">
-                <h3 class="text-center" id="contactUs">Contact us</h3>
-                <form>
-                    <div class="form-group row">
-                        <label for="inputEmail3" class="col-2 col-form-label">Email</label>
-                        <div class="col-8">
-                            <input type="email" class="form-control" id="inputEmail3">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="exampleFormControlTextarea1" class="col-2 col-form-label">Message</label>
-                        <div class="col-8">
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-12 text-center">
-                            <button type="submit" class="btn">Submit</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </footer>
+    <?php
+    include 'footer.php'
+    ?>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
