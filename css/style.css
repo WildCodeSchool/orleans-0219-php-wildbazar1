@@ -3,6 +3,10 @@
     font-family: "Courier New", Courier, monospace;
 }
 
+.sanssherif{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 /* ////////////////////////// HEADER ////////////////////////// */
 
 .navbar{
@@ -20,9 +24,13 @@ h1{
 }
 
 .nav-link{
-    
     color: white;
     font-family: monospace;
+}
+
+nav img{
+    width: 25px; 
+    height: 25px;
 }
 
 .navbar .navbar-brand{
@@ -40,19 +48,22 @@ h1{
     background-color: rgba(192, 192, 192, 0.3);
     text-shadow: 2px 2px 4px #000000;
     border-radius: 15px;
-    padding: 5px 15px 5px 15px;
+    /* padding: 5px 15px 5px 15px; */
 }
 
 .jumbotron{
-    background-image: url("/images/fond.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-image: url("../images/fondtete.jpg");
+    background-repeat:   no-repeat;
+    background-position: center center;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
+    /* background-size: 100% 100%; */
+    background-size: cover;
     height: 30em;
     width: 100%;
 }
 
 .jumbotron .container{
-    padding-top: 4em;
+    padding-top: 12em;
 }
 
 .jumbotron h1, .jumbotron h3{
@@ -61,12 +72,13 @@ h1{
 }
 
 .jumbotron h1{
-    font-size: 5em;
+    font-size: 8em;
     color: black;
 }
 .jumbotron h3{
-    font-size: 1.5em;
-    color: rgb(226, 116, 112);
+    font-size: 2.5em;
+    color:  rgb(226, 116, 112);
+    text-shadow: 3px 1px 1px black;
 }
 
 .dropdown-item{
@@ -75,30 +87,39 @@ h1{
 
 .nav-link{
     color: white;
-    padding: 5px 15px 5px 15px; 
+    /* padding: 5px 25px 5px 25px;  */
 }
 
 .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
     color: whitesmoke;
-    background-color: rgba(192, 192, 192, 0.3);
+    /* background-color: rgba(192, 192, 192, 0.3); */
     text-shadow: 2px 2px 4px #000000;
     border-radius: 15px;
-    padding: 5px 15px 5px 15px; 
+    /* padding: 5px 15px 5px 15px;  */
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 1000px){
     .jumbotron h3{
-        display: none;
+        font-size: 1.5em;
+        text-align: center;
     }
     .jumbotron h1{
-        font-size: 3em;
-        padding-top: 2em; 
+        font-size: 3.5em;
+        text-shadow: 2px 2px 4px #fdfdfd;
+        text-align: center;
+    }
+    .jumbotron{
+        height: 20em;
+    }
+    .jumbotron .container{
+        padding-top: 8em;
     }
 }
+
 /* ////////////////////////// HEADER ////////////////////////// */
 
 /* ////////////////////////// CATEGORIE ////////////////////////// */
-#portfolio .portfolio-overlay {
+.portfolio .portfolio-overlay {
     position: absolute;
     top: 0;
     right: 0;
@@ -111,7 +132,7 @@ h1{
     transition: all ease-in-out 0.4s;
 }
 
-#portfolio .portfolio-item {
+.portfolio .portfolio-item {
     overflow: hidden;
     position: relative;
     padding: 0;
@@ -119,28 +140,28 @@ h1{
     text-align: center;
 }
 
-#portfolio .portfolio-item {
+.portfolio .portfolio-item {
     margin: 0;
     font-weight: 700;
 }
 
-#portfolio .portfolio-item img {
+.portfolio .portfolio-item img {
     -webkit-transition: all ease-in-out 0.4s;
     transition: all ease-in-out 0.4s;
     width: 100%;
 }
 
-#portfolio .portfolio-item:hover img {
+.portfolio .portfolio-item:hover img {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
 
-#portfolio .portfolio-item:hover .portfolio-overlay {
+.portfolio .portfolio-item:hover .portfolio-overlay {
     opacity: 1;
     background: rgba(0, 0, 0, 0.7);
 }
 
-#portfolio .portfolio-info {
+.portfolio .portfolio-info {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -149,16 +170,8 @@ h1{
 }
 
 .line1 {
-    margin:25px solid #ffffff;
+    border:25px solid #ffffff;
 }
-
-/*.child1 {
-    margin-left: 220px;
-}*/
-
-
-
-
 
 h2{
     font-family: Courier;
@@ -179,28 +192,134 @@ h2{
     font-variant: small-caps ;
     font-weight: 700;
 
-
 }
 
-@media screen and (min-width: 600px) and (max-width: 900px) {
+@media screen and (max-width: 900px) {
     .text1 {
 
         color: white;
-        font-size: 24px;
+        font-size: 20px;
         font-family: "Courier New";
         text-shadow:3px 2px 2px black;
         margin: 0;
         font-variant: small-caps ;
         font-weight: 600;
 
+    }
+
+    .line1{
+        border: 5px solid #ffffff;
+    }
+
+    .center{
+        margin: none auto;
+        float:none;
 
     }
 
 
 }
 
+.center{
+    margin: 25px auto;
+    float:none;
+
+}
+
+
+.card-columns .card{
+    width: 22em;
+    height: 22em;
+    margin: 3em 1em 3em 1em;
+    background-color: rgba(211, 208, 208, 0.6);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
+    transition-duration:250ms;
+
+}
+
+.card:hover{
+    background-color: rgba(226, 116, 112, 0.8);
+    transform: scale(1.2,1.2);
+    z-index:1;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
+    transition-duration:250ms;
+}
+
+.card-img-top{
+    width: 90%;
+    height: 15em;
+    margin: 1em 1em 1em 1em;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.card h4{
+    text-align: center;
+    font-family: monospace;
+    font-variant: small-caps;
+}
+
 
 /* ////////////////////////// CATEGORIE ////////////////////////// */
+
+/* ////////////////////////// ABOUT US ////////////////////////// */
+
+.aboutus{
+    background-color: silver;
+}
+
+/* ////////////////////////// ABOUT US ////////////////////////// */
+
+/* ////////////////////////// TOP SELLS ////////////////////////// */
+
+.topselling h3{
+    font-size: 1.5em;
+    font-family: sanssherif;
+}
+
+
+.modal-header{
+    background-color: rgba(226, 116, 112, 0.8);
+    color: whitesmoke;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
+    text-shadow: 2px 2px 4px #000000;
+}
+.modal-body{
+    padding-top: 3em;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
+}
+.modal h4{
+    font-family: monospace;
+    font-variant: small-caps;
+    font-size: 3em;
+}
+.modal h5, .modal h6{
+    text-align: center;
+    font-family: monospace;
+    font-variant: small-caps;
+    font-size: 2em;
+}
+.modal li{
+    font-family: monospace;
+    font-variant: small-caps;
+    font-size: 1em;
+}
+
+
+.modal .btn{
+    align-content: center;
+    background-color: silver;
+    font-family: monospace;
+    font-variant: small-caps;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+.modal .btn:hover{
+    background-color: rgba(192, 192, 192, 0.5);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.7);
+}
+
+/* ////////////////////////// TOP SELLS ////////////////////////// */
 
 /* ////////////////////////// FOOTER ////////////////////////// */
 
@@ -210,7 +329,6 @@ h2{
     padding-top: 20px;
     padding-left: 35px
 }
-
 
 .footer a{
     font-family: monospace; 
@@ -242,7 +360,6 @@ h2{
     margin-left: 7em;
     font-family: monospace;
     color: white;
-
 }
 
 .collumn-right h3{
@@ -260,10 +377,19 @@ h2{
     padding-right: 0em;
 }
 .collumn-right .btn{
-    background-color: rgb(76,74,74);
-    color: white;
+    align-content: center;
+    background-color: silver;
+    font-family: monospace;
+    font-variant: small-caps;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
 }
-
+.collumn-right .btn:hover{
+    background-color: rgb(211, 208, 208);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.7);
+}
+.collumn-right .form-control{
+    font-size: 0.5rem;
+}
 
 /********Media queries Footer***********/
 @media (max-width: 768px){
