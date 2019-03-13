@@ -37,6 +37,10 @@ $products = [
 
 <body>
 
+    <?php
+    include 'header.php';
+    ?>
+
     <main>
 
         <div class="justify-content-center m-5 d-flex flex-wrap card-columns">
