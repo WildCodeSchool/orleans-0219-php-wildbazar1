@@ -6,19 +6,19 @@
         <div class="col-12 col-lg-6 collumn-left">
             <div class="row footer-link">
                 <nav class="flex-column">
-                    <a class="nav-link" href="index.html">Home</a>
-                    <a class="nav-link" href="index.html#aboutUs">About us</a>
-                    <a class="nav-link" href="index.html#topSelling">Top
+                    <a class="nav-link" href="index.php">Home</a>
+                    <a class="nav-link" href="index.php#aboutUs">About us</a>
+                    <a class="nav-link" href="index.php#topSelling">Top
                         selling</a>
-                    <a class="nav-link" href="index.html#contactUs">Contact</a>
-                    <a class="nav-link" href="index.html">Legal mentions</a>
+                    <a class="nav-link" href="index.php#contactUs">Contact</a>
+                    <a class="nav-link" href="index.php">Legal mentions</a>
                 </nav>
                 <nav class="flex-column">
-                    <a class="nav-link" href="apple.html">Apple</a>
-                    <a class="nav-link" href="windows.html">Windows</a>
-                    <a class="nav-link" href="penguins.html">Penguin</a>
-                    <a class="nav-link" href="raspberries.html">Raspberry</a>
-                    <a class="nav-link" href="developers.html">Dev</a>
+                    <a class="nav-link" href="apple.php">Apple</a>
+                    <a class="nav-link" href="windows.php">Windows</a>
+                    <a class="nav-link" href="penguins.php">Penguin</a>
+                    <a class="nav-link" href="raspberries.php">Raspberry</a>
+                    <a class="nav-link" href="developers.php">Dev</a>
                 </nav>
             </div>
             <div class="row justify-content-center">

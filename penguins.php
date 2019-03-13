@@ -2,20 +2,18 @@
 
 $products = [
 
-    'products1' => ['Sweat \"Got Linux ?\"', '40', 'Lorem ipsum dolor sit, amet consectetur adpsiciing elit. Cum obcaecati SWEAT GOT LINUX ? dolores eveniet', 'XL', '10lb', 'Black'],
-    'products2' => ['Sweat \"Peace, Love, Linux\"', '50', 'Lorem ipsum dolor sit, amet consectetur adpsiciing elit. Cum obcaecati SWEAT Peace, Love, Linux dolores eveniet', 'L', '11lb', 'Black'],
-    'products3' => ['Sweat \" May the force be with you\"', '45', 'Lorem ipsum dolor sit, amet consectetur adpsiciing elit. Cum obcaecati SWEAT May the source be with you ? dolores eveniet', 'XXL', '12lb', 'Black'],
-    'products4' => ['Sweat \"Why so Windows ?\"', '30', 'Lorem ipsum dolor sit, amet consectetur adpsiciing elit. Cum obcaecati T-shirt Why so Windows ? dolores eveniet', 'M', '6lb', 'White'],
-    'products5' => ['Mug \"Fork You\"', '20', 'Lorem ipsum dolor sit, amet consectetur adpsiciing elit. Cum obcaecati Mug Fork You dolores eveniet', 'Standard', '8lb', 'Black'],
-    'products6' => ['Mug \"Just sudo It\"', '20', 'Lorem ipsum dolor sit, amet consectetur adpsiciing elit. Cum obcaecati Mug Just sudo It dolores eveniet', 'Standard', '8lb', 'White'],
-    'products7' => ['Mug \"Del Windows\"', '20', 'Lorem ipsum dolor sit, amet consectetur adpsiciing elit. Cum obcaecati Mug Del windows dolores eveniet', 'XL', '10lb', 'White'],
-    'products8' => ['Plush \"Tux\"', '30', 'Lorem ipsum dolor sit, amet consectetur adpsiciing elit. Cum obcaecati Plush Tux dolores eveniet', '1,2 in', '5lb', 'Black'],
-    'products9' => ['Cap \"Tux\"', '25', 'Lorem ipsum dolor sit, amet consectetur adpsiciing elit. Cum obcaecati Cap Tux dolores eveniet', 'L', '10lb', 'Light brown'],
-    'products10' => ['Cap \"Ubuntu\"', '25', 'Lorem ipsum dolor sit, amet consectetur adpsiciing elit. Cum obcaecati Cap Ubuntu dolores eveniet', 'L', '10lb', 'Black & white'],
-    'products11' => ['Sticker \"sudo rm\"', '10', 'Lorem ipsum dolor sit, amet consectetur adpsiciing elit. Cum obcaecati Sticker sudo rm dolores eveniet', '2 in', '1lb', 'Black'],
-    'products12' => ['Sticker \"Gnu/Linux\"', '10', 'Lorem ipsum dolor sit, amet consectetur adpsiciing elit. Cum obcaecati Sticker Gnu/Linux dolores eveniet', '2 in', '1lb', 'Black & White'],
-
-
+    'Sweat "Got Linux ?"' => ['40', 'Lorem ipsum dolor sit, amet consectetur adpsiciing elit. Cum obcaecati SWEAT GOT LINUX ? dolores eveniet', 'XL', '10lb', 'Black','sweat1.jpg'],
+    'Sweat "Peace, Love, Linux"' => ['50', 'Lorem ipsum dolor sit, amet consectetur adpsiciing elit. Cum obcaecati SWEAT Peace, Love, Linux dolores eveniet', 'L', '11lb', 'Black','sweat2.jpeg'],
+    'Sweat " May the force be with you"' => ['45', 'Lorem ipsum dolor sit, amet consectetur adpsiciing elit. Cum obcaecati SWEAT May the source be with you ? dolores eveniet', 'XXL', '12lb', 'Black','sweat3.jpg'],
+    'Sweat "Why so Windows ?"' => ['30', 'Lorem ipsum dolor sit, amet consectetur adpsiciing elit. Cum obcaecati T-shirt Why so Windows ? dolores eveniet', 'M', '6lb', 'White','tshirt1.jpg'],
+    'Mug "Fork You"' => ['20', 'Lorem ipsum dolor sit, amet consectetur adpsiciing elit. Cum obcaecati Mug Fork You dolores eveniet', 'Standard', '8lb', 'Black','mug1.jpg'],
+    'Mug "Just sudo It"' => ['20', 'Lorem ipsum dolor sit, amet consectetur adpsiciing elit. Cum obcaecati Mug Just sudo It dolores eveniet', 'Standard', '8lb', 'White','mug2.jpg'],
+    'Mug "Del Windows"' => ['20', 'Lorem ipsum dolor sit, amet consectetur adpsiciing elit. Cum obcaecati Mug Del windows dolores eveniet', 'XL', '10lb', 'White','mug3.jpg'],
+    'Plush "Tux"' => ['30', 'Lorem ipsum dolor sit, amet consectetur adpsiciing elit. Cum obcaecati Plush Tux dolores eveniet', '1,2 in', '5lb', 'Black','plush1.jpg'],
+    'Cap "Tux"' => ['25', 'Lorem ipsum dolor sit, amet consectetur adpsiciing elit. Cum obcaecati Cap Tux dolores eveniet', 'L', '10lb', 'Light brown','cap1.jpg'],
+    'Cap "Ubuntu"' => ['25', 'Lorem ipsum dolor sit, amet consectetur adpsiciing elit. Cum obcaecati Cap Ubuntu dolores eveniet', 'L', '10lb', 'Black & white','cap2.jpg'],
+    'Sticker "sudo rm"' => ['10', 'Lorem ipsum dolor sit, amet consectetur adpsiciing elit. Cum obcaecati Sticker sudo rm dolores eveniet', '2 in', '1lb', 'Black','stickers1.jpg'],
+    'Sticker "Gnu/Linux"' => ['10', 'Lorem ipsum dolor sit, amet consectetur adpsiciing elit. Cum obcaecati Sticker Gnu/Linux dolores eveniet', '2 in', '1lb', 'Black & White','stickers2.jpg'],
 ];
 
 ?>
