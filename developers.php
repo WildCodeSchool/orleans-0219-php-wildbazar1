@@ -93,6 +93,7 @@ $products = [['title' => 'Zen your projects', 'price' => '70', 'description' => 
 </main>
 
 <!-- zone footer -->
+
 <?php include 'footer.php'?>
 
 <!-- Optional JavaScript -->
