@@ -8,10 +8,11 @@
 }
 
 body {
-    background-image: url("../images/penguins/background.jpg");
-    background-repeat: no-repeat;
+    background-image: url("../images/silver-2143730_1280.jpg");
     background-attachment: fixed;
-    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 /* ////////////////////////// HEADER ////////////////////////// */
 
