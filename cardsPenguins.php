@@ -63,9 +63,3 @@
         </div>
     </div>
 </div>
-
-
-$products [
-['broken windows','40']
-['city windows', 60,]
-['wooden windows' 70,]
