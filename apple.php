@@ -5,13 +5,13 @@ $apples = [
         "Apple \'Violet\'" => ["50", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.", "Apple - Violet", "xx", "xx", "xx", "Minaudiere-Pomme-Violet-11.jpg"],
         "Apple \'Rotten\'" => ["30", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.", "Apple - Rotten", "xx", "xx", "xx", "Pomme-au-four-à-la-crème-de-marrons.jpg"],
         "Apple \'Red\'" => ["20", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.", "Apple - Red", "xx", "xx", "xx", "shutterstock_102978833.jpg"],
-        "Apple \'Gold\'" => ["20", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.", "Apple - Gold", "xx", "xx", "xx", "images/apple/pomme-or.jpg"],
-        "Apple \'Blue\'" => ["20", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.", "Apple - Blue", "xx", "xx", "xx", "images/apple/pomme5.jpg"],
-        "Apple \'Yellow\'" => ["30", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.", "Apple - Yellow", "xx", "xx", "xx", "images/apple/pomme_golden.jpg"],
-        "Apple \'Bite\'" => ["25", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.", "Apple - Bite", "xx", "xx", "xx", "images/apple/pomme.png"],
-        "Apple \'Smoothie\'" => ["25", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.", "Apple - Smoothie", "xx", "xx", "xx", "images/apple/smoothie-pomme.jpg"],
-        "Apple \'Jobs\'" => ["10", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.", "Apple - Jobs", "xx", "xx", "xx", "images/apple/SteveJobs.jpg"],
-        "Apple \'Green\'" => ["40", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.", "Apple - Green", "xx", "xx", "xx", "images/apple/fotolia_55372155_subscription_xxl-copy.jpg"],
+        "Apple \'Gold\'" => ["20", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.", "Apple - Gold", "xx", "xx", "xx", "pomme-or.jpg"],
+        "Apple \'Blue\'" => ["20", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.", "Apple - Blue", "xx", "xx", "xx", "pomme5.jpg"],
+        "Apple \'Yellow\'" => ["30", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.", "Apple - Yellow", "xx", "xx", "xx", "pomme_golden.jpg"],
+        "Apple \'Bite\'" => ["25", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.", "Apple - Bite", "xx", "xx", "xx", "pomme.png"],
+        "Apple \'Smoothie\'" => ["25", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.", "Apple - Smoothie", "xx", "xx", "xx", "smoothie-pomme.jpg"],
+        "Apple \'Jobs\'" => ["10", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.", "Apple - Jobs", "xx", "xx", "xx", "SteveJobs.jpg"],
+        "Apple \'Green\'" => ["40", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.", "Apple - Green", "xx", "xx", "xx", "fotolia_55372155_subscription_xxl-copy.jpg"],
 
     ]
 ?>
@@ -38,6 +38,9 @@ $apples = [
 <body>
 
 <?php
+$pageTitle = 'apple.php';
+$pageUnderTitle = 'When elegance ryhmes with performance'
+
 include 'header.php'
 ?>
 
