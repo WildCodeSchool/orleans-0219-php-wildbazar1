@@ -1,24 +1,4 @@
-<!DOCTYPE html>
-<html lang="fr">
 
-<head>
-    <meta charset="UTF-8">
-    <!--- Appel Bootstrap 4 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-          crossorigin="anonymous">
-    <!-- Appel fontawesome -->
-    <link href="http://fr.allfont.net/allfont.css?fonts=courier" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-          crossorigin="anonymous">
-    <!-- Appel css -->
-    <link rel="stylesheet" href="css/<?php echo $specialCss; ?>.css">
-    <title>Wild Bazar</title>
-
-
-</head>
-
-<body>
 
 <header>
 
@@ -69,7 +49,7 @@
 
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-            <h1 class="display-4"><?php echo $pageTitle ?></h1>
+            <h1 class="display-4 typewriter"><?php echo $pageTitle ?></h1>
             <h3 class="lead"><?php echo $pageUnderTitle?></h3>
         </div>
     </div>

@@ -1,3 +1,14 @@
+body {
+    background-image: url("../images/silver-2143730_1280.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+
+
 
 .monospace {
     font-family: "Courier New", Courier, monospace;
@@ -52,33 +63,34 @@ nav img{
 }
 
 .jumbotron{
-    background-image: url("../images/fondtete.jpg");
+    background-image: url("../images/matrix-1274888_1280.png");
     background-repeat:   no-repeat;
     background-position: center center;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
     /* background-size: 100% 100%; */
     background-size: cover;
-    height: 30em;
+    height: 40em;
     width: 100%;
 }
 
 .jumbotron .container{
-    padding-top: 12em;
+    padding-top: 10em;
 }
 
 .jumbotron h1, .jumbotron h3{
-    font-variant: small-caps; /* Met le text en petite majuscule */
-    text-shadow: 2px 20px 14px black;
+    font-variant: small-caps; /* Met le texte en petite majuscule */
+
 }
 
 .jumbotron h1{
-    font-size: 8em;
+    font-size: 10em;
     color: black;
+    text-shadow: 3px 3px 6px white;
 }
 .jumbotron h3{
-    font-size: 2.5em;
-    color:  rgb(226, 116, 112);
-    text-shadow: 3px 1px 1px black;
+    font-size: 3.5em;
+    color: black;
+    text-shadow: 3px 3px 3px  rgb(226, 116, 112);
 }
 
 .dropdown-item{
@@ -100,8 +112,8 @@ nav img{
 
 @media screen and (max-width: 1000px){
     .jumbotron h3{
-        font-size: 1.5em;
         text-align: center;
+        font-size: 3,5em;
     }
     .jumbotron h1{
         font-size: 3.5em;
@@ -112,8 +124,65 @@ nav img{
         height: 20em;
     }
     .jumbotron .container{
-        padding-top: 8em;
+        padding-top: 6em;
     }
+}
+
+
+/* Demo style */
+.typewriter {
+    font-size: 3,5rem;
+    color: rgb(226, 116, 112);
+    text-shadow: 3px 1px 1px black;
+    overflow: hidden; /* Assure que le contenu n'est pas révélé avant l'animation */
+    border-right: .06em solid black; /* Le curseur */
+    white-space: nowrap; /* Garde le contenu sur une seule ligne */
+    margin: 0 auto; /* Donne l'effet de défilement au fur et à mesure */
+    letter-spacing: .10em; /* Espace entre les lettres */
+    animation:
+            typing 3.5s steps(30, end), /* Défini le temps et la vitesse de frappe des lettres */
+            blink-caret .75s step-end infinite; /* Défini le temps et la vitesse du curseur */
+}
+
+/* Effet de taper les lettres */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* Effet du curseur */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+}
+
+@media screen and (max-width: 792px) {
+    .typewriter {
+        font-size: 3,5rem; !important;
+        color: rgb(226, 116, 112);
+        text-shadow: 3px 1px 1px black;
+        overflow: hidden; /* Assure que le contenu n'est pas révélé avant l'animation */
+        border-right: none /* Le curseur */
+        white-space: none/* Garde le contenu sur une seule ligne */
+        margin: 0 auto; /* Donne l'effet de défilement au fur et à mesure */
+        letter-spacing: none /* Espace entre les lettres */
+        animation: none;
+                 /* Défini le temps et la vitesse de frappe des lettres */
+                /* Défini le temps et la vitesse du curseur */
+    }
+
+    /* Effet de taper les lettres */
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+    }
+
+    /* Effet du curseur */
+    @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: black }
+    }
+
 }
 
 /* ////////////////////////// HEADER ////////////////////////// */
@@ -170,7 +239,7 @@ nav img{
 }
 
 .line1 {
-    border:25px solid #ffffff;
+    border:25px transparent;
 }
 
 h2{
@@ -179,7 +248,8 @@ h2{
 }
 
 .fa-caret-down, .fa-caret-up, .fas {
-    color: lightcoral;
+    color: rgb(226, 116, 112);
+
 }
 
 .text1 {
@@ -208,7 +278,7 @@ h2{
     }
 
     .line1{
-        border: 5px solid #ffffff;
+        border: 5px;
     }
 
     .center{
@@ -221,7 +291,6 @@ h2{
 }
 
 .center{
-    margin: 25px auto;
     float:none;
 
 }
@@ -265,8 +334,14 @@ h2{
 /* ////////////////////////// ABOUT US ////////////////////////// */
 
 .aboutus{
-    background-color: silver;
+    background-color: rgb(226, 116, 112, 0.5);
 }
+
+.caret {
+    color: black;
+}
+
+
 
 /* ////////////////////////// ABOUT US ////////////////////////// */
 
@@ -318,6 +393,9 @@ h2{
     background-color: rgba(192, 192, 192, 0.5);
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.7);
 }
+
+
+
 
 /* ////////////////////////// TOP SELLS ////////////////////////// */
 
