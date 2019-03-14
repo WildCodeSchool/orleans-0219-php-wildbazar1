@@ -1,7 +1,7 @@
 
 <div class="card">
     <div data-toggle="modal" data-target="#pommeVer">
-        <img class="card-img-top img-fluid mt-3" src=<?php echo $number[5]; ?>" alt="Pommes">
+        <img class="card-img-top img-fluid mt-3" src=images/apple/<?php echo $number[5]; ?>" alt="Pommes">
         <div class="card-body">
             <!-- product description-->
             <h4 class="card-title text-center"><?php echo $tools; ?></h4>
@@ -25,7 +25,7 @@
                     <div class="row mx-3">
                         <div class="col-sm-6">
                             <!-- pictures -->
-                            <img class="card-img-top img-fluid mt-3" src="images/penguins/<?php echo $number[5]; ?>" alt="image du produit1">
+                            <img class="card-img-top img-fluid mt-3" src="images/apple/<?php echo $number[5]; ?>" alt="image du produit1">
                         </div>
                         <div class="col-sm-6">
                             <!-- prices -->

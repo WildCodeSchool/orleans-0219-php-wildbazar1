@@ -1,10 +1,10 @@
 <?php
 $apples = [
-        "Apple \'Worm\'" => ["40", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.", "Apple - Worm", "xx", "xx", "xx", "images/apple/pomme-_-ver.jpeg.bmp"],
-        "Apple \'Black\'" => ["50", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.", "Apple - Black", "xx", "xx", "xx", "images/apple/pomme-deco-en-resine-28cm-noir.jpg"],
-        "Apple \'Violet\'" => ["50", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.", "Apple - Violet", "xx", "xx", "xx", "images/apple/Minaudiere-Pomme-Violet-11.jpg"],
-        "Apple \'Rotten\'" => ["30", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.", "Apple - Rotten", "xx", "xx", "xx", "images/apple/Pomme-au-four-à-la-crème-de-marrons.jpg"],
-        "Apple \'Red\'" => ["20", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.", "Apple - Red", "xx", "xx", "xx", "images/apple/shutterstock_102978833.jpg"],
+        "Apple \'Worm\'" => ["40", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.", "Apple - Worm", "xx", "xx", "xx", "pomme-_-ver.jpeg.bmp"],
+        "Apple \'Black\'" => ["50", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.", "Apple - Black", "xx", "xx", "xx", "pomme-deco-en-resine-28cm-noir.jpg"],
+        "Apple \'Violet\'" => ["50", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.", "Apple - Violet", "xx", "xx", "xx", "Minaudiere-Pomme-Violet-11.jpg"],
+        "Apple \'Rotten\'" => ["30", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.", "Apple - Rotten", "xx", "xx", "xx", "Pomme-au-four-à-la-crème-de-marrons.jpg"],
+        "Apple \'Red\'" => ["20", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.", "Apple - Red", "xx", "xx", "xx", "shutterstock_102978833.jpg"],
         "Apple \'Gold\'" => ["20", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.", "Apple - Gold", "xx", "xx", "xx", "images/apple/pomme-or.jpg"],
         "Apple \'Blue\'" => ["20", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.", "Apple - Blue", "xx", "xx", "xx", "images/apple/pomme5.jpg"],
         "Apple \'Yellow\'" => ["30", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.", "Apple - Yellow", "xx", "xx", "xx", "images/apple/pomme_golden.jpg"],
