@@ -63,7 +63,7 @@ nav img{
 }
 
 .jumbotron{
-    background-image: url("../images/nvfond1.png");
+    background-image: url("../images/matrix-1274888_1280.png");
     background-repeat:   no-repeat;
     background-position: center center;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
@@ -131,7 +131,7 @@ nav img{
 
 /* Demo style */
 .typewriter {
-    font-size: 3,5rem; !important;
+    font-size: 3,5rem;
     color: rgb(226, 116, 112);
     text-shadow: 3px 1px 1px black;
     overflow: hidden; /* Assure que le contenu n'est pas révélé avant l'animation */
@@ -340,6 +340,9 @@ h2{
 .caret {
     color: black;
 }
+
+
+
 /* ////////////////////////// ABOUT US ////////////////////////// */
 
 /* ////////////////////////// TOP SELLS ////////////////////////// */
@@ -390,6 +393,9 @@ h2{
     background-color: rgba(192, 192, 192, 0.5);
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.7);
 }
+
+
+
 
 /* ////////////////////////// TOP SELLS ////////////////////////// */
 

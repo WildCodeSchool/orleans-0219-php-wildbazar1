@@ -142,13 +142,13 @@ include 'header.php';
                 <!--titre section-->
             </div>
             <div class="row">
-                <div class="col-lg-3 col-sm-12">
-                    <div class="text-center ">
-                        <img src="images/wild.jpg" class=" img-thumbnail px-1 py-1" alt="Responsive image">
-                        <!--image-->
+                <div class="col-lg-6 col-sm-12">
+                    <div class="text-center " id="blur">
+                        <img src="images/wild.jpg" class="hover img-thumbnail px-1 py-1" alt="Responsive image">
+
                     </div>
                 </div>
-                <div class="col-lg-9 col-sm-12">
+                <div class="col-lg-6 col-sm-12">
                     <p class="text-align-center px-3 py-2">Wild Code School offers you 5-month web developer
                         training courses in Paris: training in JavaScript/React or training in Java/JEE.
                     </p>
