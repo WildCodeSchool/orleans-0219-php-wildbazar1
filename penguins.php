@@ -4,112 +4,124 @@ $pageTitle = 'Tux need money';
 $pageUnderTitle = 'To show off in front of G33K !';
 $products = [
 
-    ['title' => 'Sweat "Got Linux ?"',
-        'price' => '40',
+    [
+        'title' => 'Sweat "Got Linux ?"',
+        'price' => 40,
         'description' => 'Lorem ipsum dolor sit, amet consectetur adpsiciing elit. Cum obcaecati SWEAT GOT LINUX ? dolores eveniet',
         'size' => 'XL',
         'weight' => '10lb',
         'color' => 'Black',
-        'picture' => 'sweat1.jpg'
+        'picture' => 'sweat1.jpg',
     ],
 
-    ['title' => 'Sweat "Peace, Love, Linux"',
-        'price' => '50',
+    [
+        'title' => 'Sweat "Peace, Love, Linux"',
+        'price' => 50,
         'description' => 'Lorem ipsum dolor sit, amet consectetur adpsiciing elit. Cum obcaecati SWEAT Peace, Love, Linux dolores eveniet',
         'size' => 'L',
         'weight' => '11lb',
         'color' => 'Black',
-        'picture' => 'sweat2.jpeg'
+        'picture' => 'sweat2.jpeg',
     ],
 
-    ['title' => 'Sweat " May the force be with you"',
-        'price' => '45',
+    [
+        'title' => 'Sweat " May the force be with you"',
+        'price' => 45,
         'description' => 'Lorem ipsum dolor sit, amet consectetur adpsiciing elit. Cum obcaecati SWEAT May the source be with you ? dolores eveniet',
         'size' => 'XXL',
         'weight' => '12lb',
         'color' => 'Black',
-        'picture' => 'sweat3.jpg'
+        'picture' => 'sweat3.jpg',
     ],
 
-    ['title' => 'Sweat "Why so Windows ?"',
-        'price' => '30',
+    [
+        'title' => 'Sweat "Why so Windows ?"',
+        'price' => 30,
         'description' => 'Lorem ipsum dolor sit, amet consectetur adpsiciing elit. Cum obcaecati T-shirt Why so Windows ? dolores eveniet',
         'size' => 'M',
         'weight' => '6lb',
         'color' => 'White',
-        'picture' => 'tshirt1.jpg'
+        'picture' => 'tshirt1.jpg',
     ],
 
-    ['title' => 'Mug "Fork You"',
-        'price' => '20',
+    [
+        'title' => 'Mug "Fork You"',
+        'price' => 20,
         'description' => 'Lorem ipsum dolor sit, amet consectetur adpsiciing elit. Cum obcaecati Mug Fork You dolores eveniet',
         'size' => 'Standard',
         'weight' => '8lb',
         'color' => 'Black',
-        'picture' => 'mug1.jpg'
+        'picture' => 'mug1.jpg',
     ],
 
-    ['title' => 'Mug "Just sudo It"',
-        'price' => '20',
+    [
+        'title' => 'Mug "Just sudo It"',
+        'price' => 20,
         'description' => 'Lorem ipsum dolor sit, amet consectetur adpsiciing elit. Cum obcaecati Mug Just sudo It dolores eveniet',
         'size' => 'Standard',
         'weight' => '8lb',
         'color' => 'White',
-        'picture' => 'mug2.jpg'
+        'picture' => 'mug2.jpg',
     ],
 
-    ['title' => 'Mug "Del Windows"',
-        'price' => '20',
+    [
+        'title' => 'Mug "Del Windows"',
+        'price' => 20,
         'description' => 'Lorem ipsum dolor sit, amet consectetur adpsiciing elit. Cum obcaecati Mug Del windows dolores eveniet',
         'size' => 'XL',
         'weight' => '10lb',
         'color' => 'White',
-        'picture' => 'mug3.jpg'
+        'picture' => 'mug3.jpg',
     ],
 
-    ['title' => 'Plush "Tux"',
-        'price' => '30',
+    [
+        'title' => 'Plush "Tux"',
+        'price' => 30,
         'description' => 'Lorem ipsum dolor sit, amet consectetur adpsiciing elit. Cum obcaecati Plush Tux dolores eveniet',
         'size' => '1,2 in',
         'weight' => '5lb',
         'color' => 'Black',
-        'picture' => 'plush1.jpg'
+        'picture' => 'plush1.jpg',
     ],
 
-    ['title' => 'Cap "Tux"',
-        'price' => '25',
+    [
+        'title' => 'Cap "Tux"',
+        'price' => 25,
         'description' => 'Lorem ipsum dolor sit, amet consectetur adpsiciing elit. Cum obcaecati Cap Tux dolores eveniet',
         'size' => 'L',
         'weight' => '10lb',
         'color' => 'Light brown',
-        'picture' => 'cap1.jpg'
+        'picture' => 'cap1.jpg',
     ],
 
-    ['title' => 'Cap "Ubuntu"',
-        'price' => '25',
+    [
+        'title' => 'Cap "Ubuntu"',
+        'price' => 25,
         'description' => 'Lorem ipsum dolor sit, amet consectetur adpsiciing elit. Cum obcaecati Cap Ubuntu dolores eveniet',
         'size' => 'L',
         'weight' => '10lb',
         'color' => 'Black & white',
-        'picture' => 'cap2.jpg'
+        'picture' => 'cap2.jpg',
     ],
 
-    ['title' => 'Sticker "sudo rm"',
-        'price' => '10',
+    [
+        'title' => 'Sticker "sudo rm"',
+        'price' => 10,
         'description' => 'Lorem ipsum dolor sit, amet consectetur adpsiciing elit. Cum obcaecati Sticker sudo rm dolores eveniet',
         'size' => '2 in',
         'weight' => '1lb',
         'color' => 'Black',
-        'picture' => 'stickers1.jpg'
+        'picture' => 'stickers1.jpg',
     ],
 
-    ['title' => 'Sticker "Gnu/Linux"',
-        'price' => '10',
+    [
+        'title' => 'Sticker "Gnu/Linux"',
+        'price' => 10,
         'description' => 'Lorem ipsum dolor sit, amet consectetur adpsiciing elit. Cum obcaecati Sticker Gnu/Linux dolores eveniet',
         'size' => '2 in',
         'weight' => '1lb',
         'color' => 'Black & White',
-        'picture' => 'stickers2.jpg'
+        'picture' => 'stickers2.jpg',
     ],
 ];
 

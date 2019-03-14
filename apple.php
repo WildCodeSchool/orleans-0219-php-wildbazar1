@@ -1,17 +1,19 @@
 <?php
-$apples = [
-        "Apple \'Worm\'" => ["40", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.", "Apple - Worm", "xx", "xx", "xx", "images/apple/pomme-_-ver.jpeg.bmp"],
-        "Apple \'Black\'" => ["50", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.", "Apple - Black", "xx", "xx", "xx", "images/apple/pomme-deco-en-resine-28cm-noir.jpg"],
-        "Apple \'Violet\'" => ["50", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.", "Apple - Violet", "xx", "xx", "xx", "images/apple/Minaudiere-Pomme-Violet-11.jpg"],
-        "Apple \'Rotten\'" => ["30", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.", "Apple - Rotten", "xx", "xx", "xx", "images/apple/Pomme-au-four-à-la-crème-de-marrons.jpg"],
-        "Apple \'Red\'" => ["20", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.", "Apple - Red", "xx", "xx", "xx", "images/apple/shutterstock_102978833.jpg"],
-        "Apple \'Gold\'" => ["20", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.", "Apple - Gold", "xx", "xx", "xx", "images/apple/pomme-or.jpg"],
-        "Apple \'Blue\'" => ["20", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.", "Apple - Blue", "xx", "xx", "xx", "images/apple/pomme5.jpg"],
-        "Apple \'Yellow\'" => ["30", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.", "Apple - Yellow", "xx", "xx", "xx", "images/apple/pomme_golden.jpg"],
-        "Apple \'Bite\'" => ["25", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.", "Apple - Bite", "xx", "xx", "xx", "images/apple/pomme.png"],
-        "Apple \'Smoothie\'" => ["25", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.", "Apple - Smoothie", "xx", "xx", "xx", "images/apple/smoothie-pomme.jpg"],
-        "Apple \'Jobs\'" => ["10", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.", "Apple - Jobs", "xx", "xx", "xx", "images/apple/SteveJobs.jpg"],
-        "Apple \'Green\'" => ["40", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.", "Apple - Green", "xx", "xx", "xx", "images/apple/fotolia_55372155_subscription_xxl-copy.jpg"],
+$products = [
+
+        'produit1' => ['40', 'Apple - Worm', 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.', 'pomme-_-ver.jpeg.bmp'],
+        'produit2' => ['50', 'Apple - Black', 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.', 'pomme-deco-en-resine-28cm-noir.jpg'],
+        'produit3' => ['50', 'Apple - Violet', 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.', 'Minaudiere-Pomme-Violet-11.jpg'],
+        'produit4' => ['30', 'Apple - Rotten', 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.', 'Pomme-au-four-à-la-crème-de-marrons.jpg'],
+        'produit5' => ['20', 'Apple - Red', 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.', 'shutterstock_102978833.jpg'],
+        'produit6' => ['20', 'Apple - Gold', 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.', 'pomme-or.jpg'],
+        'produit7' => ['20', 'Apple - Blue', 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.', 'pomme5.jpg'],
+        'produit8' => ['30', 'Apple - Yellow', 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.', 'pomme_golden.jpg'],
+        'produit9' => ['25', 'Apple - Bite',  'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.', 'pomme.png'],
+        'produit10' => ['25', 'Apple - Smoothie', 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.', 'smoothie-pomme.jpg'],
+        'produit11' => ['10', 'Apple - Jobs', 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.', 'SteveJobs.jpg'],
+        'produit12' => ['40',  'Apple - Green', 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.', 'fotolia_55372155_subscription_xxl-copy.jpg'],
+
 
     ]
 ?>
@@ -38,7 +40,10 @@ $apples = [
 <body>
 
 <?php
-include 'header.php'
+$pageTitle = 'A Bite of Apple';
+$pageUnderTitle = 'When elegance ryhmes with performance';
+
+include 'header.php';
 ?>
 
 <main>
@@ -46,7 +51,7 @@ include 'header.php'
 
 
         <?php
-        foreach ($apples as $tools => $number) {
+        foreach ($products as $key => $value) {
             include 'appleCards.php';
         }
         ?>
