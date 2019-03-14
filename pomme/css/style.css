@@ -1,0 +1,307 @@
+
+.monospace {
+    font-family: "Courier New", Courier, monospace;
+}
+
+/* ////////////////////////// HEADER ////////////////////////// */
+
+.navbar{
+    background-color: rgb(226, 116, 112);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4); /* Rajoute une ombre à la nav */
+    font-variant: small-caps;
+}
+
+h1{
+    font-variant: small-caps; /* Met le text en petite majuscule */
+}
+
+.dropdown-item{
+    background-color: transparent;
+}
+
+.nav-link{
+
+    color: white;
+    font-family: monospace;
+}
+
+.navbar .navbar-brand{
+    font-size: 25px;
+    color: whitesmoke;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: whitesmoke;
+    background-color: rgba(192, 192, 192, 0.3);
+    text-shadow: 2px 2px 4px #000000;
+    border-radius: 15px;
+    padding: 5px 15px 5px 15px;
+}
+
+.jumbotron{
+    background-image: url("/images/fond.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 30em;
+    width: 100%;
+}
+
+.jumbotron .container{
+    padding-top: 4em;
+}
+
+.jumbotron h1, .jumbotron h3{
+    font-variant: small-caps; /* Met le text en petite majuscule */
+    text-shadow: 2px 20px 14px black;
+}
+
+.jumbotron h1{
+    font-size: 5em;
+    color: black;
+}
+.jumbotron h3{
+    font-size: 1.5em;
+    color: rgb(226, 116, 112);
+}
+
+.dropdown-item{
+    background-color: transparent;
+}
+
+.nav-link{
+    color: white;
+    padding: 5px 15px 5px 15px;
+}
+
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+    color: whitesmoke;
+    background-color: rgba(192, 192, 192, 0.3);
+    text-shadow: 2px 2px 4px #000000;
+    border-radius: 15px;
+    padding: 5px 15px 5px 15px;
+}
+
+@media screen and (max-width: 375px){
+    .jumbotron h3{
+        display: none;
+    }
+    .jumbotron h1{
+        font-size: 3em;
+        padding-top: 2em;
+    }
+}
+/* ////////////////////////// HEADER ////////////////////////// */
+
+/* ////////////////////////// CATEGORIE ////////////////////////// */
+
+
+
+
+
+
+#portfolio .portfolio-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    -webkit-transition: all ease-in-out 0.4s;
+    transition: all ease-in-out 0.4s;
+}
+
+#portfolio .portfolio-item {
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#portfolio .portfolio-item {
+    margin: 0;
+    font-weight: 700;
+}
+
+#portfolio .portfolio-item img {
+    -webkit-transition: all ease-in-out 0.4s;
+    transition: all ease-in-out 0.4s;
+    width: 100%;
+}
+
+#portfolio .portfolio-item:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+#portfolio .portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+#portfolio .portfolio-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.line1 {
+    border:25px solid #ffffff;
+}
+
+/*.child1 {
+    margin-left: 220px;
+}*/
+
+
+
+
+
+h2{
+    font-family: Courier;
+    font-size: 40px;
+}
+
+.fa-caret-down, .fa-caret-up, .fas {
+    color: lightcoral;
+}
+
+.text1 {
+
+    color: white;
+    font-size: 30px;
+    font-family: "Courier New";
+    text-shadow:3px 2px 2px black;
+    margin: 0;
+    font-variant: small-caps ;
+    font-weight: 700;
+
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    .text1 {
+
+    color: white;
+    font-size: 24px;
+    font-family: "Courier New";
+    text-shadow:3px 2px 2px black;
+    margin: 0;
+    font-variant: small-caps ;
+    font-weight: 600;
+
+
+    }
+
+
+}
+
+.center{
+    margin: 25px auto;
+    float:none;
+
+}
+
+/* ////////////////////////// CATEGORIE ////////////////////////// */
+
+/* ////////////////////////// FOOTER ////////////////////////// */
+.footer{
+    background-color: rgb(226,116,112);
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 35px
+}
+
+
+.footer a{
+    font-family: monospace;
+    color: white;
+}
+
+.footer .nav-link{
+    padding-top: 0;
+    padding-right:2em;
+}
+
+.footer img{
+    max-height: 2.3em;
+    max-width: 2.3em;
+    margin-right: 15px;
+
+}
+
+.footer h2{
+    font-variant: small-caps;
+    font-size: 2em;
+    color: white;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: -15px;
+}
+
+.footer #address{
+    margin-left: 7em;
+    font-family: monospace;
+    color: white;
+
+}
+
+.collumn-right h3{
+    font-variant: small-caps;
+    color: white;
+}
+.collumn-right .form-group{
+    font-family: monospace;
+    color: white;
+    font-size: 1.5em;
+}
+
+.collumn-right .col-form-label{
+    padding-top: 0em;
+    padding-right: 0em;
+}
+.collumn-right .btn{
+    background-color: rgb(76,74,74);
+    color: white;
+}
+
+
+/********Media queries Footer***********/
+@media (max-width: 768px){
+    .footer h2{
+        font-size: 1.5em;
+    }
+
+    .footer #address{
+        font-size: 0.8em;
+        margin-left: 7em;
+    }
+
+    .footer-link{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .collumn-right .form-group label{
+        font-size: 0.8em;
+        margin-right: 1.8em;
+    }
+
+    .collumn-right{
+        padding-right: 2em;
+        margin-top: 1em;
+    }
+}
+
+/* ////////////////////////// FOOTER ////////////////////////// */
+
