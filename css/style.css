@@ -58,22 +58,23 @@ nav img{
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
     /* background-size: 100% 100%; */
     background-size: cover;
-    height: 30em;
+    height: 40em;
     width: 100%;
 }
 
 .jumbotron .container{
-    padding-top: 12em;
+    padding-top: 19em;
 }
 
 .jumbotron h1, .jumbotron h3{
-    font-variant: small-caps; /* Met le text en petite majuscule */
-    text-shadow: 2px 20px 14px black;
+    font-variant: small-caps; /* Met le texte en petite majuscule */
+
 }
 
 .jumbotron h1{
     font-size: 8em;
     color: black;
+    text-shadow: 2px 20px 14px black;
 }
 .jumbotron h3{
     font-size: 2.5em;
@@ -100,8 +101,8 @@ nav img{
 
 @media screen and (max-width: 1000px){
     .jumbotron h3{
-        font-size: 1.5em;
         text-align: center;
+        font-size: 3,5em;
     }
     .jumbotron h1{
         font-size: 3.5em;
@@ -114,6 +115,63 @@ nav img{
     .jumbotron .container{
         padding-top: 8em;
     }
+}
+
+
+/* Demo style */
+.typewriter {
+    font-size: 3,5rem; !important;
+    color: rgb(226, 116, 112);
+    text-shadow: 3px 1px 1px black;
+    overflow: hidden; /* Assure que le contenu n'est pas révélé avant l'animation */
+    border-right: .15em solid black; /* Le curseur */
+    white-space: nowrap; /* Garde le contenu sur une seule ligne */
+    margin: 0 auto; /* Donne l'effet de défilement au fur et à mesure */
+    letter-spacing: .15em; /* Espace entre les lettres */
+    animation:
+            typing 3.5s steps(30, end), /* Défini le temps et la vitesse de frappe des lettres */
+            blink-caret .5s step-end; /* Défini le temps et la vitesse du curseur */
+}
+
+/* Effet de taper les lettres */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* Effet du curseur */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+}
+
+@media screen and (max-width: 792px) {
+    .typewriter {
+        font-size: 3,5rem; !important;
+        color: rgb(226, 116, 112);
+        text-shadow: 3px 1px 1px black;
+        overflow: hidden; /* Assure que le contenu n'est pas révélé avant l'animation */
+        border-right: none /* Le curseur */
+        white-space: none/* Garde le contenu sur une seule ligne */
+        margin: 0 auto; /* Donne l'effet de défilement au fur et à mesure */
+        letter-spacing: none /* Espace entre les lettres */
+        animation: none;
+                 /* Défini le temps et la vitesse de frappe des lettres */
+                /* Défini le temps et la vitesse du curseur */
+    }
+
+    /* Effet de taper les lettres */
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+    }
+
+    /* Effet du curseur */
+    @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: black }
+    }
+
 }
 
 /* ////////////////////////// HEADER ////////////////////////// */
@@ -265,9 +323,12 @@ h2{
 /* ////////////////////////// ABOUT US ////////////////////////// */
 
 .aboutus{
-    background-color: silver;
+    background-color: rgb(226, 116, 112);
 }
 
+.caret {
+    color: silver;
+}
 /* ////////////////////////// ABOUT US ////////////////////////// */
 
 /* ////////////////////////// TOP SELLS ////////////////////////// */

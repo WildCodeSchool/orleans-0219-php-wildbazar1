@@ -1,7 +1,7 @@
 <?php
 
-$pageTitle = 'Tux need money';
-$pageUnderTitle = 'To show off in front of G33K !';
+$pageTitle = 'Wild Bazar';
+$pageUnderTitle = 'We find everything but mostly anythings  !';
 
 
 ?>
@@ -125,8 +125,8 @@ include 'header.php';
             <!--espacement section-->
             <div class="text-center mb-4">
                 <!--position h2-->
-                <i class="fas fa-caret-up"></i>
-                <h2>About us</h2><i class="fas fa-caret-down"></i>
+                <i class="fas fa-caret-up caret"></i>
+                <h2>About us</h2><i class="fas fa-caret-down caret"></i>
                 <!--titre section-->
             </div>
             <div class="row">
