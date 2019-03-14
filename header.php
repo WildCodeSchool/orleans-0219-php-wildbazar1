@@ -48,8 +48,8 @@
 
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-            <h1 class="display-4"><?php echo $pageTitle ?></h1>
-            <h3 class="typewriter"><?php echo $pageUnderTitle?></h3>
+            <h1 class="display-4 typewriter"><?php echo $pageTitle ?></h1>
+            <h3 class="lead"><?php echo $pageUnderTitle?></h3>
         </div>
     </div>
 

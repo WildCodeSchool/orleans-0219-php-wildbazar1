@@ -34,7 +34,7 @@ $products = [
 
     <link rel="stylesheet" href="./css/style_apple.css">
 
-    <title>Wild Bazar</title>
+    <title>Wild Bazar - Apple</title>
 </head>
 
 <body>

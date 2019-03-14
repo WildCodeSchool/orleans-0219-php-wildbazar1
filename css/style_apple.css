@@ -1,3 +1,15 @@
+
+body {
+    background-image: url("../images/silver-2143730_1280.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+
+
+
 .monospace {
     font-family: "Courier New", Courier, monospace;
 }
@@ -52,7 +64,7 @@ nav img{
 }
 
 .jumbotron{
-    background-image: url("../images/apple/apples-1004886_1280.jpg");
+    background-image: url("../images/apple/pommeJumb.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right center;
@@ -113,13 +125,6 @@ nav img{
 
 
 
-body {
-    background-image: url("../images/apple/pretty-desktop-background-7 (1).jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-
-}
 
 .centrer {
     margin-top: 10px;

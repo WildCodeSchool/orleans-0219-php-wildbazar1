@@ -57,7 +57,7 @@ include 'header.php';
 
                         <div class="col-lg-4 col-md-4 line1">
                             <div class="portfolio-item wow fadeInUp">
-                                <a href="html/windows.html">
+                                <a href="windows.php">
                                     <img src="images/categories_index/40-fenetre-et-volets-bois.jpg" alt="">
                                     <div class="portfolio-overlay">
                                         <div class="portfolio-info">
@@ -70,7 +70,7 @@ include 'header.php';
 
                         <div class="col-lg-4 col-md-4 line1">
                             <div class="portfolio-item wow fadeInUp">
-                                <a href="html/penguins.html">
+                                <a href="penguins.php">
                                     <img src="images/categories_index/penguin-56101_1280.jpg" alt="">
                                     <div class="portfolio-overlay">
                                         <div class="portfolio-info">
@@ -88,7 +88,7 @@ include 'header.php';
                     <div class="row no-gutters">
                         <div class="col-lg-4 col-md-4 center">
                             <div class="portfolio-item wow fadeInUp">
-                                <a href="rasberries.html">
+                                <a href="rasberries.php">
                                     <img src="images/categories_index/rasberry-2812469_1280.jpg" alt="">
                                     <div class="portfolio-overlay">
                                         <div class="portfolio-info">
@@ -101,11 +101,23 @@ include 'header.php';
 
                         <div class="col-lg-4 col-md-4 center">
                             <div class="portfolio-item wow fadeInUp">
-                                <a href="html/developers.html">
+                                <a href="developers.php">
                                     <img src="images/categories_index/computer-1209641_1280.jpg" alt="">
                                     <div class="portfolio-overlay">
                                         <div class="portfolio-info">
                                             <h3 class="text1">Powers of Devellopers</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 center">
+                            <div class="portfolio-item wow fadeInUp">
+                                <a href="add.php">
+                                    <img src="images/fond-ecran-prodigemobile.jpg" alt="">
+                                    <div class="portfolio-overlay">
+                                        <div class="portfolio-info">
+                                            <h3 class="text1">Create your own Categorie</h3>
                                         </div>
                                     </div>
                                 </a>
