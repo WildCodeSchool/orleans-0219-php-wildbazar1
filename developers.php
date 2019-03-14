@@ -27,18 +27,54 @@ $pageUnderTitle = "Sales our better developers!";
 include 'header.php';
 
 
-$products = [['num' => '1', 'title' => 'Zen your projects'],
-             ['num' => '2', 'title' => 'Data-analyst'],
-             ['num' => '3', 'title' => 'Webdesign and safely your projects'],
-             ['num' => '4', 'title' => 'Specialist Symphony'],
-             ['num' => '5', 'title' => 'Dev Style'],
-             ['num' => '6', 'title' => 'Work Together'],
-             ['num' => '7', 'title' => 'Clear your mind'],
-             ['num' => '8', 'title' => 'Never Stop Dreaming'],
-             ['num' => '9', 'title' => 'Upgrade your project'],
-             ['num' => '10', 'title' => 'Workflow'],
-             ['num' => '11', 'title' => 'Security!'],
-             ['num' => '12', 'title' => 'Better Security &#128514;'],
+$products = [['title' => 'Zen your projects', 'price' => '70', 'description' => 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
+                                obcaecati
+                                ut error
+                                dolor dolores eveniet.'],
+             ['title' => 'Data-analyst' , 'price' => '50', 'description' => 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
+                                obcaecati
+                                ut error
+                                dolor dolores eveniet.'],
+             ['title' => 'Webdesign and safely your projects' , 'price' => '45', 'description' => 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
+                                obcaecati
+                                ut error
+                                dolor dolores eveniet.'],
+             ['title' => 'Specialist Symphony' , 'price' => '70', 'description' => 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
+                                obcaecati
+                                ut error
+                                dolor dolores eveniet.'],
+             ['title' => 'Dev Style' , 'price' => '80', 'description' => 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
+                                obcaecati
+                                ut error
+                                dolor dolores eveniet.'],
+             ['title' => 'Work Together' , 'price' => '40', 'description' => 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
+                                obcaecati
+                                ut error
+                                dolor dolores eveniet.'],
+             ['title' => 'Clear your mind', 'price' => '90', 'description' => 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
+                                obcaecati
+                                ut error
+                                dolor dolores eveniet.'],
+             ['title' => 'Never Stop Dreaming' , 'price' => '55', 'description' => 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
+                                obcaecati
+                                ut error
+                                dolor dolores eveniet.'],
+             ['title' => 'Upgrade your project' , 'price' => '75', 'description' => 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
+                                obcaecati
+                                ut error
+                                dolor dolores eveniet.'],
+             ['title' => 'Workflow' , 'price' => '80', 'description' => 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
+                                obcaecati
+                                ut error
+                                dolor dolores eveniet.'],
+             ['title' => 'Security!' , 'price' => '50', 'description' => 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
+                                obcaecati
+                                ut error
+                                dolor dolores eveniet.'],
+             ['title' => 'Better Security &#128514;' , 'price' => '40', 'description' => 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
+                                obcaecati
+                                ut error
+                                dolor dolores eveniet.'],
             ];
 
 ?>
