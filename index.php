@@ -113,7 +113,7 @@ include 'header.php';
                         </div>
                         <div class="col-lg-4 col-md-4 center">
                             <div class="portfolio-item wow fadeInUp">
-                                <a href="addApple.html">
+                                <a href="addApple.php">
                                     <img src="images/fond-ecran-prodigemobile.jpg" alt="">
                                     <div class="portfolio-overlay">
                                         <div class="portfolio-info">
