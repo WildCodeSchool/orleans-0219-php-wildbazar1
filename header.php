@@ -37,8 +37,9 @@
                         <a class="dropdown-item" href="penguins.php">Penguins</a>
                         <a class="dropdown-item" href="raspberries.php">Raspberries</a>
                         <a class="dropdown-item" href="developers.php">Developpers</a>
+
                     </div>
-                </li>
+
             </ul>
         </div>
     </nav>
@@ -46,7 +47,9 @@
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <h1 class="display-4 typewriter"><?php echo $pageTitle ?></h1>
-            <h3 class="lead"><?php echo $pageUnderTitle ?></h3>
+
+            <h3 class="lead"><?php echo $pageUnderTitle?></h3>
+            <button class="button"><?php echo $button?></button>
         </div>
     </div>
 

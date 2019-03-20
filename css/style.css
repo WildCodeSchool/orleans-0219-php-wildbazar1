@@ -62,8 +62,10 @@ nav img{
     /* padding: 5px 15px 5px 15px; */
 }
 
+
+
 .jumbotron{
-    background-image: url("../images/matrix-1274888_1280.png");
+    background-image: url("../images/nvfond1.png");
     background-repeat:   no-repeat;
     background-position: center center;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
@@ -158,7 +160,7 @@ nav img{
 
 @media screen and (max-width: 792px) {
     .typewriter {
-        font-size: 3,5rem; !important;
+        font-size: 3,5rem;
         color: rgb(226, 116, 112);
         text-shadow: 3px 1px 1px black;
         overflow: hidden; /* Assure que le contenu n'est pas révélé avant l'animation */
