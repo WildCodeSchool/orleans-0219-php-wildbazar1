@@ -46,34 +46,34 @@ include 'header.php';
             </div>
             <div class="row">
                 <div class="col">
-                    <label for="inputUrl">window's name</label>
-                    <input type="text" class="form-control" placeholder="window's name">
+                    <label for="name">window's name</label>
+                    <input type="text" class="form-control" id="name" placeholder="window's name">
                 </div>
                 <div class="col">
-                    <label for="inputUrl">price</label>
-                    <input type="text" class="form-control" placeholder="price">
+                    <label for="price">price</label>
+                    <input type="text" class="form-control" id="price" placeholder="price">
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <label for="exampleFormControlTextarea1">Description</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                    <label for="description">Description</label>
+                    <textarea class="form-control" id="description" rows="3"
                               placeholder="desccribe your product"></textarea>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col">
-                    <label for="inputUrl">size</label>
-                    <input type="text" class="form-control" placeholder="size">
+                    <label for="size">size</label>
+                    <input type="text" class="form-control" id="size" placeholder="size">
                 </div>
                 <div class="col">
-                    <label for="inputUrl">weight</label>
-                    <input type="text" class="form-control" placeholder="weight">
+                    <label for="weight">weight</label>
+                    <input type="text" class="form-control" id="weight" placeholder="weight">
                 </div>
                 <div class="col">
-                    <label for="inputUrl">color</label>
-                    <input type="text" class="form-control" placeholder="color">
+                    <label for="color">color</label>
+                    <input type="text" class="form-control" id="color" placeholder="color">
                 </div>
             </div>
 
