@@ -130,6 +130,11 @@ nav img{
     }
 }
 
+@media screen and (max-width: 767px) {
+    .jumbotron h3 {
+        display: none;
+    }
+}
 
 .card-columns .card{
     width: 22em;
@@ -313,3 +318,15 @@ nav img{
 }
 
 /* ////////////////////////// FOOTER ////////////////////////// */
+
+/* ////////////////////////// PRODUCT ONLINE ////////////////// */
+
+.productOnline {
+    height: 500px;
+    vertical-align:center;
+}
+
+.productOnline h3 {
+    font-size: 2.5em;
+    color: rgb(226, 116, 112);
+}

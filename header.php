@@ -49,7 +49,9 @@
             <h1 class="display-4 typewriter"><?php echo $pageTitle ?></h1>
 
             <h3 class="lead"><?php echo $pageUnderTitle?></h3>
-            <button class="button"><?php echo $button?></button>
+            <div class="text-center">
+            <a class="button btn btn-secondary my-2" href="<?=$buttonRedirection?>" role="button"><?=$buttonTitle?></a>
+            </div>
         </div>
     </div>
 

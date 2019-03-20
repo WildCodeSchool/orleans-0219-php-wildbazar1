@@ -52,7 +52,6 @@
 
 
                             <div class="col-sm-6 text-center align-self-center">
-
                                 <button type="button" class="btn btn-lg">Add to card</button>
                             </div>
 
