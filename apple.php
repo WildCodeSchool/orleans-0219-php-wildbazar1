@@ -42,6 +42,7 @@ $products = [
 <?php
 $pageTitle = 'A Bite of Apple';
 $pageUnderTitle = 'When elegance ryhmes with performance';
+$button =
 
 include 'header.php';
 ?>
