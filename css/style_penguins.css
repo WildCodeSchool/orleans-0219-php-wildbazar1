@@ -26,6 +26,13 @@ h1{
     font-variant: small-caps; /* Met le text en petite majuscule */
 }
 
+h3 {
+    font-variant: small-caps;
+    text-shadow: 2px 2px 4px #000000;
+    font-size:  60px;
+    text-align: center;
+}
+
 .dropdown-item{
     background-color: transparent;
 }
