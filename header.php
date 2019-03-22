@@ -50,7 +50,7 @@
 
             <h3 class="lead"><?php echo $pageUnderTitle?></h3>
             <div class="text-center">
-            <a class="button btn btn-secondary my-2" href="<?=$buttonRedirection?>" role="button"><?=$buttonTitle?></a>
+            <a class="button btn btn-secondary my-2 buttonHeader" href="<?=$buttonRedirection?>" role="button"><?=$buttonTitle?></a>
             </div>
         </div>
     </div>
