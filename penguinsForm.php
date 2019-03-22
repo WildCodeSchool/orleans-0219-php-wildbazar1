@@ -77,7 +77,7 @@ include 'header.php';
     </div>
     <div class="justify-content-center m-5 d-flex flex-wrap card-columns">
 
-        <h3><?php if </h3>
+        <h3></h3>
 
         <form action="penguinsForm.php" method="post" class="needs-validation" novalidate>
             <div class="form-row">
