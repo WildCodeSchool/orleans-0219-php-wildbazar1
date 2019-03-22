@@ -5,45 +5,52 @@
  * Date: 20/03/19
  * Time: 14:15
  */
+
 $pageTitle = 'Tux need money';
 $pageUnderTitle = 'To show off in front of G33K !';
 $buttonRedirection = 'penguins.php';
 $buttonTitle = 'Return to the products page';
 $sizes = ['XXS', 'XS', 'S', 'M', 'L', 'XL', 'XXL'];
 $colors = ['black', 'white', 'brown', 'red', 'blackAndWhite', 'blackAndBrown', 'other'];
-$errors = [];
 
-if ($_POST) {
-    if (empty($_POST['productName']) || strlen($_POST['productName']) <= 3 ||
-        !is_string($_POST['productName'])) {
+
+require 'function.php';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+    $data = cleanData($_POST);
+
+    $errors = [];
+
+    if (empty($data['productName']) || !is_string($data['productName'])) {
         $errors['productName'] = 'Please put the product name';
     }
-    if (empty($_POST['price']) || $_POST['price'] <= 0 ||
-        !is_numeric($_POST['price'])) {
+    if (empty($data['price']) || $_POST['price'] <= 0 ||
+        !is_numeric($data['price'])) {
         $errors['price'] = 'Please put price';
     }
-    if (empty($_POST['description']) || strlen($_POST['description']) < 5 ||
-        strlen($_POST['description']) > 50 || !is_string($_POST['price'])) {
+    if (empty($data['description']) || strlen($data['description']) < 5 ||
+        strlen($data['description']) > 50 || !is_string($data['price'])) {
         $errors['description'] = 'Please describe the product with 5 carac. min. and 50 carac. max.';
     }
-    if (empty($_POST['url']) || !filter_var($_POST['url'], FILTER_VALIDATE_URL)) {
+    if (empty($data['url']) || !filter_var($data['url'], FILTER_VALIDATE_URL)) {
         $errors['url'] = 'Please give an image for the product';
     }
-    if (empty($_POST['weight']) || $_POST['weight'] <= 0 ||
-        !is_numeric($_POST['weight'])) {
+    if (empty($data['weight']) || $_POST['weight'] <= 0 ||
+        !is_numeric($data['weight'])) {
         $errors['weight'] = 'Please give the weight of the product';
     }
-    if (empty($_POST['quantity']) || $_POST['quantity'] <= 0) {
+    if (empty($data['quantity']) || $_POST['quantity'] <= 0) {
         $errors['quantity'] = 'Please give the quantity of the stock';
     }
-    if (empty($_POST['size']) || !in_array($_POST['size'], $sizes) || '' === $_POST['size']) {
+    if (empty($data['size']) || !in_array($data['size'], $sizes)) {
         $errors['size'] = 'Please select a size';
     }
-    if (empty($_POST['color']) || !in_array($_POST['color'], $colors) || '' === $_POST['color']) {
+    if (empty($data['color']) || !in_array($data['color'], $colors)) {
         $errors['color'] = 'Please select a color';
     }
-
-    if (empty($errors)) { 
+    if (empty($errors)) {
+        header('Location:penguinsForm.php');
     }
 }
 
@@ -64,14 +71,16 @@ if ($_POST) {
           crossorigin="anonymous">
     <!-- Appel css -->
     <link rel="stylesheet" href="css/style_penguins.css">
-    <!--    <script type="text/javascript" src="/JS/penguinsFormControl.js"></script> -->
+    <script type="text/javascript" src="/JS/penguinsFormControl.js"></script>
     <title>Wild Bazar</title>
 </head>
 <body>
 <?php
 include 'header.php';
 ?>
-<main>
+<main class="container">
+
+
     <div class="mb-4">
         <h3>Adding a new product :</h3>
     </div>
@@ -86,9 +95,10 @@ include 'header.php';
                     <input type="text" class="form-control" name="productName" id="productName"
                            placeholder="Type the product name" required value="<?php
                     if (!empty($errors)) {
-                        echo $_POST['productName'];
+                        echo $data['productName'];
                     }
                     ?>">
+                    <div class="text-danger"><?= $errors['productName'] ?? '' ?></div>
                 </div>
                 <div class="form-group col-md-4">
                     <label for="price">Price</label>
@@ -96,9 +106,10 @@ include 'header.php';
                            min="1"
                            value="<?php
                            if (!empty($errors)) {
-                               echo $_POST['price'];
+                               echo $data['price'];
                            }
                            ?>">
+                    <div class="text-danger"><?= $errors['price'] ?? '' ?></div>
                 </div>
             </div>
             <div class="form-group">
@@ -106,58 +117,72 @@ include 'header.php';
                 <input type="text" class="form-control" id="description" name="description"
                        placeholder="Type the product description" size="30" required value="<?php
                 if (!empty($errors)) {
-                    echo $_POST['description'];
+                    echo $data['description'];
                 }
                 ?>">
+                <div class="text-danger"><?= $errors['description'] ?? '' ?></div>
             </div>
             <div class="form-group">
                 <label for="url">Picture</label>
                 <input type="url" class="form-control" id="url" name="url" placeholder="Type the url of picture"
                        required value="<?php
                 if (!empty($errors)) {
-                    echo $_POST['url'];
+                    echo $data['url'];
                 }
                 ?>">
+                <div class="text-danger"><?= $errors['url'] ?? '' ?></div>
                 <div class="form-row">
                     <div class="form-group col-md-3">
                         <label for="weight">weight</label>
                         <input type="text" class="form-control" id="weight" name="weight" placeholder="weight" required
                                value="<?php
                                if (!empty($errors)) {
-                                   echo $_POST['weight'];
+                                   echo $data['weight'];
                                }
                                ?>">
+                        <div class="text-danger"><?= $errors['weight'] ?? '' ?></div>
                     </div>
                     <div class="form-group col-md-3">
                         <label for="quantity">Quantity</label>
                         <input type="number" class="form-control" id="quantity" name="quantity" placeholder="stock"
                                required min="1" value="<?php
                         if (!empty($errors)) {
-                            echo $_POST['quantity'];
+                            echo $data['quantity'];
                         }
                         ?>">
+                        <div class="text-danger"><?= $errors['quantity'] ?? '' ?></div>
                     </div>
                     <div class="form-group col-md-3">
                         <label for="size">Size</label>
                         <select id="size" name="size" class="form-control" required>
-                            <option value="" selected>Choose ...</option>
+                            <option value="">Choose ...</option>
                             <?php foreach ($sizes as $size) { ?>
-                                <option value="<?= $size ?>"><?= $size ?></option>
+                                <option value="<?= $size ?>"
+                                    <?php if (!empty($data['size']) && $data['size'] === $size) {
+                                        echo 'selected';
+                                    }; ?>
+                                ><?= $size ?></option>
                             <?php }; ?>
                         </select>
+                        <div class="text-danger"><?= $errors['size'] ?? '' ?></div>
                     </div>
                     <div class="form-group col-md-3">
                         <label for="color">Color</label>
                         <select id="color" name="color" class="form-control" required>
                             <option value="" selected>Choose ...</option>
                             <?php foreach ($colors as $color) { ?>
-                                <option value="<?= $color ?>"><?= $color ?></option>
+                                <option value="<?= $color ?>"
+                                    <?php if (!empty($data['color']) && $data['color'] === $color) {
+                                        echo 'selected';
+                                    }; ?>
+                                ><?= $color ?></option>
                             <?php }; ?>
                         </select>
+                        <div class="text-danger"><?= $errors['color'] ?? '' ?></div>
                     </div>
                 </div>
-                <div class="text-center">
-                    <button type="submit" class="btn btn-info">Send it now</button>
+                <div class="text-center mt-3">
+                    <button type="submit" class="btn btn-light">Send it now</button>
                 </div>
         </form>
     </div>
