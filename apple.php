@@ -40,7 +40,7 @@ $products = [
 <body>
 
 <?php
-$pageTitle = 'A Bite of Apple';
+$pageTitle = 'A Bitch of Apple';
 $pageUnderTitle = 'When elegance ryhmes with performance';
 $buttonRedirection = 'addApple.php';
 $buttonTitle = 'Add a new product';
