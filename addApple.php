@@ -70,7 +70,7 @@ include 'header.php';
                 <?php
                 if (isset($errors) && count($errors) == 0) {
                     ?>
-                    <div class="centered">
+                    <div class="centered send">
                         Your product has been taken, it will be online under 48h ! Thanks !
                     </div>
                     <?php
@@ -147,6 +147,8 @@ include 'header.php';
 <?php
 include 'footer.php';
 ?>
+
+
 
 
 </body>
