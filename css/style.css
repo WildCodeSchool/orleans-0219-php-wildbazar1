@@ -102,7 +102,7 @@ nav img{
 @media screen and (max-width: 1000px){
     .jumbotron h3{
         text-align: center;
-        font-size: 3,5em;
+        font-size: 3.5em;
     }
     .jumbotron h1{
         font-size: 3.5em;
@@ -120,7 +120,7 @@ nav img{
 
 /* Demo style */
 .typewriter {
-    font-size: 3,5rem; !important;
+    font-size: 3.5rem; !important;
     color: rgb(226, 116, 112);
     text-shadow: 3px 1px 1px black;
     overflow: hidden; /* Assure que le contenu n'est pas révélé avant l'animation */
@@ -147,14 +147,14 @@ nav img{
 
 @media screen and (max-width: 792px) {
     .typewriter {
-        font-size: 3,5rem; !important;
+        font-size: 3.5rem; !important;
         color: rgb(226, 116, 112);
         text-shadow: 3px 1px 1px black;
         overflow: hidden; /* Assure que le contenu n'est pas révélé avant l'animation */
-        border-right: none /* Le curseur */
-        white-space: none/* Garde le contenu sur une seule ligne */
+        border-right: none;/* Le curseur */
+        white-space: none;/* Garde le contenu sur une seule ligne */
         margin: 0 auto; /* Donne l'effet de défilement au fur et à mesure */
-        letter-spacing: none /* Espace entre les lettres */
+        letter-spacing: none;/* Espace entre les lettres */
         animation: none;
                  /* Défini le temps et la vitesse de frappe des lettres */
                 /* Défini le temps et la vitesse du curseur */
