@@ -11,47 +11,45 @@ $buttonRedirection = 'penguins.php';
 $buttonTitle = 'Return to the products page';
 $sizes = ['XXS', 'XS', 'S', 'M', 'L', 'XL', 'XXL'];
 $colors = ['black', 'white', 'brown', 'red', 'blackAndWhite', 'blackAndBrown', 'other'];
-$sentProducts = FALSE;
 $errors = [];
 
 if ($_POST) {
-    echo 'test';
-    if (empty($_POST['productName']) || $_POST['productName'] >= 1) {
+    if (empty($_POST['productName']) || strlen($_POST['productName']) <= 3 ||
+        !is_string($_POST['productName'])) {
         $errors['productName'] = 'Please put the product name';
     }
-    if (empty($_POST['price']) || $_POST['price'] <= 0) {
+    if (empty($_POST['price']) || $_POST['price'] <= 0 ||
+        !is_numeric($_POST['price'])) {
         $errors['price'] = 'Please put price';
     }
-    if (empty($_POST['description']) || strlen($_POST['description']) < 15) {
-        $errors['description'] = 'Please describe the product with 20 carac. min.';
+    if (empty($_POST['description']) || strlen($_POST['description']) < 5 ||
+        strlen($_POST['description']) > 50 || !is_string($_POST['price'])) {
+        $errors['description'] = 'Please describe the product with 5 carac. min. and 50 carac. max.';
     }
     if (empty($_POST['url']) || !filter_var($_POST['url'], FILTER_VALIDATE_URL)) {
         $errors['url'] = 'Please give an image for the product';
     }
-    if (empty($_POST['weight'])) {
+    if (empty($_POST['weight']) || $_POST['weight'] <= 0 ||
+        !is_numeric($_POST['weight'])) {
         $errors['weight'] = 'Please give the weight of the product';
     }
     if (empty($_POST['quantity']) || $_POST['quantity'] <= 0) {
         $errors['quantity'] = 'Please give the quantity of the stock';
     }
-    if (empty($_POST['size']) || !in_array($_POST['size'], $sizes)) {
+    if (empty($_POST['size']) || !in_array($_POST['size'], $sizes) || '' === $_POST['size']) {
         $errors['size'] = 'Please select a size';
     }
-    if (empty($_POST['color']) || !in_array($_POST['color'], $colors)) {
+    if (empty($_POST['color']) || !in_array($_POST['color'], $colors) || '' === $_POST['color']) {
         $errors['color'] = 'Please select a color';
     }
-    if (empty($_POST['testIt'])) {
-        $testIt = TRUE;
-    }
-    if (empty($errors)) {
-        $sentProducts = TRUE;
+
+    if (empty($errors)) { 
     }
 }
 
 ?>
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <!--- Appel Bootstrap 4 -->
@@ -66,26 +64,22 @@ if ($_POST) {
           crossorigin="anonymous">
     <!-- Appel css -->
     <link rel="stylesheet" href="css/style_penguins.css">
-    <script type="text/javascript" src="/JS/penguinsFormControl.js"></script>
+    <!--    <script type="text/javascript" src="/JS/penguinsFormControl.js"></script> -->
     <title>Wild Bazar</title>
-
-
 </head>
-
 <body>
-
 <?php
 include 'header.php';
 ?>
-
 <main>
-
     <div class="mb-4">
         <h3>Adding a new product :</h3>
     </div>
     <div class="justify-content-center m-5 d-flex flex-wrap card-columns">
 
-        <form action="penguinsFormModal.php" method="post" class="needs-validation" novalidate>
+        <h3><?php if </h3>
+
+        <form action="penguinsForm.php" method="post" class="needs-validation" novalidate>
             <div class="form-row">
                 <div class="form-group col-md-8">
                     <label for="productName">Product Name :</label>
@@ -99,6 +93,7 @@ include 'header.php';
                 <div class="form-group col-md-4">
                     <label for="price">Price</label>
                     <input type="number" class="form-control" id="price" name="price" placeholder="price" required
+                           min="1"
                            value="<?php
                            if (!empty($errors)) {
                                echo $_POST['price'];
@@ -136,7 +131,7 @@ include 'header.php';
                     <div class="form-group col-md-3">
                         <label for="quantity">Quantity</label>
                         <input type="number" class="form-control" id="quantity" name="quantity" placeholder="stock"
-                               required value="<?php
+                               required min="1" value="<?php
                         if (!empty($errors)) {
                             echo $_POST['quantity'];
                         }
@@ -145,7 +140,7 @@ include 'header.php';
                     <div class="form-group col-md-3">
                         <label for="size">Size</label>
                         <select id="size" name="size" class="form-control" required>
-                            <option value="" disabled selected>Choose ...</option>
+                            <option value="" selected>Choose ...</option>
                             <?php foreach ($sizes as $size) { ?>
                                 <option value="<?= $size ?>"><?= $size ?></option>
                             <?php }; ?>
@@ -154,34 +149,24 @@ include 'header.php';
                     <div class="form-group col-md-3">
                         <label for="color">Color</label>
                         <select id="color" name="color" class="form-control" required>
-                            <option value="" disabled selected>Choose ...</option>
+                            <option value="" selected>Choose ...</option>
                             <?php foreach ($colors as $color) { ?>
                                 <option value="<?= $color ?>"><?= $color ?></option>
                             <?php }; ?>
                         </select>
                     </div>
                 </div>
-                <div class="custom-control text-center custom-switch my-3">
-                    <input type="checkbox" class="custom-control-input" id="testIt" name="testIt">
-                    <label class="custom-control-label" for="testIt">Give me a preview on the product</label>
-                </div>
                 <div class="text-center">
                     <button type="submit" class="btn btn-info">Send it now</button>
                 </div>
         </form>
-
     </div>
-
-
 </main>
 
-
 <!-- zone footer -->
-
 <?php
 include 'footer.php';
 ?>
-
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -191,8 +176,5 @@ include 'footer.php';
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-
-
 </body>
-
 </html>
