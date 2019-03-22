@@ -90,12 +90,18 @@ nav img{
 }
 
 
-.contact{
-    padding: 4%;
-    padding-top: 100px;
-    padding-bottom: 760px;
-    height: 400px;
+.send {
+    text-align: center;
+    color: forestgreen;
+    font-size: 1.8em;
 }
+
+main {
+    padding-bottom: 4em;
+    padding-top: 7.5em;
+}
+
+
 .col-md-3{
     background: rgba(226, 116, 112, 0.6);
     padding: 4%;
