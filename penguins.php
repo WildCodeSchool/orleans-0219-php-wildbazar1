@@ -2,6 +2,8 @@
 
 $pageTitle = 'Tux need money';
 $pageUnderTitle = 'To show off in front of G33K !';
+$buttonRedirection = 'penguinsForm.php';
+$buttonTitle = 'Add a new product';
 $products = [
 
     [
@@ -163,10 +165,12 @@ include 'header.php';
 
         <?php
         foreach ($products as $product => $caracteristic) {
-            include 'cardsPenguins.php';
+            include 'penguinsCards.php';
         }
         ?>
 
+
+}
 
     </div>
 </main>

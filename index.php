@@ -57,7 +57,7 @@ include 'header.php';
 
                         <div class="col-lg-4 col-md-4 line1">
                             <div class="portfolio-item wow fadeInUp">
-                                <a href="html/windows.html">
+                                <a href="windows.php">
                                     <img src="images/categories_index/40-fenetre-et-volets-bois.jpg" alt="">
                                     <div class="portfolio-overlay">
                                         <div class="portfolio-info">
@@ -70,7 +70,7 @@ include 'header.php';
 
                         <div class="col-lg-4 col-md-4 line1">
                             <div class="portfolio-item wow fadeInUp">
-                                <a href="html/penguins.html">
+                                <a href="penguins.php">
                                     <img src="images/categories_index/penguin-56101_1280.jpg" alt="">
                                     <div class="portfolio-overlay">
                                         <div class="portfolio-info">
@@ -88,7 +88,7 @@ include 'header.php';
                     <div class="row no-gutters">
                         <div class="col-lg-4 col-md-4 center">
                             <div class="portfolio-item wow fadeInUp">
-                                <a href="rasberries.html">
+                                <a href="rasberries.php">
                                     <img src="images/categories_index/rasberry-2812469_1280.jpg" alt="">
                                     <div class="portfolio-overlay">
                                         <div class="portfolio-info">
@@ -101,11 +101,23 @@ include 'header.php';
 
                         <div class="col-lg-4 col-md-4 center">
                             <div class="portfolio-item wow fadeInUp">
-                                <a href="html/developers.html">
+                                <a href="developers.php">
                                     <img src="images/categories_index/computer-1209641_1280.jpg" alt="">
                                     <div class="portfolio-overlay">
                                         <div class="portfolio-info">
                                             <h3 class="text1">Powers of Devellopers</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 center">
+                            <div class="portfolio-item wow fadeInUp">
+                                <a href="addApple.php">
+                                    <img src="images/fond-ecran-prodigemobile.jpg" alt="">
+                                    <div class="portfolio-overlay">
+                                        <div class="portfolio-info">
+                                            <h3 class="text1">Create your own Categorie</h3>
                                         </div>
                                     </div>
                                 </a>
@@ -130,13 +142,13 @@ include 'header.php';
                 <!--titre section-->
             </div>
             <div class="row">
-                <div class="col-lg-3 col-sm-12">
-                    <div class="text-center ">
-                        <img src="images/wild.jpg" class=" img-thumbnail px-1 py-1" alt="Responsive image">
-                        <!--image-->
+                <div class="col-lg-6 col-sm-12">
+                    <div class="text-center " id="blur">
+                        <img src="images/wild.jpg" class="hover img-thumbnail px-1 py-1" alt="Responsive image">
+
                     </div>
                 </div>
-                <div class="col-lg-9 col-sm-12">
+                <div class="col-lg-6 col-sm-12">
                     <p class="text-align-center px-3 py-2">Wild Code School offers you 5-month web developer
                         training courses in Paris: training in JavaScript/React or training in Java/JEE.
                     </p>

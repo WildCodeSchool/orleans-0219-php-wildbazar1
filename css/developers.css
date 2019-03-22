@@ -4,10 +4,11 @@
 }
 
 body {
-    background-image: url("../images/developers/background.jpg");
-    background-repeat: no-repeat;
+    background-image: url("../images/silver-2143730_1280.jpg");
     background-attachment: fixed;
-    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 /* ////////////////////////// HEADER ////////////////////////// */
 .navbar{
@@ -65,7 +66,7 @@ nav img{
     background-position: bottom right ;
     /* opacity: 0.8; */
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
-    background-color: rgba(216, 213, 213, 0.6);
+    background-color: rgba(216, 213, 213, 0.1);
     height: 30em;
     width: 100%;
 }

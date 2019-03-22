@@ -34,7 +34,7 @@ $products = [
 
     <link rel="stylesheet" href="./css/style_apple.css">
 
-    <title>Wild Bazar</title>
+    <title>Wild Bazar - Apple</title>
 </head>
 
 <body>
@@ -42,6 +42,8 @@ $products = [
 <?php
 $pageTitle = 'A Bite of Apple';
 $pageUnderTitle = 'When elegance ryhmes with performance';
+$buttonRedirection = 'addApple.php';
+$buttonTitle = 'Add a new product';
 
 include 'header.php';
 ?>

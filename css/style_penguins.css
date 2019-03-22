@@ -1,4 +1,3 @@
-
 .monospace{
     font-family: 'Courier New', Courier, monospace;
 }
@@ -8,10 +7,11 @@
 }
 
 body {
-    background-image: url("../images/penguins/background.jpg");
-    background-repeat: no-repeat;
+    background-image: url("../images/silver-2143730_1280.jpg");
     background-attachment: fixed;
-    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 /* ////////////////////////// HEADER ////////////////////////// */
 
@@ -23,6 +23,13 @@ body {
 
 h1{
     font-variant: small-caps; /* Met le text en petite majuscule */
+}
+
+h3 {
+    font-variant: small-caps;
+    text-shadow: 2px 2px 4px #000000;
+    font-size:  60px;
+    text-align: center;
 }
 
 .dropdown-item{
@@ -65,13 +72,13 @@ nav img{
     background-position: bottom right ;
     /* opacity: 0.8; */
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
-    background-color: rgba(216, 213, 213, 0.6);
+    background-color: rgba(216, 213, 213, 0.1);
     height: 30em;
     width: 100%;
 }
 
 .jumbotron .container{
-    padding-top: 7.5em;
+    padding-top: 2.5em;
 }
 
 .jumbotron h3 {
@@ -80,7 +87,8 @@ nav img{
 }
 .jumbotron h1, .jumbotron h3 {
     font-variant: small-caps;
-    text-shadow: 2px 2px 4px #000000;
+    text-shadow: 2px 2px 4px #fdfdfd;
+
 }
 .jumbotron h1{
     font-size: 8em;
@@ -122,6 +130,17 @@ nav img{
     }
 }
 
+@media (max-width: 768px) {
+
+
+
+}
+
+@media screen and (max-width: 1200px) {
+    .jumbotron h3 {
+        display: none;
+    }
+}
 
 .card-columns .card{
     width: 22em;
@@ -190,7 +209,7 @@ nav img{
 
 .modal p{
     margin-top: 1em;
-    font-family: sanssherif;
+    font-family: sansserif;
     overflow: auto;
 }
 
@@ -269,10 +288,12 @@ nav img{
     font-variant: small-caps;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
 }
+
 .collumn-right .btn:hover{
     background-color: rgb(211, 208, 208);
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.7);
 }
+
 .collumn-right .form-control{
     font-size: 0.5rem;
 }
@@ -305,3 +326,21 @@ nav img{
 }
 
 /* ////////////////////////// FOOTER ////////////////////////// */
+
+/* ////////////////////////// PRODUCT ONLINE ////////////////// */
+
+.productOnline {
+    height: 500px;
+    vertical-align:center;
+}
+
+.productOnline h3 {
+    font-size: 2.5em;
+    color: rgb(226, 116, 112);
+}
+
+.form {
+    border-radius: 5%;
+    background-color: rgb(226, 116, 112);
+    padding: 25%;
+}

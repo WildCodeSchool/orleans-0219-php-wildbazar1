@@ -1,3 +1,4 @@
+/* //////////// BODY /////////// */
 body {
     background-image: url("../images/silver-2143730_1280.jpg");
     background-attachment: fixed;
@@ -6,10 +7,25 @@ body {
 
 }
 
-.form {
-    border-radius: 5%;
-    background-color: rgb(226, 116, 112);
-    padding: 25%;
+
+.formulaire {
+
+    border-radius: 1%;
+    background-color: rgb(226, 116, 112, 0.6);
+    padding: 2%;
+    margin: 15%;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.6);
+
+
+}
+
+.col{
+    padding-top: 2%;
+}
+
+.submission {
+    padding-top: 2%;
+    text-align: center;
 }
 
 .monospace {
@@ -74,7 +90,7 @@ nav img {
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
     /* background-size: 100% 100%; */
     background-size: cover;
-    background-color: rgba(216, 213, 213, 0.1);
+    background-color: rgba(216, 213, 213, 0.6);
 
     height: 30em;
     width: 100%;
@@ -143,99 +159,6 @@ nav img {
 
 /* ////////////////////////// HEADER ////////////////////////// */
 
-/* ////////////////////////// CATEGORIE ////////////////////////// */
-
-.card-columns .card {
-    width: 22em;
-    height: 22em;
-    margin: 3em 1em 3em 1em;
-    background-color: rgba(211, 208, 208, 0.6);
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
-    transition-duration: 250ms;
-
-}
-
-.card:hover {
-    background-color: rgba(226, 116, 112, 0.8);
-    transform: scale(1.2, 1.2);
-    z-index: 1;
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
-    transition-duration: 250ms;
-}
-
-.card-img-top {
-    width: 90%;
-    height: 15em;
-    margin: 1em 1em 1em 1em;
-    border-radius: 5px;
-    object-fit: cover;
-}
-
-.card h4 {
-    text-align: center;
-    font-family: monospace;
-    font-variant: small-caps;
-}
-
-
-/* ////////////////////////// MODALS ////////////////////////// */
-
-/* .modal-content{
-
-} */
-
-.modal-header {
-    background-color: rgba(226, 116, 112, 0.8);
-    color: whitesmoke;
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
-    text-shadow: 2px 2px 4px #000000;
-}
-
-.modal-body {
-    padding-top: 3em;
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
-}
-
-.modal h4 {
-    font-family: monospace;
-    font-variant: small-caps;
-    font-size: 3em;
-}
-
-.modal h5,
-.modal h6 {
-    margin-top: 1em;
-    text-align: center;
-    font-family: monospace;
-    font-variant: small-caps;
-    font-size: 2em;
-}
-
-.modal li {
-    font-family: monospace;
-    font-variant: small-caps;
-    font-size: 1em;
-}
-
-.modal p {
-    margin-top: 1em;
-    font-family: sanssherif;
-    overflow: auto;
-}
-
-.modal .btn {
-    align-content: center;
-    background-color: silver;
-    font-family: monospace;
-    font-variant: small-caps;
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
-}
-
-.modal .btn:hover {
-    background-color: rgba(192, 192, 192, 0.5);
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.7);
-}
-
 /* ////////////////////////// FOOTER ////////////////////////// */
 
 .footer {
@@ -289,8 +212,8 @@ nav img {
 }
 
 .collumn-right .col-form-label {
-    padding-top: 0em;
-    padding-right: 0em;
+    padding-top: 0.1em;
+    padding-right: 0.1em;
 }
 
 .collumn-right .btn {
