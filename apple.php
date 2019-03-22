@@ -42,7 +42,8 @@ $products = [
 <?php
 $pageTitle = 'A Bite of Apple';
 $pageUnderTitle = 'When elegance ryhmes with performance';
-$button =
+$buttonRedirection = 'addApple.php';
+$buttonTitle = 'Add a new product';
 
 include 'header.php';
 ?>
