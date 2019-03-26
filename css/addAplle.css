@@ -96,6 +96,8 @@ nav img{
     font-size: 1.8em;
 }
 
+
+
 main {
     padding-bottom: 4em;
     padding-top: 7.5em;
@@ -108,13 +110,13 @@ main {
     border-top-left-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
 }
-.contact-info{
+.border_add{
     margin-top:10%;
 }
-.contact-info img{
+.border_add img{
     margin-bottom: 15%;
 }
-.contact-info h2{
+.border_add h2{
     margin-bottom: 10%;
 }
 .col-md-9{

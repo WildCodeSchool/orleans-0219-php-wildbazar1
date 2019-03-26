@@ -6,7 +6,23 @@ include 'header.php';
 ?>
 <!--fin nav bar et jumbotron-->
 <!doctype html>
-<html lang="zxx">
+<html lang="en">
+
+<!--php verif method et remplissage form-->
+<?php
+
+var_dump($_POST);
+
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST')
+    foreach ($_POST as $key => $value) {
+        $data[$key] = trim($value);
+        if (empty($_POST['inputUrl'])) {
+            echo 'chemin d\'accès de l\'image vide';
+        }
+    }
+?>
+
 
 <head>
     <!-- Required meta tags -->
@@ -24,7 +40,7 @@ include 'header.php';
           integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
           crossorigin="anonymous">
 
-
+    <!--css perso-->
     <link rel="stylesheet" href="/css/windows_form.css">
 
     <title>Wild Bazar</title>
@@ -34,51 +50,66 @@ include 'header.php';
 
 <main class="form">
 
+
     <div class="formulaire">
 
+        <!--début du formulaire-->
+        <form id="form" action="" method="POST" novalidate>
 
-        <form>
             <div class="row">
                 <div class="col">
                     <label for="inputUrl">Add picture</label>
-                    <input type="url" class="form-control" id="inputUrl" placeholder="your picture here">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <label for="inputUrl">window's name</label>
-                    <input type="text" class="form-control" placeholder="window's name">
-                </div>
-                <div class="col">
-                    <label for="inputUrl">price</label>
-                    <input type="text" class="form-control" placeholder="price">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <label for="exampleFormControlTextarea1">Description</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                              placeholder="desccribe your product"></textarea>
+                    <input type="url" class="form-control" id="inputUrl" name="inputUrl" placeholder="your picture here"
+                           required>
+
                 </div>
             </div>
 
             <div class="row">
                 <div class="col">
-                    <label for="inputUrl">size</label>
-                    <input type="text" class="form-control" placeholder="size">
+                    <label for="name">window's name</label>
+                    <input type="text" class="form-control" name="windowsName" id="windowsName"
+                           placeholder="window's name"
+                           required>
+
+                </div>
+
+                <div class="col">
+                    <label for="price">price</label>
+                    <input type="text" class="form-control" name="price" id="price" placeholder="price" required>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label for="description">Description</label>
+                    <textarea class="form-control" name="description" id="description" rows="3"
+                              placeholder="desccribe your product" required></textarea>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label for="size">size</label>
+                    <input type="text" class="form-control" name="size" id="size" placeholder="size" required>
+
                 </div>
                 <div class="col">
-                    <label for="inputUrl">weight</label>
-                    <input type="text" class="form-control" placeholder="weight">
+                    <label for="weight">weight</label>
+                    <input type="text" class="form-control" name="weight" id="weight" placeholder="weight" required>
+
                 </div>
                 <div class="col">
-                    <label for="inputUrl">color</label>
-                    <input type="text" class="form-control" placeholder="color">
+                    <label for="color">color</label>
+                    <input type="text" class="form-control" name="color" id="color" placeholder="color" required>
+
                 </div>
             </div>
 
             <div class="submission">
-                <button type="button" class="btn btn-secondary btn-lg">Add window</button>
+                <button class="btn btn-secondary btn-lg">Add window</button>
             </div>
 
         </form>
