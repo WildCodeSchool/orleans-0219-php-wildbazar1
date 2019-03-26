@@ -14,12 +14,11 @@ $sizes = ['XXS', 'XS', 'S', 'M', 'L', 'XL', 'XXL'];
 $colors = ['black', 'white', 'brown', 'red', 'blackAndWhite', 'blackAndBrown', 'other'];
 
 
-require 'function.php';
+require 'src/functionPenguins.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $data = cleanData($_POST);
-
     $errors = [];
 
     if (empty($data['productName']) || !is_string($data['productName'])) {
@@ -71,7 +70,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           crossorigin="anonymous">
     <!-- Appel css -->
     <link rel="stylesheet" href="css/style_penguins.css">
-    <script type="text/javascript" src="/JS/penguinsFormControl.js"></script>
+   <!--  <script type="text/javascript" src="/JS/penguinsFormControl.js"></script> -->
     <title>Wild Bazar</title>
 </head>
 <body>
@@ -82,13 +81,18 @@ include 'header.php';
 
 
     <div class="mb-4">
-        <h3>Adding a new product :</h3>
     </div>
     <div class="justify-content-center m-5 d-flex flex-wrap card-columns">
 
         <h3></h3>
-
-        <form action="penguinsForm.php" method="post" class="needs-validation" novalidate>
+        <div class="col-md-3 border">
+            <div class="border_add">
+                <i class="tux"></i>
+                <h2>Add your Product</h2>
+                <h4>Show your love to Tux !</h4>
+            </div>
+        </div>
+        <form action="penguinsForm.php" method="post" class="needs-validation col-md-9" novalidate>
             <div class="form-row">
                 <div class="form-group col-md-8">
                     <label for="productName">Product Name :</label>

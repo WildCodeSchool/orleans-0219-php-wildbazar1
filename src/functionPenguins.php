@@ -8,9 +8,8 @@
 
 function cleanData(array $data) : array
 {
-        foreach ($data as $dataCleaned ){
-            trim($dataCleaned);
+        foreach ($data as $key => $dataCleaned ){
+            $data[$key] = trim($dataCleaned);
         }
         return $data;
 };
-
