@@ -1,9 +1,9 @@
 <?php
 
-include "../connec.php";
+include '../connec.php';
 $connec = mysqli_connect(SERVER, USER, PASS, DB);
 
-$result = mysqli_query('SELECT * FROM article');
+
 
 
 
@@ -45,6 +45,8 @@ $result = mysqli_query('SELECT * FROM article');
 
     $pageTitle = 'A taste of Raspberry';
     $pageUnderTitle = 'When wildness meets Softness !';
+    $buttonRedirection = href="formRaspberry.php";
+    $buttonTitle = 'Add your Raspberries!';
 
     include 'header.php';
     ?>
@@ -55,14 +57,17 @@ $result = mysqli_query('SELECT * FROM article');
 
 
             <?php
-            while($data = mysqli_fetch_assoc($result)){
-                echo $data['id'];
+
+            $result = mysqli_query('SELECT * FROM article');
+
+            $data = mysqli_fetch_assoc($result);
+           /*   echo $data['id'];
                 echo $data['category'];
                 echo $data['title'];
                 echo $data['description'];
                 echo $data['price'];
-                echo $data['picture'];
-            }
+                echo $data['picture'];*/
+
             ?>
 
 
