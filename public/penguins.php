@@ -1,8 +1,18 @@
 <?php
 
+
+require '../connec.php';
+$phpDatabaseObject = new PDO(DSN, USER, PASS);
+
+$query = "SELECT * FROM article";
+$myObjects = $phpDatabaseObject->query($query);
+
+var_dump($myObjects);
+
+
 $pageTitle = 'Tux need money';
 $pageUnderTitle = 'To show off in front of G33K !';
-$buttonRedirection = 'penguinsForm.php';
+$buttonRedirection = 'penguinsAdd.php';
 $buttonTitle = 'Add a new product';
 $products = [
 

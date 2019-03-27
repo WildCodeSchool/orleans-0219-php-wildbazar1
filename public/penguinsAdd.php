@@ -6,12 +6,14 @@
  * Time: 14:15
  */
 
+
 $pageTitle = 'Tux need money';
 $pageUnderTitle = 'To show off in front of G33K !';
 $buttonRedirection = 'penguins.php';
 $buttonTitle = 'Return to the products page';
 $sizes = ['XXS', 'XS', 'S', 'M', 'L', 'XL', 'XXL'];
 $colors = ['black', 'white', 'brown', 'red', 'blackAndWhite', 'blackAndBrown', 'other'];
+
 
 
 require '../src/functionPenguins.php';
@@ -49,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $errors['color'] = 'Please select a color';
     }
     if (empty($errors)) {
-        header('Location:penguinsForm.php');
+        header('Location:penguinsAdd.php');
     }
 }
 
@@ -92,7 +94,7 @@ include 'header.php';
                 <h4>Show your love to Tux !</h4>
             </div>
         </div>
-        <form action="penguinsForm.php" method="post" class="needs-validation col-md-9" novalidate>
+        <form action="penguinsAdd.php" method="post" class="needs-validation col-md-9" novalidate>
             <div class="form-row">
                 <div class="form-group col-md-8">
                     <label for="productName">Product Name :</label>
