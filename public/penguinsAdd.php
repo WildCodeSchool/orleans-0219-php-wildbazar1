@@ -6,6 +6,11 @@
  * Time: 14:15
  */
 
+require '../connec.php';
+
+$phpDatabaseObject = new PDO(DSN, USER, PASS);
+$phpDatabaseObject->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
+
 
 $pageTitle = 'Tux need money';
 $pageUnderTitle = 'To show off in front of G33K !';
@@ -15,33 +20,32 @@ $sizes = ['XXS', 'XS', 'S', 'M', 'L', 'XL', 'XXL'];
 $colors = ['black', 'white', 'brown', 'red', 'blackAndWhite', 'blackAndBrown', 'other'];
 
 
-
 require '../src/functionPenguins.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $data = cleanData($_POST);
     $errors = [];
+    $data['category']='penguins';
 
-    if (empty($data['productName']) || !is_string($data['productName'])) {
-        $errors['productName'] = 'Please put the product name';
+    if (empty($data['title']) || !is_string($data['title'])) {
+        $errors['title'] = 'Please put the product name';
     }
-    if (empty($data['price']) || $_POST['price'] <= 0 ||
+    if (empty($data['price']) || $data['price'] <= 0 ||
         !is_numeric($data['price'])) {
         $errors['price'] = 'Please put price';
     }
     if (empty($data['description']) || strlen($data['description']) < 5 ||
-        strlen($data['description']) > 50 || !is_string($data['price'])) {
+        strlen($data['description']) > 500 || !is_string($data['price'])) {
         $errors['description'] = 'Please describe the product with 5 carac. min. and 50 carac. max.';
     }
-    if (empty($data['url']) || !filter_var($data['url'], FILTER_VALIDATE_URL)) {
-        $errors['url'] = 'Please give an image for the product';
+    if (empty($data['picture'])) {
+        $errors['picture'] = 'Please give an image for the product';
     }
-    if (empty($data['weight']) || $_POST['weight'] <= 0 ||
-        !is_numeric($data['weight'])) {
+    if (empty($data['weight']) || $data['weight'] <= 0) {
         $errors['weight'] = 'Please give the weight of the product';
     }
-    if (empty($data['quantity']) || $_POST['quantity'] <= 0) {
+    if (empty($data['quantity']) || $data['quantity'] <= 0) {
         $errors['quantity'] = 'Please give the quantity of the stock';
     }
     if (empty($data['size']) || !in_array($data['size'], $sizes)) {
@@ -51,7 +55,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $errors['color'] = 'Please select a color';
     }
     if (empty($errors)) {
-        header('Location:penguinsAdd.php');
+
+        $query = "INSERT INTO article (category, title, description, price, quantity, size, weight, color, picture) 
+          VALUES (:category, :title, :description, :price, :quantity, :size, :weight, :color, :picture)";
+
+        $newObjects = $phpDatabaseObject->prepare($query);
+
+        $newObjects->bindValue(':category', $data['category'], PDO::PARAM_STR);
+        $newObjects->bindValue(':title', $data['title'], PDO::PARAM_STR);
+        $newObjects->bindValue(':description', $data['description'], PDO::PARAM_STR);
+        $newObjects->bindValue(':price', $data['price'], PDO::PARAM_STR);
+        $newObjects->bindValue(':quantity', $data['quantity'], PDO::PARAM_INT);
+        $newObjects->bindValue(':size', $data['size'], PDO::PARAM_STR);
+        $newObjects->bindValue(':weight', $data['weight'], PDO::PARAM_STR);
+        $newObjects->bindValue(':color', $data['color'], PDO::PARAM_STR);
+        $newObjects->bindValue(':picture', $data['picture'], PDO::PARAM_STR);
+        $newObjects->execute();
+        header('Location:penguins.php');
     }
 }
 
@@ -72,7 +92,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           crossorigin="anonymous">
     <!-- Appel css -->
     <link rel="stylesheet" href="css/style_penguins.css">
-   <!--  <script type="text/javascript" src="/JS/penguinsFormControl.js"></script> -->
+    <script type="text/javascript" src="/JS/penguinsFormControl.js"></script>
     <title>Wild Bazar</title>
 </head>
 <body>
@@ -97,14 +117,14 @@ include 'header.php';
         <form action="penguinsAdd.php" method="post" class="needs-validation col-md-9" novalidate>
             <div class="form-row">
                 <div class="form-group col-md-8">
-                    <label for="productName">Product Name :</label>
-                    <input type="text" class="form-control" name="productName" id="productName"
+                    <label for="title">Product Name :</label>
+                    <input type="text" class="form-control" name="title" id="title"
                            placeholder="Type the product name" required value="<?php
                     if (!empty($errors)) {
-                        echo $data['productName'];
+                        echo $data['title'];
                     }
                     ?>">
-                    <div class="text-danger"><?= $errors['productName'] ?? '' ?></div>
+                    <div class="text-danger"><?= $errors['title'] ?? '' ?></div>
                 </div>
                 <div class="form-group col-md-4">
                     <label for="price">Price</label>
@@ -129,14 +149,14 @@ include 'header.php';
                 <div class="text-danger"><?= $errors['description'] ?? '' ?></div>
             </div>
             <div class="form-group">
-                <label for="url">Picture</label>
-                <input type="url" class="form-control" id="url" name="url" placeholder="Type the url of picture"
+                <label for="picture">Picture</label>
+                <input type="text" class="form-control" id="picture" name="picture" placeholder="Type the url of picture"
                        required value="<?php
                 if (!empty($errors)) {
-                    echo $data['url'];
+                    echo $data['picture'];
                 }
                 ?>">
-                <div class="text-danger"><?= $errors['url'] ?? '' ?></div>
+                <div class="text-danger"><?= $errors['picture'] ?? '' ?></div>
                 <div class="form-row">
                     <div class="form-group col-md-3">
                         <label for="weight">weight</label>
@@ -150,7 +170,7 @@ include 'header.php';
                     </div>
                     <div class="form-group col-md-3">
                         <label for="quantity">Quantity</label>
-                        <input type="number" class="form-control" id="quantity" name="quantity" placeholder="stock"
+                        <input type="text" class="form-control" id="quantity" name="quantity" placeholder="stock"
                                required min="1" value="<?php
                         if (!empty($errors)) {
                             echo $data['quantity'];
