@@ -1,20 +1,22 @@
 <?php
 
-
+// connection to table "article" //
 require '../connec.php';
-$phpDatabaseObject = new PDO(DSN, USER, PASS);
-$phpDatabaseObject->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
-
+$pdo = new PDO(DSN, USER, PASS);
+$pdo->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
 
 $query = "SELECT * FROM article";
-$myObjects = $phpDatabaseObject->query($query);
-$products = $myObjects->fetchAll(PDO::FETCH_ASSOC);
+$statement = $pdo->query($query);
+$products = $statement->fetchAll(PDO::FETCH_ASSOC);
+// -------------------- //
 
+
+// Variable for dynamic Jumbotron //
 $pageTitle = 'Tux need money';
 $pageUnderTitle = 'To show off in front of G33K !';
 $buttonRedirection = 'penguinsAdd.php';
 $buttonTitle = 'Add a new product';
-
+// ------------------------------ //
 
 ?>
 
@@ -48,28 +50,20 @@ include 'header.php';
 ?>
 
 <main>
-
     <div class="justify-content-center m-5 d-flex flex-wrap card-columns">
-
-
+        <!-- Dynamic cards -->
         <?php
-        foreach ($products as $product => $caracteristic) {
+        foreach ($products as $key => $product) {
             include 'penguinsCards.php';
         }
         ?>
-
-
-
-
     </div>
 </main>
-
 <!-- zone footer -->
-
 <?php
 include 'footer.php';
 ?>
-
+<!-- Javascript for bootstrap -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -81,5 +75,4 @@ include 'footer.php';
         crossorigin="anonymous"></script>
 
 </body>
-
 </html>

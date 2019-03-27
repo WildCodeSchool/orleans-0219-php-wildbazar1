@@ -1,10 +1,10 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: vinny
- * Date: 22/03/19
- * Time: 10:44
- */
+ *
+ * Function for cleaning data before POST in database
+ *
+*/
+
 
 function cleanData(array $data) : array
 {
@@ -13,5 +13,3 @@ function cleanData(array $data) : array
         }
         return $data;
 };
-
-

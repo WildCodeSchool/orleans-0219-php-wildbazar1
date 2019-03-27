@@ -1,32 +1,30 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: vinny
- * Date: 20/03/19
- * Time: 14:15
- */
 
+// Trim data from database //
+require '../src/cleanData.php';
+
+// connection to table "article" //
 require '../connec.php';
 
-$phpDatabaseObject = new PDO(DSN, USER, PASS);
-$phpDatabaseObject->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
+$pdo = new PDO(DSN, USER, PASS);
+$pdo->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
+// -------------------- //
 
-
+// Variable for dynamic Jumbotron //
 $pageTitle = 'Tux need money';
 $pageUnderTitle = 'To show off in front of G33K !';
 $buttonRedirection = 'penguins.php';
 $buttonTitle = 'Return to the products page';
 $sizes = ['XXS', 'XS', 'S', 'M', 'L', 'XL', 'XXL'];
 $colors = ['black', 'white', 'brown', 'red', 'blackAndWhite', 'blackAndBrown', 'other'];
+// ------------------------------ //
 
-
-require '../src/functionPenguins.php';
-
+// For add article whith Post method, clean & verify & post data on Article database //
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $data = cleanData($_POST);
     $errors = [];
-    $data['category']='penguins';
+    $data['category'] = 'penguins';
 
     if (empty($data['title']) || !is_string($data['title'])) {
         $errors['title'] = 'Please put the product name';
@@ -59,21 +57,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $query = "INSERT INTO article (category, title, description, price, quantity, size, weight, color, picture) 
           VALUES (:category, :title, :description, :price, :quantity, :size, :weight, :color, :picture)";
 
-        $newObjects = $phpDatabaseObject->prepare($query);
+        $statement = $pdo->prepare($query);
 
-        $newObjects->bindValue(':category', $data['category'], PDO::PARAM_STR);
-        $newObjects->bindValue(':title', $data['title'], PDO::PARAM_STR);
-        $newObjects->bindValue(':description', $data['description'], PDO::PARAM_STR);
-        $newObjects->bindValue(':price', $data['price'], PDO::PARAM_STR);
-        $newObjects->bindValue(':quantity', $data['quantity'], PDO::PARAM_INT);
-        $newObjects->bindValue(':size', $data['size'], PDO::PARAM_STR);
-        $newObjects->bindValue(':weight', $data['weight'], PDO::PARAM_STR);
-        $newObjects->bindValue(':color', $data['color'], PDO::PARAM_STR);
-        $newObjects->bindValue(':picture', $data['picture'], PDO::PARAM_STR);
-        $newObjects->execute();
+        $statement->bindValue(':category', $data['category'], PDO::PARAM_STR);
+        $statement->bindValue(':title', $data['title'], PDO::PARAM_STR);
+        $statement->bindValue(':description', $data['description'], PDO::PARAM_STR);
+        $statement->bindValue(':price', $data['price'], PDO::PARAM_STR);
+        $statement->bindValue(':quantity', $data['quantity'], PDO::PARAM_INT);
+        $statement->bindValue(':size', $data['size'], PDO::PARAM_STR);
+        $statement->bindValue(':weight', $data['weight'], PDO::PARAM_STR);
+        $statement->bindValue(':color', $data['color'], PDO::PARAM_STR);
+        $statement->bindValue(':picture', $data['picture'], PDO::PARAM_STR);
+        $statement->execute();
         header('Location:penguins.php');
     }
 }
+// --------------------------------------------------------- //
+
 
 ?>
 <!DOCTYPE html>
@@ -100,17 +100,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 include 'header.php';
 ?>
 <main class="container">
-
-
     <div class="mb-4">
     </div>
     <div class="justify-content-center m-5 d-flex flex-wrap card-columns">
-
         <h3></h3>
         <div class="col-md-3 border">
             <div class="border_add">
                 <i class="tux"></i>
                 <h2>Add your Product</h2>
+                <img class="tuxMono" src="images/penguins/tux_mono.png" alt="image du tux en noir et blanc"</img>
                 <h4>Show your love to Tux !</h4>
             </div>
         </div>
@@ -150,7 +148,8 @@ include 'header.php';
             </div>
             <div class="form-group">
                 <label for="picture">Picture</label>
-                <input type="text" class="form-control" id="picture" name="picture" placeholder="Type the url of picture"
+                <input type="text" class="form-control" id="picture" name="picture"
+                       placeholder="Type the url of picture"
                        required value="<?php
                 if (!empty($errors)) {
                     echo $data['picture'];
@@ -213,11 +212,11 @@ include 'header.php';
         </form>
     </div>
 </main>
-
 <!-- zone footer -->
 <?php
 include 'footer.php';
 ?>
+<!-- Javascript for bootstrap -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
