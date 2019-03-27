@@ -47,9 +47,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $statement->bindValue(':title_one', $data['title_one'], PDO::PARAM_STR);
         $statement->bindValue(':price', $data['price'], PDO::PARAM_INT);
         $statement->bindValue(':description', $data['description'], PDO::PARAM_STR);
-        $statement->bindValue(':image', $data['image'], PDO::PARAM_STR);
-        $statement->execute();
-        header('Location:apple.php');
+        $statement->bindValue(':picture', $data['picture'], PDO::PARAM_STR);
+        //$statement->execute();
+
     }
 }
 // --------------------------------------------------------- //
@@ -112,7 +112,7 @@ include 'header.php';
                         <label class="control-label col-sm-2" for="title_one">Style:</label>
                         <div class="col-sm-10">
                             <input name="title_one" class="form-control" id="title_one" placeholder="Apple Violet"
-                                    value="<?php
+                                    required value="<?php
                                     if (!empty($errors)) {
                                         echo $data['title_one'];
                                     }
@@ -124,7 +124,7 @@ include 'header.php';
                         <label class="control-label col-sm-2">Price:</label>
                         <div class="col-sm-10">
                             <input name="price" class="form-control" id="price" placeholder="Enter your Price"
-                                   value="<?php
+                                   required value="<?php
                                    if (!empty($errors)) {
                                        echo $data['price'];
                                    }
@@ -170,7 +170,7 @@ include 'header.php';
                         <label class="control-label col-sm-2">Picture:</label>
                         <div class="col-sm-10">
                             <input class="form-control" id="picture" placeholder="Add Link" name="picture"
-                                   value="<?php
+                                   required value="<?php
                                    if (!empty($errors)) {
                                        echo $data['picture'];
                                    }
