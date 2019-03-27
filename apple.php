@@ -4,36 +4,6 @@ $mysqli = new mysqli("localhost", "root", "maille99", "apple");
 $result = $mysqli->query("SELECT * FROM `categorie_apple`");
 $products = $result->fetch_all();
 
-
-
-
-
-
-
-//var_dump($products);
-//die;
-
-
-
-
-
-//$products = [
-//
-//        'produit1' => ['40', 'Apple - Worm', 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.', 'pomme-_-ver.jpeg.bmp'],
-//        'produit2' => ['50', 'Apple - Black', 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.', 'pomme-deco-en-resine-28cm-noir.jpg'],
-//        'produit3' => ['50', 'Apple - Violet', 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.', 'Minaudiere-Pomme-Violet-11.jpg'],
-//        'produit4' => ['30', 'Apple - Rotten', 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.', 'Pomme-au-four-à-la-crème-de-marrons.jpg'],
-//        'produit5' => ['20', 'Apple - Red', 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.', 'shutterstock_102978833.jpg'],
-//        'produit6' => ['20', 'Apple - Gold', 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.', 'pomme-or.jpg'],
-//        'produit7' => ['20', 'Apple - Blue', 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.', 'pomme5.jpg'],
-//        'produit8' => ['30', 'Apple - Yellow', 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.', 'pomme_golden.jpg'],
-//        'produit9' => ['25', 'Apple - Bite',  'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.', 'pomme.png'],
-//        'produit10' => ['25', 'Apple - Smoothie', 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.', 'smoothie-pomme.jpg'],
-//        'produit11' => ['10', 'Apple - Jobs', 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.', 'SteveJobs.jpg'],
-//        'produit12' => ['40',  'Apple - Green', 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati ut error dolor dolores eveniet.', 'fotolia_55372155_subscription_xxl-copy.jpg'],
-//
-//
-//    ]
 ?>
 
 
