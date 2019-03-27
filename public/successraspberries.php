@@ -6,7 +6,8 @@
  * Time: 17:40
  */
 
-
+include "../connec.php";
+$connec = mysqli_connect(SERVER, USER, PASS, DB);
 
 
 
@@ -31,7 +32,7 @@
 
 <?php
 
-$pageTitle = 'A taste of Raspberries';
+$pageTitle = 'A taste of Raspberry';
 $pageUnderTitle = 'When wildness meets Softness !';
 
 include 'header.php';

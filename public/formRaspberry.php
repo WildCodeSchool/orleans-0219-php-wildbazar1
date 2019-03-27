@@ -53,7 +53,7 @@
 
 <?php
 
-$pageTitle = 'A taste of Raspberries';
+$pageTitle = 'A taste of Raspberry';
 $pageUnderTitle = 'When wildness meets Softness !';
 
 include 'header.php';
