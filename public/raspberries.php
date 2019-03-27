@@ -1,19 +1,26 @@
 <?php
 
-$products = [
-    'produit1' => ['40', 'Black Raspberries', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, vero!', 'black.jpg'],
-    'produit2' => ['40', 'Blue Raspberries', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, vero!', 'blue.jpg'],
-    'produit3' => ['40', 'Chocolate Raspberries', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, vero!', 'chocolat.jpg'],
-    'produit4' => ['40', 'Cupcake Raspberries', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, vero!', 'cupcake.jpg'],
-    'produit5' => ['40', 'Dark Raspberries', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, vero!', 'dark.png'],
-    'produit6' => ['40', 'Donuts Raspberries', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, vero!', 'donuts.jpg'],
-    'produit7' => ['40', 'Red Raspberries', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, vero!', 'rouge.jpg'],
-    'produit8' => ['40', 'Yellow Raspberries', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, vero!', 'jaune.jpg'],
-    'produit9' => ['40', 'Pink Raspberries', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, vero!', 'rose.jpg'],
-    'produit10' => ['40', 'Pie Raspberries', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, vero!', 'tarte.jpg'],
-    'produit11' => ['40', 'Tiramisu Raspberries', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, vero!', 'tiramisu.jpg'],
-    'produit12' => ['40', 'Device Raspberries', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, vero!', 'device.jpg']
-];
+include "../connec.php";
+$connec = mysqli_connect(SERVER, USER, PASS, DB);
+
+$result = mysqli_query('SELECT * FROM article');
+
+
+
+/*$products = [
+    'produit1' => ['40', 'Black Raspberry', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, vero!', 'black.jpg'],
+    'produit2' => ['40', 'Blue Raspberry', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, vero!', 'blue.jpg'],
+    'produit3' => ['40', 'Chocolate Raspberry', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, vero!', 'chocolat.jpg'],
+    'produit4' => ['40', 'Cupcake Raspberry', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, vero!', 'cupcake.jpg'],
+    'produit5' => ['40', 'Dark Raspberry', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, vero!', 'dark.png'],
+    'produit6' => ['40', 'Donuts Raspberry', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, vero!', 'donuts.jpg'],
+    'produit7' => ['40', 'Red Raspberry', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, vero!', 'rouge.jpg'],
+    'produit8' => ['40', 'Yellow Raspberry', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, vero!', 'jaune.jpg'],
+    'produit9' => ['40', 'Pink Raspberry', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, vero!', 'rose.jpg'],
+    'produit10' => ['40', 'Pie Raspberry', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, vero!', 'tarte.jpg'],
+    'produit11' => ['40', 'Tiramisu Raspberry', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, vero!', 'tiramisu.jpg'],
+    'produit12' => ['40', 'Device Raspberry', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, vero!', 'device.jpg']
+];*/
 
 ?>
 
@@ -36,7 +43,7 @@ $products = [
 
     <?php
 
-    $pageTitle = 'A taste of Raspberries';
+    $pageTitle = 'A taste of Raspberry';
     $pageUnderTitle = 'When wildness meets Softness !';
 
     include 'header.php';
@@ -48,8 +55,13 @@ $products = [
 
 
             <?php
-            foreach ($products as $key => $value) {
-                include 'cardsRaspberries.php';
+            while($data = mysqli_fetch_assoc($result)){
+                echo $data['id'];
+                echo $data['category'];
+                echo $data['title'];
+                echo $data['description'];
+                echo $data['price'];
+                echo $data['picture'];
             }
             ?>
 
