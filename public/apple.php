@@ -1,8 +1,18 @@
 <?php
 
-$mysqli = new mysqli("localhost", "root", "maille99", "apple");
-$result = $mysqli->query("SELECT * FROM `categorie_apple`");
-$products = $result->fetch_all();
+require '../connec.php';
+
+
+$pdo = new PDO(DSN, USER, PASS);
+$query = "SELECT * FROM categorie_apple";
+$res = $pdo->query($query);
+$products = $res->fetchAll();
+
+
+$pageTitle = 'A Bite of Apple';
+$pageUnderTitle = 'When elegance ryhmes with performance';
+$buttonRedirection = 'addApple.php';
+$buttonTitle = '+ Add a new product';
 
 ?>
 
@@ -28,10 +38,7 @@ $products = $result->fetch_all();
 <body>
 
 <?php
-$pageTitle = 'A Bite of Apple';
-$pageUnderTitle = 'When elegance ryhmes with performance';
-$buttonRedirection = 'addApple.php';
-$buttonTitle = '+ Add a new product';
+
 
 include 'header.php';
 ?>

@@ -1,4 +1,10 @@
 <?php
+
+require '../connec.php';
+
+$pdo = new PDO(DSN, USER, PASS);
+
+
 if ($_POST) {
     $errors = array();
     if (empty($_POST['style'])) {
