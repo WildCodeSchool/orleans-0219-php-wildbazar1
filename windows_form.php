@@ -11,16 +11,69 @@ include 'header.php';
 <!--php verif method et remplissage form-->
 <?php
 
-var_dump($_POST);
+require 'function_windows.php';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST')
-    foreach ($_POST as $key => $value) {
-        $data[$key] = trim($value);
-        if (empty($_POST['inputUrl'])) {
-            echo 'chemin d\'accès de l\'image vide';
-        }
+    $data = trimArray($_POST);
+
+    $errors = [];
+
+    if (empty($data['inputUrl']) || !filter_var($data['inputUrl'], FILTER_VALIDATE_URL)) {
+        $errors['inputUrl'] = 'chemin d\'accès de l\'image vide';
+
     }
+    $inputUrlMax = 100;
+    if ((strlen($data['inputUrl']) || !filter_var($data['inputUrl'], FILTER_VALIDATE_URL)) > $inputUrlMax) {
+        $errors['inputUrl'] = 'chemin d\'accès de l\'image trop long limite ' . $inputUrlMax . ' caractères';
+
+    }
+    if (empty($data['windowsName']) || !is_string($data['windowsName'])) {
+        $errors['windowsName'] = 'nom de l\'image vide';
+
+    }
+    $nameMax = 100;
+    if ((strlen($data['windowsName']) || !is_string($data['windowsName'])) > $nameMax) {
+        $errors['windowsName'] = 'nom de l\'image trop long limite ' . $nameMax . ' caractères';
+
+    }
+    if (empty($data['price']) || $_POST['price'] <= 0 ||
+        !is_numeric($data['price'])) {
+        $errors['price'] = 'champ du prix vide';
+    }
+
+
+    if (empty($data['description']) || !is_string($data['description']) > $nameMax) {
+        $errors['description'] = 'Description de l\'image vide';
+    }
+    $descriptionLengthMax = 255;
+    if ((strlen($data['description']) || !is_string($data['windowsName'])) > $descriptionLengthMax) {
+        $errors['description'] = 'chemin d\'accès de l\'image trop long limite ' . $descriptionLengthMax . ' caractères';
+
+    }
+
+
+    if (empty($data['size']) || !is_string($data['description'])) {
+        $errors['size'] = 'indiquez la taille du produit';
+
+    }
+    if (empty($data['weight']) || !is_string($data['description'])) {
+        $errors['weight'] = 'indiquez le poids du produit';
+
+    }
+    if (empty($data['color']) || !is_string($data['description'])) {
+        $errors['color'] = 'indiquez la couleur du produit';
+
+    }
+
+
+    if (empty($errors)) {
+        //redirection
+        header('Location:windows_form.php');
+        //enregistrement bdd
+    }
+}
 ?>
 
 
@@ -54,13 +107,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
     <div class="formulaire">
 
         <!--début du formulaire-->
-        <form id="form" action="" method="POST" novalidate>
+        <form id="form" action="windows_form.php" method="POST" novalidate>
 
             <div class="row">
                 <div class="col">
                     <label for="inputUrl">Add picture</label>
                     <input type="url" class="form-control" id="inputUrl" name="inputUrl" placeholder="your picture here"
-                           required>
+                           required value="<?php
+                    if (!empty($errors)) {
+                        echo $data['inputUrl'];
+                    }
+                    ?>"><!--sauvegarde le champ rempli si correct et l'affiche-->
+                    <div class="text-danger"><?= $errors['inputUrl'] ?? '' ?></div><!--message d'erreur-->
 
                 </div>
             </div>
@@ -70,13 +128,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
                     <label for="name">window's name</label>
                     <input type="text" class="form-control" name="windowsName" id="windowsName"
                            placeholder="window's name"
-                           required>
+                           required value="<?php
+                    if (!empty($errors)) {
+                        echo $data['windowsName'];
+                    }
+                    ?>"><!--sauvegarde le champ rempli si correct et l'affiche-->
+                    <div class="text-danger"><?= $errors['windowsName'] ?? '' ?></div><!--message d'erreur-->
 
                 </div>
 
                 <div class="col">
                     <label for="price">price</label>
-                    <input type="text" class="form-control" name="price" id="price" placeholder="price" required>
+                    <input type="text" class="form-control" name="price" id="price" placeholder="price" required
+                           value="<?php
+                           if (!empty($errors)) {
+                               echo $data['price'];
+                           }
+                           ?>"><!--sauvegarde le champ rempli si correct et l'affiche-->
+                    <div class="text-danger"><?= $errors['price'] ?? '' ?></div><!--message d'erreur-->
 
                 </div>
             </div>
@@ -85,7 +154,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
                 <div class="col">
                     <label for="description">Description</label>
                     <textarea class="form-control" name="description" id="description" rows="3"
-                              placeholder="desccribe your product" required></textarea>
+                              placeholder="desccribe your product" required value="<?php
+                    if (!empty($errors)) {
+                        echo $data['description'];
+                    }
+                    ?>"></textarea><!--sauvegarde le champ rempli si correct et l'affiche-->
+                    <div class="text-danger"><?= $errors['description'] ?? '' ?></div><!--message d'erreur-->
 
                 </div>
             </div>
@@ -93,17 +167,35 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
             <div class="row">
                 <div class="col">
                     <label for="size">size</label>
-                    <input type="text" class="form-control" name="size" id="size" placeholder="size" required>
+                    <input type="text" class="form-control" name="size" id="size" placeholder="size" required
+                           value="<?php
+                           if (!empty($errors)) {
+                               echo $data['size'];
+                           }
+                           ?>"><!--sauvegarde le champ rempli si correct et l'affiche-->
+                    <div class="text-danger"><?= $errors['size'] ?? '' ?></div><!--message d'erreur-->
 
                 </div>
                 <div class="col">
                     <label for="weight">weight</label>
-                    <input type="text" class="form-control" name="weight" id="weight" placeholder="weight" required>
+                    <input type="text" class="form-control" name="weight" id="weight" placeholder="weight" required
+                           value="<?php
+                           if (!empty($errors)) {
+                               echo $data['weight'];
+                           }
+                           ?>"><!--sauvegarde le champ rempli si correct et l'affiche-->
+                    <div class="text-danger"><?= $errors['weight'] ?? '' ?></div><!--message d'erreur-->
 
                 </div>
                 <div class="col">
                     <label for="color">color</label>
-                    <input type="text" class="form-control" name="color" id="color" placeholder="color" required>
+                    <input type="text" class="form-control" name="color" id="color" placeholder="color" required
+                           value="<?php
+                           if (!empty($errors)) {
+                               echo $data['color'];
+                           }
+                           ?>"><!--sauvegarde le champ rempli si correct et l'affiche-->
+                    <div class="text-danger"><?= $errors['color'] ?? '' ?></div><!--message d'erreur-->
 
                 </div>
             </div>
