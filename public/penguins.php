@@ -53,7 +53,7 @@ include 'header.php';
     <div class="justify-content-center m-5 d-flex flex-wrap card-columns">
         <!-- Dynamic cards -->
         <?php
-        foreach ($products as $key => $product) {
+        foreach ($products as $product) {
             include 'penguinsCards.php';
         }
         ?>
