@@ -1,37 +1,62 @@
 <?php
 
+
+require '../src/cleanData.php';
+
+
 require '../connec.php';
 
 $pdo = new PDO(DSN, USER, PASS);
+$pdo->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
 
 
-if ($_POST) {
-    $errors = array();
-    if (empty($_POST['style'])) {
-        $errors['style1'] = "Please enter a style for your Apple";
+// For add article whith Post method, clean & verify & post data on Article database //
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+    $data = cleanData($_POST);
+    $errors = [];
+    $data['apple'] = 'apple';
+
+    if (empty($data['title_one']) || !is_string($data['title_one'])) {
+        $errors['title_one'] = 'Please enter a style!';
     }
-
-    if (empty($_POST['price'])) {
-        $errors['price1'] = "Please define a price for your product";
+    if (empty($data['price']) || $data['price'] <= 0 ||
+        !is_numeric($data['price'])) {
+        $errors['price'] = 'Please define a price';
+    }
+    if (empty($data['description']) || strlen($data['description']) < 5 ||
+        strlen($data['description']) > 255 || !is_string($data['price'])) {
+        $errors['description'] = 'Please add a description for your apple';
+    }
+    if (empty($data['picture'])) {
+        $errors['picture'] = 'Please add a link of a picture';
     }
 
     $isEmailValid = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL);
     if ($isEmailValid === false) {
-        $errors['email1'] = "Please enter a valid email";
+        $errors['email'] = "Please enter a valid email";
     }
 
+    if (empty($errors)) {
 
-    if (empty($_POST['picture'])) {
-        $errors['picture1'] = "Please add a link for a picture";
+        $query = "INSERT INTO categorie_apple (title_one, price, description, caracteristics, image) 
+          VALUES (:title_one, :price, :description, :caracteristics, :image)";
+
+        $statement = $pdo->prepare($query);
+
+        $statement->bindValue(':title_one', $data['title_one'], PDO::PARAM_STR);
+        $statement->bindValue(':price', $data['price'], PDO::PARAM_INT);
+        $statement->bindValue(':description', $data['description'], PDO::PARAM_STR);
+        $statement->bindValue(':image', $data['image'], PDO::PARAM_STR);
+        $statement->execute();
+        header('Location:apple.php');
     }
-
-    if (0 == count($errors)) {
-        unset($_POST);
-    }
-
-
 }
+// --------------------------------------------------------- //
+
+
 ?>
+
 
 
 <!DOCTYPE html>
@@ -84,21 +109,27 @@ include 'header.php';
                 ?>
                 <div class="contact-form">
                     <div class="form-group">
-                        <label class="control-label col-sm-2" for="fname">Style:</label>
+                        <label class="control-label col-sm-2" for="title_one">Style:</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="fname" placeholder="Apple Violet" name="style"
-                                   value="<?php if (isset($_POST['style'])) echo $_POST['style']; ?>">
-                            <p><?php if (isset($errors['style1'])) echo $errors['style1'];
-                                ?></p>
+                            <input name="title_one" class="form-control" id="title_one" placeholder="Apple Violet"
+                                    value="<?php
+                                    if (!empty($errors)) {
+                                        echo $data['title_one'];
+                                    }
+                                    ?>">
+                            <p><?= $errors['title_one'] ?? '' ?></p>
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="control-label col-sm-2">Price:</label>
                         <div class="col-sm-10">
                             <input name="price" class="form-control" id="price" placeholder="Enter your Price"
-                                   value="<?php if (isset($_POST['price'])) echo $_POST['price']; ?>">
-                            <p><?php if (isset($errors['price1'])) echo $errors['price1'];
-                                ?></p>
+                                   value="<?php
+                                   if (!empty($errors)) {
+                                       echo $data['price'];
+                                   }
+                                   ?>">
+                            <p><?= $errors['price'] ?? '' ?></p>
                         </div>
                     </div>
                     <div class="form-group">
@@ -106,7 +137,7 @@ include 'header.php';
                         <div class="col-sm-10">
                             <input type="email" class="form-control" id="email" placeholder="contac@example.com"
                                    name="email" value="<?php if (isset($_POST['email'])) echo $_POST['email']; ?>">
-                            <p><?php if (isset($errors['email1'])) echo $errors['email1'];
+                            <p><?php if (isset($errors['email'])) echo $errors['email'];
                                 ?></p>
                         </div>
                     </div>
@@ -126,17 +157,25 @@ include 'header.php';
                         <label class="control-label col-sm-2" for="description">Description:</label>
                         <div class="col-sm-10">
                             <textarea name="description" class="form-control" rows="5" placeholder="Add a description">
-
+                                <?php
+                                if (!empty($errors)) {
+                                    echo $data['description'];
+                                }
+                                ?>
                             </textarea>
+                            <p><?= $errors['description'] ?? '' ?></p>
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="control-label col-sm-2">Picture:</label>
                         <div class="col-sm-10">
                             <input class="form-control" id="picture" placeholder="Add Link" name="picture"
-                                   value="<?php if (isset($_POST['picture'])) echo $_POST['picture']; ?>">
-                            <p><?php if (isset($errors['picture1'])) echo $errors['picture1'];
-                                ?></p>
+                                   value="<?php
+                                   if (!empty($errors)) {
+                                       echo $data['picture'];
+                                   }
+                                   ?>">
+                            <p><?= $errors['picture'] ?? '' ?></p>
                         </div>
                     </div>
                     <div class="form-group">
